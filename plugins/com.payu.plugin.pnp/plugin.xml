@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="com.payu.plugin.pnp" version="1.0.0">
+    <name>PayUMoneyPNPPlugin</name>
+    <js-module name="PayUMoneyPNPPlugin" src="www/PayUMoneyPNPPlugin.js">
+        <clobbers target="cordova.plugins.PayUMoneyPNPPlugin" />
+    </js-module>
+    <asset src="www/PayU-Helper.js" target="js/PayU-Helper.js" />
+
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="PayUMoneyPNPPlugin">
+                <param name="ios-package" value="PayUMoneyPNPPlugin" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/PayUMoneyPNPPlugin.m" />
+        <framework src="src/ios/SDKs/CitrusGraphics.framework" custom="true" embed="true"/>
+        <framework src="src/ios/SDKs/PayUMoneyCoreSDK.framework" custom="true" embed="true"/>
+        <framework src="src/ios/SDKs/PlugNPlay.framework" custom="true" embed="true"/>
+    </platform>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="PayUMoneyPNPPlugin">
+                <param name="android-package" value="com.payu.plugin.pnp.PayUMoneyPNPPlugin" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml" />
+        <source-file src="src/android/PayUMoneyPNPPlugin.java" target-dir="src/com/payu/plugin/pnp/PayUMoneyPNPPlugin" />
+        <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
+    </platform>
+</plugin>

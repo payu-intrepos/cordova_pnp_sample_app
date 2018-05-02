@@ -1,0 +1,4 @@
+#Wed May 02 09:57:33 IST 2018
+base.0=/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+renamed.0=classes.dex
+file.0=/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex
