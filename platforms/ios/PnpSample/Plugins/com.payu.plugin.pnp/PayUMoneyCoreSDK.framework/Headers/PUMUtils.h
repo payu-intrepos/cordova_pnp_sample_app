@@ -142,6 +142,10 @@ typedef enum {
 
 +(NSDecimalNumber *)roundUpNumberTo2DecimalPlaces:(NSDecimalNumber *) number;
 
++(NSString *)stringUpto2Decimal:(NSString *)str;
+
++(NSDecimalNumber *)decimalNumberFromFloat:(float)value;
+
 +(NSString *)getTotalAmountFromPaymentResponse:(NSDictionary *) response;
 
 +(NSString *)getPaymentIDFromAddPaymentResponse:(NSDictionary *) response;
@@ -149,5 +153,7 @@ typedef enum {
 +(NSString *)getAuthTypeFromAuth:(NSString *) otpOrPassword;
 
 +(BOOL)isNumber:(NSString *) str;
+
++(id)objectFromString:(NSString *)str error:(NSError **)err;
 
 @end

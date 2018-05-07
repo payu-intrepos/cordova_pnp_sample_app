@@ -1,6 +1,5 @@
 package com.payu.plugin.pnp;
 
-import android.content.Intent;
 import android.util.Log;
 
 import org.apache.cordova.CordovaPlugin;
@@ -36,10 +35,6 @@ public class PayUMoneyPNPPlugin extends CordovaPlugin {
         else {
             callbackContext.error("Expected one non-empty string argument.");
         }
-    }
-
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent intent) {
     }
 }
 

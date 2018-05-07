@@ -210,6 +210,7 @@
  ************************************************** Internal Environments ***********************
  */
 #define ENVIRONMENT_PP42                                        @"PP42"
+#define ENVIRONMENT_PP25                                        @"PP25"
 #define ENVIRONMENT_PP41                                        @"PP41"
 #define ENVIRONMENT_PP10                                        @"PP10"
 #define ENVIRONMENT_PP0                                         @"PP0"
@@ -218,8 +219,9 @@
 
 //API URLs
 #define ENVIRONMENT_PRODUCTION_API_URL                          @"https://www.payumoney.com/"
-#define ENVIRONMENT_TEST_API_URL                                @"https://test.payumoney.com/"
+#define ENVIRONMENT_TEST_API_URL                                @"https://www.payumoney.com/sandbox/"
 #define ENVIRONMENT_PP42_API_URL                                @"http://pp42.payumoney.com/"
+#define ENVIRONMENT_PP25_API_URL                                @"http://pp25.payumoney.com/"
 #define ENVIRONMENT_PP48_API_URL                                @"http://pp51.payumoney.com/"
 #define ENVIRONMENT_PP41_API_URL                                @"http://pp41.payumoney.com/"
 #define ENVIRONMENT_PP10_API_URL                                @"http://pp10.payumoney.com/"
@@ -230,17 +232,18 @@
 #define ENVIRONMENT_PP44_API_URL                                 @"http://pp44.payumoney.com/"
 
 //Web URLs
-#define ENVIRONMENT_PRODUCTION_WEB_URL                          @"https://secure.payu.in/_seamless_payment"
-#define ENVIRONMENT_TEST_WEB_URL                                @"https://test.payu.in/_seamless_payment"
-#define ENVIRONMENT_PP42_WEB_URL                                @"http://pp42.secure.payu.in/_seamless_payment/"
-#define ENVIRONMENT_PP41_WEB_URL                                @"http://pp41.secure.payu.in/_seamless_payment/"
-#define ENVIRONMENT_PP10_WEB_URL                                @"http://pp10.secure.payu.in/_seamless_payment/"
-#define ENVIRONMENT_PP0_WEB_URL                                 @"http://pp0.secure.payu.in/_seamless_payment/"
-#define ENVIRONMENT_PP48_WEB_URL                                 @"http://pp51.secure.payu.in/_seamless_payment/"
-#define ENVIRONMENT_PP4_WEB_URL                                 @"http://pp4.secure.payu.in/_seamless_payment/"
-#define ENVIRONMENT_MOBILE_TEST_WEB_URL                         @"http://mobiletest.payu.in/_seamless_payment/"
-#define ENVIRONMENT_PP22_WEB_URL                                @"http://pp22.secure.payu.in/_seamless_payment/"
-#define ENVIRONMENT_PP44_WEB_URL                                @"http://pp44.secure.payu.in/_seamless_payment/"
+#define ENVIRONMENT_PRODUCTION_WEB_URL                          @"https://secure.payu.in/_payment"
+#define ENVIRONMENT_TEST_WEB_URL                                @"https://sandboxsecure.payu.in/_payment"
+#define ENVIRONMENT_PP42_WEB_URL                                @"http://pp42.secure.payu.in/_payment"
+#define ENVIRONMENT_PP25_WEB_URL                                @"http://pp25.secure.payu.in/_payment"
+#define ENVIRONMENT_PP41_WEB_URL                                @"http://pp41.secure.payu.in/_payment"
+#define ENVIRONMENT_PP10_WEB_URL                                @"http://pp10.secure.payu.in/_payment"
+#define ENVIRONMENT_PP0_WEB_URL                                 @"http://pp0.secure.payu.in/_payment"
+#define ENVIRONMENT_PP48_WEB_URL                                 @"http://pp51.secure.payu.in/_payment"
+#define ENVIRONMENT_PP4_WEB_URL                                 @"http://pp4.secure.payu.in/_payment"
+#define ENVIRONMENT_MOBILE_TEST_WEB_URL                         @"http://mobiletest.payu.in/_payment"
+#define ENVIRONMENT_PP22_WEB_URL                                @"http://pp22.secure.payu.in/_payment"
+#define ENVIRONMENT_PP44_WEB_URL                                @"http://pp44.secure.payu.in/_payment"
 
 
 
@@ -290,9 +293,10 @@ typedef NS_ENUM(NSInteger, PUMInternalEnvironment) {
     PUMEnvironmentPP10,
     PUMEnvironmentPP0,
     PUMEnvironmentPP4,
-  PUMEnvironmentPP22,
-  PUMEnvironmentPP48,
-  PUMEnvironmentPP44
+    PUMEnvironmentPP22,
+    PUMEnvironmentPP48,
+    PUMEnvironmentPP44,
+    PUMEnvironmentPP25
 };
 
 

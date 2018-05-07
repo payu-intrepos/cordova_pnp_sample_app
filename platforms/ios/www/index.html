@@ -33,38 +33,44 @@
                     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
                         <link rel="stylesheet" type="text/css" href="css/index.css">
                             <title>Hello World</title>
-                            </head>
+                            <style>
+                            
+                            td, th {
+                                text-align: left;
+                                padding: 8px;
+                            }
+                            
+                            </style>
+    </head>
     <body onLoad="codeAddress();">
-        <div class="app">
-            <h1>Apache Cordova</h1>
-        </div>
-        <div id="deviceready" class="blink"></div>
-        <button id='Init'>Init</button>
-        <button id='ShowLogin'>Show Login</button>
+        <div id="deviceready"></div>
+        <table text-align: left>
+            <tr><th>Phone Number</th> <th><input type="text" id="PhoneNumber" value="9876543210"></th></tr>
+            <tr><th>Email</th> <th><input type="text" id="Email" value="a@bc.cc"></th></tr>
+            <tr><th>Amount</th> <th><input type="text" id="Amount" value="11"></th></tr>
+        </table>
+        <button id='Pay'>Pay</button>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/PayU-Helper.js"></script>
         <script type="text/javascript">
             
             function codeAddress(){
-                document.getElementById('Init').addEventListener('click', initPayUSDK);
-                document.getElementById('ShowLogin').addEventListener('click', showLogin);
+                document.getElementById('Pay').addEventListener('click', payButtonClicked);
             }
         
-        var initPayUSDK = function () {
-            
-            var txnParam = new PUMTxnParam("mdyCKV","4914106","12","11","9876543210","a@bc.cc","UserFirstName","https://www.payumoney.com/mobileapp/payumoney/success.php","https://www.payumoney.com/mobileapp/payumoney/failure.php","iPhone7",PUMEnvironment.PUMEnvironmentProduction,"28b25ce0f3f2bd7f550a9343c41ccfefa15c6b8d77114853ae782b888e4fd90a13b074b4d4fed42e4d4c3f7d5915cb30e71dcfeb22e6c7313c26b5525bb07f2a","as","sad");
-            cordova.plugins.PayUMoneyPNPPlugin.initWithTxnParams(function (response) {
+        var payButtonClicked = function () {
+            var phoneNumber = document.getElementById("PhoneNumber").value;
+            var email = document.getElementById("Email").value;
+            var amount = document.getElementById("Amount").value;
+
+            var txnParam = new PUMTxnParam("mdyCKV","4914106","12",amount,phoneNumber,email,"UserFirstName","https://www.payumoney.com/mobileapp/payumoney/success.php","https://www.payumoney.com/mobileapp/payumoney/failure.php","iPhone7",PUMEnvironment.PUMEnvironmentProduction,"28b25ce0f3f2bd7f550a9343c41ccfefa15c6b8d77114853ae782b888e4fd90a13b074b4d4fed42e4d4c3f7d5915cb30e71dcfeb22e6c7313c26b5525bb07f2a","as","sad");
+            cordova.plugins.PayUMoneyPNPPlugin.showPaymentView(function (response) {
                                                                  console.log('Received Success ');
                                                                  alert(JSON.stringify(response)) },
                                                                  function (response){
                                                                  console.log('Received Failure ');
                                                                  alert(JSON.stringify(response))},txnParam);                                  }
-        
-        var showLogin = function () {
-            cordova.plugins.PayPalMobile.version(function (response) {
-                                                 console.log('Received Success ');
-                                                 alert(JSON.stringify(response)) });                                  }
         
         
             </script>
