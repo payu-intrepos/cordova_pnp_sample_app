@@ -89,7 +89,7 @@
                                                  }
                                              }
                                              else {
-                                                 pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:[NSString stringWithFormat:@"%@",[paymentResponse valueForKey:@"status"]]];
+                                                 pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:[paymentResponse valueForKey:@"status"]];
                                              }
                                              
                                              [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];

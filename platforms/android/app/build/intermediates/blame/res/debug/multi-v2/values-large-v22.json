@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v22/values-large-v22.xml",
+            "map": [
+                {
+                    "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/values-large-v22/values-large-v22.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,148",
+                        "endLines": "2,5",
+                        "endColumns": "92,12",
+                        "endOffsets": "143,310"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -3,5 +3,5 @@ repositories{
 }
 
 dependencies {
-   compile 'com.payumoney.sdkui:plug-n-play:1.2.0'
+    compile 'com.payumoney.sdkui:plug-n-play:1.4.0-beta'
 }

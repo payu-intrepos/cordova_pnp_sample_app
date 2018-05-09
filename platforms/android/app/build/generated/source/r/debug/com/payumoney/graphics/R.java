@@ -8,8 +8,8 @@ package com.payumoney.graphics;
 
 public final class R {
     public static final class drawable {
-        public static final int default_bank = 0x7f060057;
-        public static final int default_card = 0x7f060058;
+        public static final int default_bank = 0x7f060058;
+        public static final int default_card = 0x7f060059;
     }
     public static final class string {
         public static final int app_name = 0x7f0c001d;

@@ -12,4 +12,8 @@
         <!-- We use the framework provided edit text background on 22+ -->
         <item name="editTextBackground">?android:attr/editTextBackground</item>
     </style>
+    <style name="cb_dialog" parent="@android:style/Theme.DeviceDefault.Light.Dialog.Alert"/>
+    <style name="cb_snooze_dialog" parent="@android:style/Theme.DeviceDefault.Light.Dialog.Alert">
+        <item name="android:windowNoTitle">true</item>
+    </style>
 </resources>

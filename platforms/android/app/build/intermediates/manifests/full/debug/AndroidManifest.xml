@@ -59,15 +59,24 @@
             android:theme="@style/PayumoneyAppTheme"
             android:windowSoftInputMode="adjustPan" />
         <activity
+            android:name="com.payumoney.sdkui.ui.activities.ReviewOrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PayumoneyAppTheme" />
+        <activity
             android:name="com.payumoney.core.SdkWebViewActivityNew"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
         <activity
             android:name="com.payu.custombrowser.CBActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden" />
+            android:theme="@style/Theme.AppCompat"
+            android:windowSoftInputMode="adjustNothing" />
 
         <service android:name="com.payu.custombrowser.services.SnoozeService" />
 
+        <activity
+            android:name="com.payu.custombrowser.upiintent.PaymentResponseActivity"
+            android:theme="@style/Theme.Transparent" />
         <activity android:name="com.payu.magicretry.MainActivity" >
 
             <!--

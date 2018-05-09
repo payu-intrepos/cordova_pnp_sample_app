@@ -111,6 +111,7 @@
     <color name="dim_foreground_material_dark">#ffbebebe</color>
     <color name="dim_foreground_material_light">#ff323232</color>
     <color name="divider_line_color">#808080</color>
+    <color name="emi_tenure_select_row_bg">#f2f2f2</color>
     <color name="error_strip">#e74040</color>
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
@@ -408,6 +409,13 @@
     <dimen name="dimen_80dp">80dp</dimen>
     <dimen name="dimen_85dp">85dp</dimen>
     <dimen name="dimen_8dp">8dp</dimen>
+    <dimen name="dimen_amount_layout_amount">24sp</dimen>
+    <dimen name="dimen_emi_interest">14sp</dimen>
+    <dimen name="dimen_emi_tenure">14sp</dimen>
+    <dimen name="dimen_emi_tenure_margin">20dp</dimen>
+    <dimen name="dimen_emi_tenure_margin2">10dp</dimen>
+    <dimen name="dimen_emi_value">14sp</dimen>
+    <dimen name="dimen_review_order_title_size">16sp</dimen>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
     <dimen name="eight">8dp</dimen>
@@ -536,12 +544,14 @@
     <string name="cb_detect_bank">detectBank</string>
     <string name="cb_detect_otp">detectOtp</string>
     <string name="cb_enter_caps_otp">Enter OTP</string>
-    <string name="cb_enter_manually">Enter Manually</string>
+    <string name="cb_enter_manually">Enter OTP Manually</string>
     <string name="cb_enter_otp">enterOTP</string>
     <string name="cb_enter_otp_c">Enter OTP</string>
     <string name="cb_enter_pin">enterPIN</string>
     <string name="cb_error">error</string>
     <string name="cb_error_title">ERROR_TITLE</string>
+    <string name="cb_fill_otp">fillOTP</string>
+    <string name="cb_find_new_otp">findNewOtp</string>
     <string name="cb_find_otp">findOtp</string>
     <string name="cb_hide">hide</string>
     <string name="cb_incorrect_OTP_2">incorrectOTP</string>
@@ -615,7 +625,7 @@
     <string name="cb_use_sms_otp">USE SMS OTP</string>
     <string name="cb_user_input_confirm_transaction">confirm_transaction</string>
     <string name="cb_verify_message_received">verify_message_received</string>
-    <string name="cb_waiting_for_otp">Waiting for OTP</string>
+    <string name="cb_waiting_for_otp">Sit back and relax while we\n check OTP</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="citrus_balance_inner_label">Citrus Cash (\u20B9%1$s)</string>
     <string name="color_string">#%06X</string>
@@ -635,6 +645,16 @@
     <string name="email_not_valid">Email address is not valid</string>
     <string name="email_phone_invalid">Email/Phone number is invalid</string>
     <string name="email_phone_no">Email / Mobile Phone No.</string>
+    <string name="emi_add_card">Add card for EMI</string>
+    <string name="emi_card_type_mismatch">You have selected a card of a different bank</string>
+    <string name="emi_getting_interests">Loading interests</string>
+    <string name="emi_international_card_type_not_supported_message">EMI based payments can only be initiated with a card issued in India. Please try again with a valid card</string>
+    <string name="emi_only_credit_card_supported">EMI based payments are not supported on debit cards. Please use a valid credit card to continue</string>
+    <string name="emi_screen_emi">EMI</string>
+    <string name="emi_screen_interest">Interest</string>
+    <string name="emi_screen_select_tenure">Select EMI Tenure</string>
+    <string name="emi_screen_tenure">Tenure</string>
+    <string name="emi_tenure_failed_to_load">We encountered an error in fetching the details. Please try again</string>
     <string name="enter_email_id">Your email is required</string>
     <string name="enter_the_otp_password">Enter the OTP/Password</string>
     <string name="enter_your_cvv">Enter CVV</string>
@@ -658,6 +678,7 @@
     <string name="error_msg_operation_canceled">Operation cancelled</string>
     <string name="excess_amount_msg">Amount cannot be greater than INR.5000 or less than INR. 1</string>
     <string name="forgot_password"><a href="#">Forgot Password?</a></string>
+    <string name="go_back">GO BACK</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hint_account_holder_name">Account holder\'s name</string>
     <string name="hint_account_number">Account number</string>
@@ -700,6 +721,8 @@
     <string name="label_edt_autoload_limits">Edit Auto load limits</string>
     <string name="label_eligible_cards_banner_1">Please select the card from the set of</string>
     <string name="label_eligible_cards_banner_2">Eligible cards below.</string>
+    <string name="label_emi_header">EMI</string>
+    <string name="label_emi_rs">EMI(\u20B9%1$s)</string>
     <string name="label_enter_bank_details">Enter Bank Details</string>
     <string name="label_enter_bank_name">Enter Bank Name</string>
     <string name="label_enter_card_no">Enter Card No.</string>
@@ -755,11 +778,13 @@
     <string name="msg_reached_wallet_limit">You have reached the Max load limit of wallet</string>
     <string name="no_internet_connection">No Internet Connection</string>
     <string name="no_internet_connection_try_later">Please check your internet connection try again later</string>
+    <string name="order_details_btn_text">Order Details</string>
     <string name="order_information">Order Information</string>
     <string name="otp_is_send_to_mobile_number">OTP is send to phone number</string>
     <string name="otp_password">Password / OTP</string>
     <string name="password">Password</string>
     <string name="pay_u_money_inner_label">PayUmoney Cash (\u20B9%1$s)</string>
+    <string name="pay_with_emi">PAY WITH EMI</string>
     <string name="payu_bank_down_msg">We are unable to connect to this bank. Please select the different bank.</string>
     <string name="payu_citi_netbank_error">The selected payment method is currently unavailable. Please try with an alternate payment method.</string>
     <string name="payu_credit">Credit</string>
@@ -794,6 +819,9 @@
     <string name="redirect_back_to_merchant">Redirecting you back to merchant...</string>
     <string name="resend_otp">Resend OTP</string>
     <string name="resuming_your_transaction">Resuming your transaction...</string>
+    <string name="review_order_conv_fee_msg">*A convenience fee might be added to the total at the time of payment</string>
+    <string name="review_order_default_text">Order Details</string>
+    <string name="review_order_details">Order Details</string>
     <string name="rs_balance">\u20B9%1$s</string>
     <string name="rs_symbol">\u20B9</string>
     <string name="save_this_card_for_future_use">Save this card for future use</string>
@@ -804,6 +832,7 @@
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="status_unknown_redirect_to_merchant">The bank could not verify the transaction at this time. Redirecting you back to the merchant...</string>
     <string name="temp_card_name">%1$s (%2$s)</string>
+    <string name="terms_and_conditions">Terms and conditions</string>
     <string name="text_add_card">Add Card</string>
     <string name="text_add_money">Add money</string>
     <string name="text_add_money_wallet">Add money to your wallet</string>
@@ -815,6 +844,7 @@
     <string name="text_manage_cards">Manage Cards</string>
     <string name="text_my_wallet">My Wallet</string>
     <string name="text_no_saved_cards">You have no saved Cards.</string>
+    <string name="text_or">or </string>
     <string name="text_payment_failure">Payment Failure</string>
     <string name="text_payment_success">Payment Success</string>
     <string name="text_return_to_app_shopping">Continue Shopping</string>
@@ -826,6 +856,7 @@
     <string name="text_withdraw_success">Withdrawal In Progress</string>
     <string name="title_activity_citrus">CitrusUiActivity</string>
     <string name="toast_insufficient_balance_in_wallet">Insufficient balance in wallet</string>
+    <string name="total">Total</string>
     <string name="transaction_response_msg">Your payment of \u20B9%1$s \n was successfully completed</string>
     <string name="transaction_response_withdraw_msg">Your payment of \u20B9%1$s \n was successfully completed</string>
     <string name="valid_amount_msg">Please enter valid amount</string>
@@ -1967,6 +1998,12 @@
         <item name="android:windowBackground">@android:color/white</item>
         <item name="windowActionBar">false</item>
         <item name="windowActionModeOverlay">true</item>
+        <item name="android:actionMenuTextAppearance">@style/PayumoneyAppTheme.MenuTextStyle</item>
+    </style>
+    <style name="PayumoneyAppTheme.MenuTextStyle" parent="android:TextAppearance.Holo.Widget.ActionBar.Menu">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/dimen_review_order_title_size</item>
+        <item name="android:textStyle">normal</item>
     </style>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
@@ -2265,6 +2302,14 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+    <style name="Theme.Transparent" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--   <item name="android:windowIsFloating">true</item>-->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.AppCompat.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Dark" parent="Base.ThemeOverlay.AppCompat.Dark"/>
@@ -2439,6 +2484,9 @@
         <item name="android:textColor">#FFFFFF</item>
 
     </style>
+    <style name="cb_dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
     <style name="cb_edit_text" parent="android:Widget.EditText">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
@@ -2476,6 +2524,7 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:background">@color/cb_background</item>
     </style>
+    <style name="cb_snooze_dialog" parent="Theme.AppCompat.Light.Dialog.Alert"/>
     <style name="cb_text_view" parent="android:Widget.TextView">
         <item name="android:background">@null</item>
         <item name="android:layout_height">wrap_content</item>

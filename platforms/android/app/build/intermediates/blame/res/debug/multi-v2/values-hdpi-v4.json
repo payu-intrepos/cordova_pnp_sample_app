@@ -4,6 +4,33 @@
             "outputFile": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
+                    "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,113,163,211,266,321,368",
+                        "endColumns": "57,49,47,54,54,46,60",
+                        "endOffsets": "108,158,206,261,316,363,424"
+                    }
+                },
+                {
+                    "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payumoney-sdk-7.4.0-beta2.aar/4024326e14518ecbf89726681bb23157/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,114",
+                        "endColumns": "58,37",
+                        "endOffsets": "109,147"
+                    },
+                    "to": {
+                        "startLines": "9,10",
+                        "startColumns": "4,4",
+                        "startOffsets": "429,488",
+                        "endColumns": "58,37",
+                        "endOffsets": "483,521"
+                    }
+                },
+                {
                     "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
@@ -12,6 +39,14 @@
                         "endLines": "6",
                         "endColumns": "13",
                         "endOffsets": "327"
+                    },
+                    "to": {
+                        "startLines": "11",
+                        "startColumns": "4",
+                        "startOffsets": "526",
+                        "endLines": "15",
+                        "endColumns": "13",
+                        "endOffsets": "798"
                     }
                 }
             ]

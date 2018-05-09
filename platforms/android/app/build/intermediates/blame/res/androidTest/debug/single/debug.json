@@ -1,35 +1,35 @@
 [
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_surepay_logo.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xhdpi-v4/surepay_logo.png"
-    },
-    {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_button1.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payumoney-sdk-7.2.0.aar/a2bd89298b9c53dfc6fbe799378cf506/res/drawable/button1.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xhdpi-v4/surepay_logo.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_cb_layout_snooze_slow_user.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/layout/cb_layout_snooze_slow_user.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/layout/cb_layout_snooze_slow_user.xml"
+    },
+    {
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_button1.xml.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payumoney-sdk-7.4.0-beta2.aar/4024326e14518ecbf89726681bb23157/res/drawable/button1.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/color-v23_abc_color_highlight_material.xml.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/color-v23/abc_color_highlight_material.xml"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_shadow_top.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable/shadow_top.xml"
-    },
-    {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_background_drawable.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable/background_drawable.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable/background_drawable.xml"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-xxhdpi-v4/abc_ic_star_half_black_16dp.png"
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_shadow_top.xml.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable/shadow_top.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-xxhdpi-v4/abc_ic_star_half_black_16dp.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
@@ -37,7 +37,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_sticky_row_details.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/layout/sticky_row_details.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/sticky_row_details.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/anim_abc_grow_fade_in_from_bottom.xml.flat",
@@ -57,19 +57,19 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout-v21_saved_card_item.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/layout-v21/saved_card_item.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout-v21/saved_card_item.xml"
+    },
+    {
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_fragment_bank_list.xml.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/fragment_bank_list.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-xxxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_fragment_bank_list.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/layout/fragment_bank_list.xml"
-    },
-    {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_ic_txn_done.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/drawable-xhdpi-v4/ic_txn_done.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable-xhdpi-v4/ic_txn_done.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
@@ -85,11 +85,11 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_snooze11.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xhdpi-v4/snooze11.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xhdpi-v4/snooze11.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_hsbc.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xhdpi-v4/hsbc.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xhdpi-v4/hsbc.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
@@ -104,12 +104,12 @@
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-hdpi-v4/abc_list_pressed_holo_dark.9.png"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_btn_rating_star_on_mtrl_alpha.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-hdpi-v4/abc_btn_rating_star_on_mtrl_alpha.png"
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_ic_txn_fail.png.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable-xhdpi-v4/ic_txn_fail.png"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_ic_txn_fail.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/drawable-xhdpi-v4/ic_txn_fail.png"
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_btn_rating_star_on_mtrl_alpha.png.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-hdpi-v4/abc_btn_rating_star_on_mtrl_alpha.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_abc_list_selector_background_transition_holo_dark.xml.flat",
@@ -121,7 +121,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_bg_rounded_white.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/drawable/bg_rounded_white.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable/bg_rounded_white.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_abc_btn_radio_material.xml.flat",
@@ -129,7 +129,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/anim_cb_animation.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/anim/cb_animation.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/anim/cb_animation.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -148,16 +148,16 @@
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/design-23.2.1.aar/0931ca555003769f2d07f5d79667cc23/res/layout/design_menu_item_action_area.xml"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-mdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/anim_abc_shrink_fade_out_from_bottom.xml.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/anim/abc_shrink_fade_out_from_bottom.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-mdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/anim_abc_shrink_fade_out_from_bottom.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/anim/abc_shrink_fade_out_from_bottom.xml"
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-mdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-ldrtl-hdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -173,7 +173,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_fragment_validate_wallet.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/layout/fragment_validate_wallet.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/fragment_validate_wallet.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_list_pressed_holo_light.9.png.flat",
@@ -189,11 +189,11 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_snooze22.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xhdpi-v4/snooze22.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xhdpi-v4/snooze22.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_bankold.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/layout/bankold.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/layout/bankold.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_ic_clear_mtrl_alpha.png.flat",
@@ -212,16 +212,16 @@
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/layout/abc_alert_dialog_button_bar_material.xml"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-xxhdpi-v4/abc_btn_check_to_on_mtrl_015.png"
-    },
-    {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-xhdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_ic_info_black.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/drawable-xhdpi-v4/ic_info_black.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable-xhdpi-v4/ic_info_black.png"
+    },
+    {
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-xxhdpi-v4/abc_btn_check_to_on_mtrl_015.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -253,11 +253,11 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_img_back_arrow.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/drawable-hdpi-v4/img_back_arrow.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable-hdpi-v4/img_back_arrow.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_saved_card_item_manage_cards.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/layout/saved_card_item_manage_cards.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/saved_card_item_manage_cards.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
@@ -277,7 +277,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_cvv_dialog_content.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/layout/cvv_dialog_content.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/cvv_dialog_content.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
@@ -297,7 +297,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_layout_terms_condition.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/layout/layout_terms_condition.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/layout_terms_condition.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_notification_template_part_chronometer.xml.flat",
@@ -309,15 +309,15 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_ic_notifications_paused_black_24dp.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-hdpi-v4/ic_notifications_paused_black_24dp.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-hdpi-v4/ic_notifications_paused_black_24dp.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_close.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/drawable-xxhdpi-v4/close.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable-xxhdpi-v4/close.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_kotak.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xhdpi-v4/kotak.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xhdpi-v4/kotak.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
@@ -325,15 +325,19 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_security_icons.jpg.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payumoney-sdk-7.2.0.aar/a2bd89298b9c53dfc6fbe799378cf506/res/drawable-mdpi-v4/security_icons.jpg"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payumoney-sdk-7.4.0-beta2.aar/4024326e14518ecbf89726681bb23157/res/drawable-mdpi-v4/security_icons.jpg"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-xhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_wallet_view_emi_layout.xml.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/wallet_view_emi_layout.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-hdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-xhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_abc_ic_clear_mtrl_alpha.png.flat",
@@ -345,11 +349,15 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_wallet_view_third_party_wallets_layout.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/layout/wallet_view_third_party_wallets_layout.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/wallet_view_third_party_wallets_layout.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/anim_abc_slide_out_bottom.xml.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_down_arrow.png.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable-xxhdpi-v4/down_arrow.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -381,7 +389,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_logo_payu.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xhdpi-v4/logo_payu.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xhdpi-v4/logo_payu.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/anim_design_bottom_sheet_slide_out.xml.flat",
@@ -393,7 +401,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_ic_txn_done.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/drawable-hdpi-v4/ic_txn_done.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable-hdpi-v4/ic_txn_done.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_ic_go_search_api_mtrl_alpha.png.flat",
@@ -401,11 +409,11 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/color_otp_approve_button_color.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/color/otp_approve_button_color.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/color/otp_approve_button_color.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_hdfc_bank.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xhdpi-v4/hdfc_bank.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xhdpi-v4/hdfc_bank.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_support_simple_spinner_dropdown_item.xml.flat",
@@ -428,32 +436,36 @@
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-xhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_l_icon4.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xxhdpi-v4/l_icon4.png"
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_edit_bg.xml.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable/edit_bg.xml"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_edit_bg.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/drawable/edit_bg.xml"
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_l_icon4.png.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xxhdpi-v4/l_icon4.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_ic_notifications_paused_black_24dp.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-mdpi-v4/ic_notifications_paused_black_24dp.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-mdpi-v4/ic_notifications_paused_black_24dp.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_abc_ic_menu_moreoverflow_mtrl_alpha.png.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-xxhdpi-v4/abc_ic_menu_moreoverflow_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_015.png"
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_emi_tenure_screen.xml.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/emi_tenure_screen.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-xhdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
     },
     {
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_close.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/drawable-xhdpi-v4/close.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable-xhdpi-v4/close.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_abc_action_menu_layout.xml.flat",
@@ -490,6 +502,10 @@
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_notification_media_cancel_action.xml.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/layout/notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_union_bank_logo.png.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xhdpi-v4/union_bank_logo.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/color_abc_search_url_text.xml.flat",
@@ -532,28 +548,28 @@
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-v21/abc_btn_colored_material.xml"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-mdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
-    },
-    {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_ic_check_circle_black_48dp.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/drawable-xxhdpi-v4/ic_check_circle_black_48dp.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable-xxhdpi-v4/ic_check_circle_black_48dp.png"
+    },
+    {
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-mdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_trusticon.png.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/magicretry-1.0.5.aar/2da275bf1bd497e39919151f8846c7ab/res/drawable/trusticon.png"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_design_navigation_item_header.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/design-23.2.1.aar/0931ca555003769f2d07f5d79667cc23/res/layout/design_navigation_item_header.xml"
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_cvv_boxes_layout.xml.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/cvv_boxes_layout.xml"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_cvv_boxes_layout.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/layout/cvv_boxes_layout.xml"
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_design_navigation_item_header.xml.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/design-23.2.1.aar/0931ca555003769f2d07f5d79667cc23/res/layout/design_navigation_item_header.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/anim_design_bottom_sheet_slide_in.xml.flat",
@@ -561,7 +577,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_img_back_arrow.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payumoney-sdk-7.2.0.aar/a2bd89298b9c53dfc6fbe799378cf506/res/drawable-mdpi-v4/img_back_arrow.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payumoney-sdk-7.4.0-beta2.aar/4024326e14518ecbf89726681bb23157/res/drawable-mdpi-v4/img_back_arrow.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_abc_ic_star_black_36dp.png.flat",
@@ -569,15 +585,19 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_slider.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xhdpi-v4/slider.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xhdpi-v4/slider.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_btn_rating_star_on_mtrl_alpha.png.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-mdpi-v4/abc_btn_rating_star_on_mtrl_alpha.png"
     },
     {
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_bg_rounded_grey_border.xml.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable/bg_rounded_grey_border.xml"
+    },
+    {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_induslogo.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xhdpi-v4/induslogo.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xhdpi-v4/induslogo.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
@@ -586,6 +606,10 @@
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-xhdpi-v4/abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_down_arrow.png.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable-hdpi-v4/down_arrow.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
@@ -617,7 +641,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_add_new_card_item.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/layout/add_new_card_item.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/add_new_card_item.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_notification_template_media.xml.flat",
@@ -634,6 +658,10 @@
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-xhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_review_order_toolbar.xml.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/review_order_toolbar.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_ic_repeat_black_36dp.png.flat",
@@ -665,19 +693,23 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_cb_edit_text.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable/cb_edit_text.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable/cb_edit_text.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_abc_ic_search_api_mtrl_alpha.png.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-xhdpi-v4/abc_ic_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-xxxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_sdk_review_order_toolbar.xml.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payumoney-sdk-7.4.0-beta2.aar/4024326e14518ecbf89726681bb23157/res/layout/sdk_review_order_toolbar.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout-v11_saved_card_item.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/layout-v11/saved_card_item.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout-v11/saved_card_item.xml"
+    },
+    {
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-xxxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_abc_search_view.xml.flat",
@@ -685,7 +717,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxxhdpi-v4_hourglass.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xxxhdpi-v4/hourglass.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xxxhdpi-v4/hourglass.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
@@ -693,7 +725,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_ing_logo.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xhdpi-v4/ing_logo.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xhdpi-v4/ing_logo.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -705,7 +737,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_yesbank_logo.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xhdpi-v4/yesbank_logo.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xhdpi-v4/yesbank_logo.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
@@ -725,15 +757,15 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_payu_shape_oval.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable/payu_shape_oval.xml"
-    },
-    {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-ldpi-v4_ic_notifications_paused_black_24dp.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-ldpi-v4/ic_notifications_paused_black_24dp.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable/payu_shape_oval.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-xxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-ldpi-v4_ic_notifications_paused_black_24dp.png.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-ldpi-v4/ic_notifications_paused_black_24dp.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
@@ -741,7 +773,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_fragment_add_card_fragment_new.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/layout/fragment_add_card_fragment_new.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/fragment_add_card_fragment_new.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
@@ -753,19 +785,19 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_otp_icon_over.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xhdpi-v4/otp_icon_over.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xhdpi-v4/otp_icon_over.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/anim_slide_to_bottom.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/anim/slide_to_bottom.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/anim/slide_to_bottom.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_ic_wallet_small.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/drawable-xxhdpi-v4/ic_wallet_small.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable-xxhdpi-v4/ic_wallet_small.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_transaction_successful.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xxhdpi-v4/transaction_successful.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xxhdpi-v4/transaction_successful.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/anim_abc_fade_out.xml.flat",
@@ -784,16 +816,16 @@
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/magicretry-1.0.5.aar/2da275bf1bd497e39919151f8846c7ab/res/drawable-xxhdpi-v4/ic_refresh_black_36dp.png"
     },
     {
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_activity_citrus_ui.xml.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/activity_citrus_ui.xml"
+    },
+    {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-xhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_activity_citrus_ui.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/layout/activity_citrus_ui.xml"
-    },
-    {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_ic_done_black_24dp.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/drawable-xxhdpi-v4/ic_done_black_24dp.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable-xxhdpi-v4/ic_done_black_24dp.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_default_bank.png.flat",
@@ -809,7 +841,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_password_icon_over.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xhdpi-v4/password_icon_over.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xhdpi-v4/password_icon_over.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_abc_ic_ab_back_mtrl_am_alpha.png.flat",
@@ -817,7 +849,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_transaction_successful.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xhdpi-v4/transaction_successful.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xhdpi-v4/transaction_successful.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_abc_screen_content_include.xml.flat",
@@ -825,11 +857,11 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_fragment_pay_umoney.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/layout/fragment_pay_umoney.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/fragment_pay_umoney.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_wallet_view_saved_card_layout.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/layout/wallet_view_saved_card_layout.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/wallet_view_saved_card_layout.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/color-v11_abc_background_cache_hint_selector_material_light.xml.flat",
@@ -845,7 +877,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_pin_button_selector.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable/pin_button_selector.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable/pin_button_selector.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
@@ -857,7 +889,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_axis_logo.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xhdpi-v4/axis_logo.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xhdpi-v4/axis_logo.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_abc_list_longpressed_holo.9.png.flat",
@@ -865,7 +897,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/anim_cb_face_out.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/anim/cb_face_out.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/anim/cb_face_out.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
@@ -885,7 +917,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/anim_slide_from_bottom.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/anim/slide_from_bottom.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/anim/slide_from_bottom.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_abc_switch_thumb_material.xml.flat",
@@ -916,8 +948,12 @@
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/layout/abc_action_mode_close_item_material.xml"
     },
     {
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_fragment_add_card_fragment_emi.xml.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/fragment_add_card_fragment_emi.xml"
+    },
+    {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_ic_txn_fail.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/drawable-hdpi-v4/ic_txn_fail.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable-hdpi-v4/ic_txn_fail.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
@@ -928,12 +964,12 @@
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-xxhdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-ldrtl-xxxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-ldrtl-xxxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/color_app_abc_primary_text_material_light.xml.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/color/app_abc_primary_text_material_light.xml"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/color_app_abc_primary_text_material_light.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/color/app_abc_primary_text_material_light.xml"
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-ldrtl-xxxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-ldrtl-xxxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_list_longpressed_holo.9.png.flat",
@@ -949,7 +985,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-anydpi-v21_ic_notifications_paused_black_24dp.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-anydpi-v21/ic_notifications_paused_black_24dp.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-anydpi-v21/ic_notifications_paused_black_24dp.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/color_switch_thumb_material_dark.xml.flat",
@@ -957,7 +993,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_wallet_view_net_banking_layout.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/layout/wallet_view_net_banking_layout.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/wallet_view_net_banking_layout.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
@@ -965,19 +1001,19 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/anim_cb_tranlateup.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/anim/cb_tranlateup.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/anim/cb_tranlateup.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_hourglass.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-hdpi-v4/hourglass.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-hdpi-v4/hourglass.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/anim_cb_translate.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/anim/cb_translate.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/anim/cb_translate.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_ic_txn_done.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/drawable-xxhdpi-v4/ic_txn_done.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable-xxhdpi-v4/ic_txn_done.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_abc_cab_background_top_material.xml.flat",
@@ -993,7 +1029,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_ic_check_circle_black_48dp.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/drawable-xhdpi-v4/ic_check_circle_black_48dp.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable-xhdpi-v4/ic_check_circle_black_48dp.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-ldrtl-hdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -1009,15 +1045,15 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_static_bank_item.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/layout/static_bank_item.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/static_bank_item.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_otp_button_selector.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable/otp_button_selector.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable/otp_button_selector.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_cb_layout_snooze.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/layout/cb_layout_snooze.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/layout/cb_layout_snooze.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_abc_list_selector_holo_dark.xml.flat",
@@ -1025,7 +1061,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/anim_fadein.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/anim/fadein.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/anim/fadein.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -1044,16 +1080,20 @@
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
     },
     {
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_review_order_row_layout.xml.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/review_order_row_layout.xml"
+    },
+    {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-xxhdpi-v4/abc_switch_track_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/anim_cb_fade_in.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/anim/cb_fade_in.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/anim/cb_fade_in.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_ic_wallet_small.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/drawable-xhdpi-v4/ic_wallet_small.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable-xhdpi-v4/ic_wallet_small.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -1061,7 +1101,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_shape_progress.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable/shape_progress.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable/shape_progress.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
@@ -1073,7 +1113,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_bg_rounded_search_view.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/drawable/bg_rounded_search_view.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable/bg_rounded_search_view.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/color_abc_primary_text_material_dark.xml.flat",
@@ -1081,7 +1121,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_cb_progress_bar.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable/cb_progress_bar.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable/cb_progress_bar.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_abc_text_cursor_material.xml.flat",
@@ -1089,19 +1129,19 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_img_back_arrow.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/drawable-xhdpi-v4/img_back_arrow.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable-xhdpi-v4/img_back_arrow.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_fragment_result_new.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/layout/fragment_result_new.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/fragment_result_new.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_password_icon_large.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xhdpi-v4/password_icon_large.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xhdpi-v4/password_icon_large.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_register.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/layout/register.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/layout/register.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -1110,6 +1150,10 @@
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-hdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_emi_tenure_row_selection_bg.xml.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable/emi_tenure_row_selection_bg.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
@@ -1129,7 +1173,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_wait_for_otp.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/layout/wait_for_otp.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/layout/wait_for_otp.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_abc_item_background_holo_dark.xml.flat",
@@ -1137,19 +1181,23 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_sdk_activity_login.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payumoney-sdk-7.2.0.aar/a2bd89298b9c53dfc6fbe799378cf506/res/layout/sdk_activity_login.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payumoney-sdk-7.4.0-beta2.aar/4024326e14518ecbf89726681bb23157/res/layout/sdk_activity_login.xml"
+    },
+    {
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_icici.png.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xhdpi-v4/icici.png"
+    },
+    {
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_app_progressbar.xml.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/app_progressbar.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-ldrtl-xhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-ldrtl-xhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_icici.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xhdpi-v4/icici.png"
-    },
-    {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_app_progressbar.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/layout/app_progressbar.xml"
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_emi_tenure_layout.xml.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/emi_tenure_layout.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_ripple_drawable.xml.flat",
@@ -1161,7 +1209,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_ic_notifications_paused_black_24dp.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xxhdpi-v4/ic_notifications_paused_black_24dp.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xxhdpi-v4/ic_notifications_paused_black_24dp.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxxhdpi-v4_abc_ic_clear_mtrl_alpha.png.flat",
@@ -1169,7 +1217,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_l_icon3.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xxhdpi-v4/l_icon3.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xxhdpi-v4/l_icon3.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_abc_screen_toolbar.xml.flat",
@@ -1192,12 +1240,12 @@
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-hdpi-v4/abc_ic_star_black_16dp.png"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_ic_star_black_16dp.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-mdpi-v4/abc_ic_star_black_16dp.png"
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_ic_action_delete.png.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable-xxhdpi-v4/ic_action_delete.png"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_ic_action_delete.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/drawable-xxhdpi-v4/ic_action_delete.png"
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_ic_star_black_16dp.png.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-mdpi-v4/abc_ic_star_black_16dp.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_select_dialog_multichoice_material.xml.flat",
@@ -1213,19 +1261,19 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_dialog_signle_button_layout.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/layout/dialog_signle_button_layout.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/dialog_signle_button_layout.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_nb_layout.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/layout/nb_layout.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/layout/nb_layout.xml"
+    },
+    {
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_fragment_get_cvv_fragment_new.xml.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/fragment_get_cvv_fragment_new.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-xxhdpi-v4/abc_list_divider_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_fragment_get_cvv_fragment_new.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/layout/fragment_get_cvv_fragment_new.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
@@ -1245,11 +1293,11 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_line_divider.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/drawable/line_divider.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable/line_divider.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_wallet_view_login_layout.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/layout/wallet_view_login_layout.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/wallet_view_login_layout.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
@@ -1325,7 +1373,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/anim_slide_up_out.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/anim/slide_up_out.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/anim/slide_up_out.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_design_fab_background.xml.flat",
@@ -1344,12 +1392,12 @@
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/layout/abc_action_menu_item_layout.xml"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/anim-v21_design_bottom_sheet_slide_in.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/design-23.2.1.aar/0931ca555003769f2d07f5d79667cc23/res/anim-v21/design_bottom_sheet_slide_in.xml"
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_ic_action_delete.png.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable-hdpi-v4/ic_action_delete.png"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_ic_action_delete.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/drawable-hdpi-v4/ic_action_delete.png"
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/anim-v21_design_bottom_sheet_slide_in.xml.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/design-23.2.1.aar/0931ca555003769f2d07f5d79667cc23/res/anim-v21/design_bottom_sheet_slide_in.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_abc_activity_chooser_view.xml.flat",
@@ -1361,7 +1409,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_payu_review_order_list_row.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/layout/payu_review_order_list_row.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/layout/payu_review_order_list_row.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-ldrtl-mdpi-v17_abc_ic_ab_back_mtrl_am_alpha.png.flat",
@@ -1385,7 +1433,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_wallet_view_user_wallet_layout.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/layout/wallet_view_user_wallet_layout.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/wallet_view_user_wallet_layout.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_ic_voice_search_api_mtrl_alpha.png.flat",
@@ -1409,23 +1457,23 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_ic_done_black_24dp.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/drawable-hdpi-v4/ic_done_black_24dp.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable-hdpi-v4/ic_done_black_24dp.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_design_snackbar_background.xml.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/design-23.2.1.aar/0931ca555003769f2d07f5d79667cc23/res/drawable/design_snackbar_background.xml"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/color_abc_primary_text_disable_only_material_dark.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/color/abc_primary_text_disable_only_material_dark.xml"
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_design_navigation_menu.xml.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/design-23.2.1.aar/0931ca555003769f2d07f5d79667cc23/res/layout/design_navigation_menu.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/anim_abc_slide_in_bottom.xml.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/anim/abc_slide_in_bottom.xml"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_design_navigation_menu.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/design-23.2.1.aar/0931ca555003769f2d07f5d79667cc23/res/layout/design_navigation_menu.xml"
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/color_abc_primary_text_disable_only_material_dark.xml.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/color/abc_primary_text_disable_only_material_dark.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
@@ -1444,8 +1492,12 @@
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-v21/abc_action_bar_item_background_material.xml"
     },
     {
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_footer_checkout_layout.xml.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/footer_checkout_layout.xml"
+    },
+    {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout-v21_bank_row_details.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/layout-v21/bank_row_details.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout-v21/bank_row_details.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
@@ -1454,6 +1506,10 @@
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-hdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_down_arrow.png.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable-xhdpi-v4/down_arrow.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -1465,15 +1521,15 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_ic_lock.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/drawable/ic_lock.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable/ic_lock.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_ic_action_delete.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/drawable-xhdpi-v4/ic_action_delete.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable-xhdpi-v4/ic_action_delete.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_send_otp.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payumoney-sdk-7.2.0.aar/a2bd89298b9c53dfc6fbe799378cf506/res/drawable/send_otp.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payumoney-sdk-7.4.0-beta2.aar/4024326e14518ecbf89726681bb23157/res/drawable/send_otp.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_ic_menu_moreoverflow_mtrl_alpha.png.flat",
@@ -1481,7 +1537,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/anim_fadeout.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/anim/fadeout.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/anim/fadeout.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_abc_alert_dialog_material.xml.flat",
@@ -1509,11 +1565,11 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_ic_wallet_small.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/drawable-hdpi-v4/ic_wallet_small.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable-hdpi-v4/ic_wallet_small.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_sdk_progressdialog_sendingotp.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payumoney-sdk-7.2.0.aar/a2bd89298b9c53dfc6fbe799378cf506/res/layout/sdk_progressdialog_sendingotp.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payumoney-sdk-7.4.0-beta2.aar/4024326e14518ecbf89726681bb23157/res/layout/sdk_progressdialog_sendingotp.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_notification_template_big_media_narrow.xml.flat",
@@ -1521,7 +1577,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_sdk_outer_circle.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payumoney-sdk-7.2.0.aar/a2bd89298b9c53dfc6fbe799378cf506/res/drawable/sdk_outer_circle.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payumoney-sdk-7.4.0-beta2.aar/4024326e14518ecbf89726681bb23157/res/drawable/sdk_outer_circle.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_abc_list_menu_item_layout.xml.flat",
@@ -1533,7 +1589,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_register_pin.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/layout/register_pin.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/layout/register_pin.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
@@ -1544,12 +1600,12 @@
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-mdpi-v4/abc_list_selector_disabled_holo_light.9.png"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_rectangle_box.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xhdpi-v4/rectangle_box.xml"
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_password.png.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payumoney-sdk-7.4.0-beta2.aar/4024326e14518ecbf89726681bb23157/res/drawable-xxhdpi-v4/password.png"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_password.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payumoney-sdk-7.2.0.aar/a2bd89298b9c53dfc6fbe799378cf506/res/drawable-xxhdpi-v4/password.png"
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_rectangle_box.xml.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xhdpi-v4/rectangle_box.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-ldrtl-xhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -1561,7 +1617,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_otp_icon_large.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xhdpi-v4/otp_icon_large.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xhdpi-v4/otp_icon_large.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_abc_seekbar_thumb_material.xml.flat",
@@ -1569,7 +1625,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_choose_action.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/layout/choose_action.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/layout/choose_action.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
@@ -1581,7 +1637,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_amount_layout.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/layout/amount_layout.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/amount_layout.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
@@ -1601,27 +1657,27 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_cb_payments.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/layout/cb_payments.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/layout/cb_payments.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
     },
     {
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_ic_info_black.png.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable-xxhdpi-v4/ic_info_black.png"
+    },
+    {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_abc_list_menu_item_checkbox.xml.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_ic_info_black.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/drawable-xxhdpi-v4/ic_info_black.png"
-    },
-    {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_sticky_index.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/layout/sticky_index.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/sticky_index.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_approve_otp_button.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable/approve_otp_button.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable/approve_otp_button.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_ic_menu_moreoverflow_mtrl_alpha.png.flat",
@@ -1629,7 +1685,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_citi.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xhdpi-v4/citi.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xhdpi-v4/citi.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -1641,7 +1697,11 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout-v21_activity_citrus_ui.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/layout-v21/activity_citrus_ui.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout-v21/activity_citrus_ui.xml"
+    },
+    {
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_activity_review_order.xml.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/activity_review_order.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-ldrtl-xhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -1661,7 +1721,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_cb_amex_logo.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xhdpi-v4/cb_amex_logo.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xhdpi-v4/cb_amex_logo.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_abc_list_menu_item_radio.xml.flat",
@@ -1685,11 +1745,15 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_edit_bg_white.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/drawable/edit_bg_white.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable/edit_bg_white.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_abc_btn_rating_star_on_mtrl_alpha.png.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-xhdpi-v4/abc_btn_rating_star_on_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_default_card.png.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/asset-download-sdk-0.3.1.aar/0a89198e39443dc0845afc081b1bb254/res/drawable-xxhdpi-v4/default_card.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
@@ -1697,11 +1761,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxxhdpi-v4_ic_notifications_paused_black_24dp.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xxxhdpi-v4/ic_notifications_paused_black_24dp.png"
-    },
-    {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_default_card.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/asset-download-sdk-0.3.1.aar/0a89198e39443dc0845afc081b1bb254/res/drawable-xxhdpi-v4/default_card.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xxxhdpi-v4/ic_notifications_paused_black_24dp.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_abc_ic_go_search_api_mtrl_alpha.png.flat",
@@ -1717,7 +1777,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_trusticon.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xhdpi-v4/trusticon.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xhdpi-v4/trusticon.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
@@ -1733,7 +1793,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_bank.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/layout/bank.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/layout/bank.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_ic_star_black_36dp.png.flat",
@@ -1741,11 +1801,11 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_ic_notifications_paused_black_24dp.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xhdpi-v4/ic_notifications_paused_black_24dp.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xhdpi-v4/ic_notifications_paused_black_24dp.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_hourglass.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-mdpi-v4/hourglass.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-mdpi-v4/hourglass.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_ic_search_api_mtrl_alpha.png.flat",
@@ -1772,16 +1832,20 @@
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable/abc_edit_text_material.xml"
     },
     {
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_emi_tenure_layout_header.xml.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/emi_tenure_layout_header.xml"
+    },
+    {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_loading.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/layout/loading.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/layout/loading.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_hourglass.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xhdpi-v4/hourglass.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xhdpi-v4/hourglass.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/mipmap-xhdpi-v4_img_back_arrow.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payumoney-sdk-7.2.0.aar/a2bd89298b9c53dfc6fbe799378cf506/res/mipmap-xhdpi-v4/img_back_arrow.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payumoney-sdk-7.4.0-beta2.aar/4024326e14518ecbf89726681bb23157/res/mipmap-xhdpi-v4/img_back_arrow.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout-sw600dp-v13_design_layout_snackbar.xml.flat",
@@ -1789,23 +1853,23 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_l_icon1.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xxhdpi-v4/l_icon1.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xxhdpi-v4/l_icon1.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-hdpi-v4/abc_list_longpressed_holo.9.png"
     },
     {
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_ic_done_black_24dp.png.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable-xhdpi-v4/ic_done_black_24dp.png"
+    },
+    {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-xhdpi-v4/abc_popup_background_mtrl_mult.9.png"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_ic_done_black_24dp.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/drawable-xhdpi-v4/ic_done_black_24dp.png"
-    },
-    {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/anim_slide_up_in.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/anim/slide_up_in.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/anim/slide_up_in.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
@@ -1829,7 +1893,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_dialog_ui_header.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/layout/dialog_ui_header.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/layout/dialog_ui_header.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
@@ -1841,15 +1905,15 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_logo_color.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payumoney-sdk-7.2.0.aar/a2bd89298b9c53dfc6fbe799378cf506/res/drawable-xxhdpi-v4/logo_color.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payumoney-sdk-7.4.0-beta2.aar/4024326e14518ecbf89726681bb23157/res/drawable-xxhdpi-v4/logo_color.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_retry_otp.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/layout/retry_otp.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/layout/retry_otp.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_l_icon2.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xxhdpi-v4/l_icon2.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xxhdpi-v4/l_icon2.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
@@ -1869,7 +1933,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_hourglass.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xxhdpi-v4/hourglass.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xxhdpi-v4/hourglass.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
@@ -1877,11 +1941,11 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_cb_prog_dialog.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/layout/cb_prog_dialog.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/layout/cb_prog_dialog.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_cb_payu_close_grey.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable/cb_payu_close_grey.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable/cb_payu_close_grey.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_abc_ic_go_search_api_mtrl_alpha.png.flat",
@@ -1893,7 +1957,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_scblogo.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xhdpi-v4/scblogo.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xhdpi-v4/scblogo.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/anim_abc_slide_in_top.xml.flat",
@@ -1901,7 +1965,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_message_icon.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payumoney-sdk-7.2.0.aar/a2bd89298b9c53dfc6fbe799378cf506/res/drawable-xxhdpi-v4/message_icon.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payumoney-sdk-7.4.0-beta2.aar/4024326e14518ecbf89726681bb23157/res/drawable-xxhdpi-v4/message_icon.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
@@ -1909,11 +1973,11 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_payumoney_edit_bg.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payumoney-sdk-7.2.0.aar/a2bd89298b9c53dfc6fbe799378cf506/res/drawable-xxhdpi-v4/payumoney_edit_bg.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payumoney-sdk-7.4.0-beta2.aar/4024326e14518ecbf89726681bb23157/res/drawable-xxhdpi-v4/payumoney_edit_bg.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_ic_txn_fail.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/drawable-xxhdpi-v4/ic_txn_fail.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable-xxhdpi-v4/ic_txn_fail.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_ic_star_half_black_16dp.png.flat",
@@ -1932,6 +1996,10 @@
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/layout/abc_select_dialog_material.xml"
     },
     {
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/menu_review_order_menu.xml.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/menu/review_order_menu.xml"
+    },
+    {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxxhdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-xxxhdpi-v4/abc_ic_star_black_16dp.png"
     },
@@ -1941,7 +2009,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_fragment_review_order.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/layout/fragment_review_order.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/layout/fragment_review_order.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_abc_dialog_material_background_light.xml.flat",
@@ -1977,11 +2045,11 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_idbi.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xhdpi-v4/idbi.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xhdpi-v4/idbi.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_notification_animation.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable/notification_animation.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable/notification_animation.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
@@ -1997,19 +2065,19 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_cb_progressdialog.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/layout/cb_progressdialog.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/layout/cb_progressdialog.xml"
+    },
+    {
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_close.png.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable-hdpi-v4/close.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_ic_voice_search_api_mtrl_alpha.png.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/9d692e07c570337339d4ffdcaa6ae2a3/res/drawable-hdpi-v4/abc_ic_voice_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_close.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/drawable-hdpi-v4/close.png"
-    },
-    {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_sbi.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-6.2.1.aar/c5210760a5ab0130b18406290729a42b/res/drawable-xhdpi-v4/sbi.png"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.1.1.aar/12839282bcbe82bec3774b69260f7d67/res/drawable-xhdpi-v4/sbi.png"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -2017,19 +2085,19 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_sdk_activity_web_view_dummy.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payumoney-sdk-7.2.0.aar/a2bd89298b9c53dfc6fbe799378cf506/res/layout/sdk_activity_web_view_dummy.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/payumoney-sdk-7.4.0-beta2.aar/4024326e14518ecbf89726681bb23157/res/layout/sdk_activity_web_view_dummy.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_magicretry_main.xml.flat",
         "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/magicretry-1.0.5.aar/2da275bf1bd497e39919151f8846c7ab/res/layout/magicretry_main.xml"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_design_layout_snackbar_include.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/design-23.2.1.aar/0931ca555003769f2d07f5d79667cc23/res/layout/design_layout_snackbar_include.xml"
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_img_back_arrow.png.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/drawable-xxhdpi-v4/img_back_arrow.png"
     },
     {
-        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_img_back_arrow.png.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/drawable-xxhdpi-v4/img_back_arrow.png"
+        "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_design_layout_snackbar_include.xml.flat",
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/design-23.2.1.aar/0931ca555003769f2d07f5d79667cc23/res/layout/design_layout_snackbar_include.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_default_bank.png.flat",
@@ -2045,7 +2113,7 @@
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/layout_bank_row_details.xml.flat",
-        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/layout/bank_row_details.xml"
+        "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/layout/bank_row_details.xml"
     },
     {
         "merged": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/res/merged/androidTest/debug/drawable_abc_seekbar_track_material.xml.flat",

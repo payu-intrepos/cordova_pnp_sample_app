@@ -4,7 +4,7 @@
             "outputFile": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/platforms/android/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.2.0.aar/813589c7050b186a47bfc89591c66e47/res/values-w820dp-v13/values-w820dp-v13.xml",
+                    "source": "/Users/rajvinder.singh/.gradle/caches/transforms-1/files-1.1/plug-n-play-1.4.0-beta.aar/7232d724ea917222b5d8fc88a80bb760/res/values-w820dp-v13/values-w820dp-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

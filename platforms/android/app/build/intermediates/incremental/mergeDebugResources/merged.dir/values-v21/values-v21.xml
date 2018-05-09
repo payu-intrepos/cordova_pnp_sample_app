@@ -245,6 +245,7 @@
         <item name="android:windowBackground">@android:color/white</item>
         <item name="windowActionBar">false</item>
         <item name="windowActionModeOverlay">true</item>
+        <item name="android:actionMenuTextAppearance">@style/PayumoneyAppTheme.MenuTextStyle</item>
     </style>
     <style name="Platform.AppCompat" parent="android:Theme.Material">
         <item name="android:windowNoTitle">true</item>
