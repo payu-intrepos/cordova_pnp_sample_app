@@ -64,7 +64,7 @@
             var email = document.getElementById("Email").value;
             var amount = document.getElementById("Amount").value;
 
-            var txnParam = new PUMTxnParam("mdyCKV","4914106","12",amount,phoneNumber,email,"UserFirstName","https://www.payumoney.com/mobileapp/payumoney/success.php","https://www.payumoney.com/mobileapp/payumoney/failure.php","iPhone7",PUMEnvironment.PUMEnvironmentProduction,"28b25ce0f3f2bd7f550a9343c41ccfefa15c6b8d77114853ae782b888e4fd90a13b074b4d4fed42e4d4c3f7d5915cb30e71dcfeb22e6c7313c26b5525bb07f2a","as","sad");
+            var txnParam = new PUMTxnParam("LLKwG0","393463","12",amount,phoneNumber,email,"UserFirstName","https://www.payumoney.com/mobileapp/payumoney/success.php","https://www.payumoney.com/mobileapp/payumoney/failure.php","iPhone7",PUMEnvironment.PUMEnvironmentProduction,"28b25ce0f3f2bd7f550a9343c41ccfefa15c6b8d77114853ae782b888e4fd90a13b074b4d4fed42e4d4c3f7d5915cb30e71dcfeb22e6c7313c26b5525bb07f2a","","");
             cordova.plugins.PayUMoneyPNPPlugin.showPaymentView(function (response) {
                                                                  console.log('Received Success ');
                                                                  alert(JSON.stringify(response)) },
