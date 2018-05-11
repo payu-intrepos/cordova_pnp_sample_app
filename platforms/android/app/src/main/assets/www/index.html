@@ -54,16 +54,23 @@
 &nbsp;<input type="checkbox" id="disableNetBanking"/>Disable Netbanking<br/>
 &nbsp;<input type="checkbox" id="disableThirdPartyWallets"/>Disable Third Party Wallets<br/>
 &nbsp;<input type="checkbox" id="disableEmi"/>Disable Emi<br/>
+&nbsp;<input type="checkbox" id="disableExitAlertOnCheckoutPage"/>Disable Exit Alert On Checkout Page<br/>
+&nbsp;<input type="checkbox" id="disableCompletionScreen"/>Override Result Screen<br/>
 
-<br/>&nbsp;Select style:<br/>
-&nbsp;<input type="radio" name="style" value="default" checked>Default&nbsp;&nbsp;
-&nbsp;<input type="radio" name="style" value="pink">Pink&nbsp;&nbsp;
-&nbsp;<input type="radio" name="style" value="grey">Grey&nbsp;&nbsp;
-&nbsp;<input type="radio" name="style" value="green">Green&nbsp;&nbsp;
-&nbsp;<input type="radio" name="style" value="purple">Purple
+
+
+<br/>&nbsp;&nbsp;Select style:<br/>
+&nbsp;<input type="radio" name="style" value="default" checked><span style="color:#F3A62E">Default</span>&nbsp;&nbsp;
+&nbsp;<input type="radio" name="style" value="pink"><span style="color:#C0175C">Pink</span>&nbsp;&nbsp;
+&nbsp;<input type="radio" name="style" value="grey"><span style="color:#424242">Grey</span>&nbsp;&nbsp;
+&nbsp;<input type="radio" name="style" value="green"><span style="color:#0A927A">Green</span>&nbsp;&nbsp;
+&nbsp;<input type="radio" name="style" value="purple"><span style="color:#7A1FA2">Purple</span>
+
+<br/><br/>&nbsp;&nbsp;Screen Title: <input type="text" name="screenTitle" id="screenTitle" value="My Title"><br>
+<br/>&nbsp;&nbsp;Done button text: <input type="text" name="doneButtonText" id="doneButtonText" value="Continue Shopping"><br>
 
 <br/><br/>
-&nbsp;<button id='Pay'>Pay</button><br/>
+&nbsp;&nbsp;<button id='Pay'>Pay</button><br/>
 
 
 
@@ -79,9 +86,34 @@
                 document.getElementById('disableNetBanking').addEventListener('click', disableNetBankingClicked );
                 document.getElementById('disableThirdPartyWallets').addEventListener('click', disableThirdPartyWalletsClicked );
                 document.getElementById('disableEmi').addEventListener('click', disableEmiClicked );
+                document.getElementById('disableExitAlertOnCheckoutPage').addEventListener('click', disableExitAlertOnCheckoutPageClicked );
+                document.getElementById('disableCompletionScreen').addEventListener('click', disableCompletionScreenClicked );
             }
 
         var payButtonClicked = function () {
+            var screenTitle = document.getElementById( "screenTitle" ).value;
+            cordova.plugins.PayUMoneyPNPPlugin.setScreenTitle( function (response) {
+                                                                    console.log('setScreenTitle received Success ');
+                                                                 },
+
+                                                                 function (response){
+                                                                    console.log('setScreenTitle received Failure '.concat(response) );
+                                                                 },
+
+                                                                 screenTitle );
+
+
+            var doneButtonText = document.getElementById( "doneButtonText" ).value;
+            cordova.plugins.PayUMoneyPNPPlugin.setDoneButtonText( function (response) {
+                                                                    console.log('setDoneButtonText received Success ');
+                                                                 },
+
+                                                                 function (response){
+                                                                    console.log('setDoneButtonText received Failure '.concat(response) );
+                                                                 },
+
+                                                                 doneButtonText );
+
             var phoneNumber = document.getElementById("PhoneNumber").value;
             var email = document.getElementById("Email").value;
             var amount = document.getElementById("Amount").value;
@@ -114,7 +146,7 @@
                                                                      function (response){
                                                                         console.log('disableWallet Received Failure ');
                                                                         alert(JSON.stringify(response));
-
+                                                                        checkBoxWallet.checked = !toDisable;
                                                                      },
 
                                                                      toDisable);
@@ -134,6 +166,7 @@
                                                                         function (response){
                                                                             console.log('disableCards Received Failure ');
                                                                             alert(JSON.stringify(response));
+                                                                            checkBoxSavedCards.checked = !toDisable;
                                                                         },
 
                                                                         toDisable);
@@ -153,6 +186,7 @@
                                                                         function (response){
                                                                             console.log( 'disableNetBanking Received Failure' );
                                                                             alert(JSON.stringify(response));
+                                                                            checkBoxNb.checked = !toDisable;
                                                                         },
 
                                                                         toDisable);
@@ -173,6 +207,7 @@
                                                                                  function (response){
                                                                                      console.log('disableThirdPartyWallets Received Failure ');
                                                                                      alert(JSON.stringify(response))
+                                                                                     checkBoxDisableThirdPartyWallets.checked = !toDisable;
                                                                                  },
 
                                                                                  toDisable);
@@ -192,13 +227,49 @@
                                                                     function (response){
                                                                         console.log('disableEmi Received Failure ');
                                                                         alert( JSON.stringify(response) );
+                                                                        checkBoxEmi.checked = !toDisable;
                                                                     },
 
                                                                     toDisable);
         }
 
 
+        var disableExitAlertOnCheckoutPageClicked = function () {
+                var checkBoxDisableExitScreenCheckout = document.getElementById( "disableExitAlertOnCheckoutPage" );
+                var toDisable = checkBoxDisableExitScreenCheckout.checked;
 
+                cordova.plugins.PayUMoneyPNPPlugin.disableExitAlertOnCheckoutPage(      function (response) {
+                                                                                             console.log( 'disableExitAlertOnCheckoutPage Received Success' );
+                                                                                             alert( JSON.stringify(response) );
+                                                                                        },
+
+                                                                                        function (response){
+                                                                                            console.log('disableExitAlertOnCheckoutPage Received Failure ');
+                                                                                            alert( JSON.stringify(response) );
+                                                                                            checkBoxDisableExitScreenCheckout.checked = !toDisable;
+                                                                                        },
+
+                                                                                        toDisable);
+        }
+
+
+        var disableCompletionScreenClicked = function () {
+                var checkBoxDisableCompletionScreenClicked= document.getElementById( "disableCompletionScreen" );
+                var toDisable = checkBoxDisableCompletionScreenClicked.checked;
+
+                cordova.plugins.PayUMoneyPNPPlugin.disableCompletionScreen(      function (response) {
+                                                                                             console.log( 'disableCompletionScreen Received Success' );
+                                                                                             alert( JSON.stringify(response) );
+                                                                                        },
+
+                                                                                        function (response){
+                                                                                            console.log('disableCompletionScreen Received Failure ');
+                                                                                            alert( JSON.stringify(response) );
+                                                                                            checkBoxDisableCompletionScreenClicked.checked = !toDisable;
+                                                                                        },
+
+                                                                                        toDisable);
+        }
 
 
             </script>
