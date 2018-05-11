@@ -49,7 +49,16 @@
     <tr><th>Email</th> <th><input type="text" id="Email" value="a@bc.cc"></th></tr>
     <tr><th>Amount</th> <th><input type="text" id="Amount" value="11"></th></tr>
 </table>
-<button id='Pay'>Pay</button>
+<input type="checkbox" id="disableWallet"/>Disable Wallet</br>
+<input type="checkbox" id="disableSavedCards"/>Disable Saved Cards</br>
+<input type="checkbox" id="disableNetBanking"/>Disable Netbanking</br>
+<input type="checkbox" id="disableThirdPartyWallets"/>Disable Third Party Wallets</br>
+<input type="checkbox" id="disableEmi"/>Disable Emi</br>
+</br>
+<button id='Pay'>Pay</button></br>
+
+
+
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" src="js/PayU-Helper.js"></script>
@@ -57,6 +66,11 @@
 
             function codeAddress(){
                 document.getElementById('Pay').addEventListener('click', payButtonClicked);
+                document.getElementById('disableWallet').addEventListener('click', disableWalletClicked );
+                document.getElementById('disableSavedCards').addEventListener('click', disableSavedCardsClicked );
+                document.getElementById('disableNetBanking').addEventListener('click', disableNetBankingClicked );
+                document.getElementById('disableThirdPartyWallets').addEventListener('click', disableThirdPartyWalletsClicked );
+                document.getElementById('disableEmi').addEventListener('click', disableEmiClicked );
             }
 
         var payButtonClicked = function () {
@@ -65,16 +79,133 @@
             var amount = document.getElementById("Amount").value;
 
             var txnParam = new PUMTxnParam("LLKwG0","393463","12",amount,phoneNumber,email,"UserFirstName","https://www.payumoney.com/mobileapp/payumoney/success.php","https://www.payumoney.com/mobileapp/payumoney/failure.php","iPhone7",PUMEnvironment.PUMEnvironmentProduction,"28b25ce0f3f2bd7f550a9343c41ccfefa15c6b8d77114853ae782b888e4fd90a13b074b4d4fed42e4d4c3f7d5915cb30e71dcfeb22e6c7313c26b5525bb07f2a","","");
-            cordova.plugins.PayUMoneyPNPPlugin.showPaymentView(function (response) {
-                                                                 console.log('Received Success ');
-                                                                 alert(JSON.stringify(response)) },
+            cordova.plugins.PayUMoneyPNPPlugin.showPaymentView( function (response) {
+                                                                    console.log('showPaymentView received Success ');
+                                                                    alert(JSON.stringify(response));
+                                                                 },
+
                                                                  function (response){
-                                                                 console.log('Received Failure ');
-                                                                 alert(JSON.stringify(response))},txnParam);                                  }
+                                                                    console.log('showPaymentView received Failure ');
+                                                                    alert(JSON.stringify(response));
+                                                                 },
+
+                                                                 txnParam );
+        }
+
+
+
+        var disableWalletClicked = function () {
+                var checkBoxWallet = document.getElementById( "disableWallet" );
+                var toDisable = checkBoxWallet.checked;
+
+                cordova.plugins.PayUMoneyPNPPlugin.disableWallet( function (response) {
+                                                                        console.log('disableWallet Received Success ');
+                                                                        alert(JSON.stringify(response));
+                                                                     },
+
+                                                                     function (response){
+                                                                        console.log('disableWallet Received Failure ');
+                                                                        alert(JSON.stringify(response));
+
+                                                                     },
+
+                                                                     toDisable);
+        }
+
+
+        var disableSavedCardsClicked = function () {
+                var checkBoxSavedCards = document.getElementById( "disableSavedCards" );
+                var toDisable = checkBoxSavedCards.checked;
+
+                var debug = "checkBoxSavedCards checked = ".concat( toDisable );
+                alert( debug );
+
+                cordova.plugins.PayUMoneyPNPPlugin.disableSavedCards(   function (response) {
+                                                                             console.log('disableSavedCards Received Success ');
+                                                                             alert(JSON.stringify(response));
+                                                                        },
+
+
+                                                                        function (response){
+                                                                            console.log('disableSavedCards Received Failure ');
+                                                                            alert(JSON.stringify(response));
+                                                                        },
+
+                                                                        toDisable);
+        }
+
+
+
+        var disableNetBankingClicked = function () {
+                var checkBoxNb = document.getElementById( "disableNetBanking" );
+                var toDisable = checkBoxNb.checked;
+
+                var debug = "checkBoxNb checked = ".concat( toDisable );
+                alert( debug );
+
+                cordova.plugins.PayUMoneyPNPPlugin.disableNetBanking(   function (response) {
+                                                                             console.log( 'disableNetBanking Received Success' );
+                                                                             alert(JSON.stringify(response));
+                                                                         },
+
+                                                                        function (response){
+                                                                            console.log( 'disableNetBanking Received Failure' );
+                                                                            alert(JSON.stringify(response));
+                                                                        },
+
+                                                                        toDisable);
+        }
+
+
+
+
+        var disableThirdPartyWalletsClicked = function () {
+                var checkBoxDisableThirdPartyWallets = document.getElementById( "disableThirdPartyWallets" );
+                var toDisable = checkBoxDisableThirdPartyWallets.checked;
+
+                var debug = "checkBoxDisableThirdPartyWallets checked = ".concat( toDisable );
+                alert( debug );
+
+                cordova.plugins.PayUMoneyPNPPlugin.disableThirdPartyWallets(    function (response) {
+                                                                                     console.log( 'disableThirdPartyWallets Received Success' );
+                                                                                     alert(JSON.stringify(response));
+                                                                                 },
+
+                                                                                 function (response){
+                                                                                     console.log('disableThirdPartyWallets Received Failure ');
+                                                                                     alert(JSON.stringify(response))
+                                                                                 },
+
+                                                                                 toDisable);
+        }
+
+
+
+        var disableEmiClicked = function () {
+                var checkBoxEmi = document.getElementById( "disableEmi" );
+                var toDisable = checkBoxEmi.checked;
+
+                var debug = "checkBoxEmi checked = ".concat( toDisable );
+                alert( debug );
+
+                cordova.plugins.PayUMoneyPNPPlugin.disableEmi(      function (response) {
+                                                                         console.log( 'disableEmi Received Success' );
+                                                                         alert( JSON.stringify(response) );
+                                                                    },
+
+                                                                    function (response){
+                                                                        console.log('disableEmi Received Failure ');
+                                                                        alert( JSON.stringify(response) );
+                                                                    },
+
+                                                                    toDisable);
+        }
+
+
+
 
 
             </script>
 </body>
 </html>
-
 
