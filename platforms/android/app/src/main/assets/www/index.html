@@ -44,18 +44,26 @@
 </head>
 <body onLoad="codeAddress();">
 <div id="deviceready"></div>
-<table text-align: left>
+<table>
     <tr><th>Phone Number</th> <th><input type="text" id="PhoneNumber" value="9876543210"></th></tr>
     <tr><th>Email</th> <th><input type="text" id="Email" value="a@bc.cc"></th></tr>
     <tr><th>Amount</th> <th><input type="text" id="Amount" value="11"></th></tr>
 </table>
-<input type="checkbox" id="disableWallet"/>Disable Wallet</br>
-<input type="checkbox" id="disableSavedCards"/>Disable Saved Cards</br>
-<input type="checkbox" id="disableNetBanking"/>Disable Netbanking</br>
-<input type="checkbox" id="disableThirdPartyWallets"/>Disable Third Party Wallets</br>
-<input type="checkbox" id="disableEmi"/>Disable Emi</br>
-</br>
-<button id='Pay'>Pay</button></br>
+&nbsp;<input type="checkbox" id="disableWallet"/>Disable Wallet<br/>
+&nbsp;<input type="checkbox" id="disableSavedCards"/>Disable Saved Cards<br/>
+&nbsp;<input type="checkbox" id="disableNetBanking"/>Disable Netbanking<br/>
+&nbsp;<input type="checkbox" id="disableThirdPartyWallets"/>Disable Third Party Wallets<br/>
+&nbsp;<input type="checkbox" id="disableEmi"/>Disable Emi<br/>
+
+<br/>&nbsp;Select style:<br/>
+&nbsp;<input type="radio" name="style" value="default" checked>Default&nbsp;&nbsp;
+&nbsp;<input type="radio" name="style" value="pink">Pink&nbsp;&nbsp;
+&nbsp;<input type="radio" name="style" value="grey">Grey&nbsp;&nbsp;
+&nbsp;<input type="radio" name="style" value="green">Green&nbsp;&nbsp;
+&nbsp;<input type="radio" name="style" value="purple">Purple
+
+<br/><br/>
+&nbsp;<button id='Pay'>Pay</button><br/>
 
 
 
