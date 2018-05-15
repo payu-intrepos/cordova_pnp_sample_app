@@ -58,8 +58,8 @@
 &nbsp;<input type="checkbox" id="disableCompletionScreen"/>Override Result Screen<br/>
 
 <br/>&nbsp;&nbsp;Select environment:<br/>
-&nbsp;<input type="radio" name="env" value="Sandbox" checked>Sandbox&nbsp;&nbsp;
-&nbsp;<input type="radio" name="env" value="Production">Production&nbsp;&nbsp;
+&nbsp;<input type="radio" id="env_test"         name="env" value="Test" checked>Test&nbsp;&nbsp;
+&nbsp;<input type="radio" id="env_production"   name="env" value="Production">Production&nbsp;&nbsp;
 
 <br/><br/>
 
@@ -122,7 +122,14 @@
             var email = document.getElementById("Email").value;
             var amount = document.getElementById("Amount").value;
 
-            var txnParam = new PUMTxnParam("LLKwG0","393463","12",amount,phoneNumber,email,"UserFirstName","https://www.payumoney.com/mobileapp/payumoney/success.php","https://www.payumoney.com/mobileapp/payumoney/failure.php","iPhone7",PUMEnvironment.PUMEnvironmentProduction,"28b25ce0f3f2bd7f550a9343c41ccfefa15c6b8d77114853ae782b888e4fd90a13b074b4d4fed42e4d4c3f7d5915cb30e71dcfeb22e6c7313c26b5525bb07f2a","","");
+            var environment_value;
+            if (document.getElementById('env_test').checked) {
+                environment_value = PUMEnvironment.PUMEnvironmentTest;
+            }else{
+                environment_value = PUMEnvironment.PUMEnvironmentProduction;
+            }
+
+            var txnParam = new PUMTxnParam("LLKwG0","393463","12",amount,phoneNumber,email,"UserFirstName","https://www.payumoney.com/mobileapp/payumoney/success.php","https://www.payumoney.com/mobileapp/payumoney/failure.php","iPhone7",environment_value,"28b25ce0f3f2bd7f550a9343c41ccfefa15c6b8d77114853ae782b888e4fd90a13b074b4d4fed42e4d4c3f7d5915cb30e71dcfeb22e6c7313c26b5525bb07f2a","","");
             cordova.plugins.PayUMoneyPNPPlugin.showPaymentView( function (response) {
                                                                     console.log('showPaymentView received Success ');
                                                                     alert(JSON.stringify(response));
