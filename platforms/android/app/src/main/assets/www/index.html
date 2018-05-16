@@ -64,11 +64,12 @@
 <br/><br/>
 
 <br/>&nbsp;&nbsp;Select style:<br/>
-&nbsp;<input type="radio" name="style" value="default" checked><span style="color:#F3A62E">Default</span>&nbsp;&nbsp;
-&nbsp;<input type="radio" name="style" value="pink"><span style="color:#C0175C">Pink</span>&nbsp;&nbsp;
-&nbsp;<input type="radio" name="style" value="grey"><span style="color:#424242">Grey</span>&nbsp;&nbsp;
-&nbsp;<input type="radio" name="style" value="green"><span style="color:#0A927A">Green</span>&nbsp;&nbsp;
-&nbsp;<input type="radio" name="style" value="purple"><span style="color:#7A1FA2">Purple</span>
+&nbsp;<input type="radio" name="style" id="style_default" value="default" checked><span style="color:#F3A62E">Default</span>&nbsp;&nbsp;
+&nbsp;<input type="radio" name="style" id="style_pink"    value="pink"><span style="color:#C0175C">Pink</span>&nbsp;&nbsp;
+&nbsp;<input type="radio" name="style" id="style_grey"    value="grey"><span style="color:#424242">Grey</span>&nbsp;&nbsp;<br>
+&nbsp;<input type="radio" name="style" id="style_green"   value="green"><span style="color:#0A927A">Green</span>&nbsp;&nbsp;
+&nbsp;<input type="radio" name="style" id="style_purple"  value="purple"><span style="color:#7A1FA2">Purple</span>&nbsp;&nbsp;
+&nbsp;<input type="radio" name="style" id="style_blue"    value="blue"><span style="color:#4C63E2">Blue</span>&nbsp;&nbsp;
 
 <br/><br/>&nbsp;&nbsp;Screen Title: <input type="text" name="screenTitle" id="screenTitle" value="My Title"><br>
 <br/>&nbsp;&nbsp;Done button text: <input type="text" name="doneButtonText" id="doneButtonText" value="Continue Shopping"><br>
@@ -128,6 +129,32 @@
             }else{
                 environment_value = PUMEnvironment.PUMEnvironmentProduction;
             }
+
+
+            var style_value;
+            if (document.getElementById('style_default').checked) {
+                style_value = PUMStyle.PUMStyleDefault;
+            }else if (document.getElementById('style_pink').checked) {
+                style_value = PUMStyle.PUMStylePink;
+            }else if (document.getElementById('style_grey').checked) {
+                style_value = PUMStyle.PUMStyleGrey;
+            }else if (document.getElementById('style_green').checked) {
+                style_value = PUMStyle.PUMStyleGreen;
+            }else if (document.getElementById('style_purple').checked) {
+                style_value = PUMStyle.PUMStylePurple;
+            }else if (document.getElementById('style_blue').checked) {
+                style_value = PUMStyle.PUMStyleBlue;
+            }
+
+            cordova.plugins.PayUMoneyPNPPlugin.setAppTheme( function (response) {
+                                                                    console.log('setAppTheme received Success ');
+                                                                 },
+
+                                                                 function (response){
+                                                                    console.log('setAppTheme received Failure '.concat(response) );
+                                                                 },
+
+                                                                 style_value );
 
             var txnParam = new PUMTxnParam("LLKwG0","393463","12",amount,phoneNumber,email,"UserFirstName","https://www.payumoney.com/mobileapp/payumoney/success.php","https://www.payumoney.com/mobileapp/payumoney/failure.php","iPhone7",environment_value,"28b25ce0f3f2bd7f550a9343c41ccfefa15c6b8d77114853ae782b888e4fd90a13b074b4d4fed42e4d4c3f7d5915cb30e71dcfeb22e6c7313c26b5525bb07f2a","","");
             cordova.plugins.PayUMoneyPNPPlugin.showPaymentView( function (response) {
@@ -281,6 +308,8 @@
 
                                                                                         toDisable);
         }
+
+
 
 
             </script>
