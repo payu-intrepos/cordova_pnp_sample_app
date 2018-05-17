@@ -11,6 +11,15 @@ var PUMPaymentMode = {
   PUMPaymentModeStoredCard: 3,
 };
 
+var PUMStyle = {
+  PUMStyleDefault: 0,
+  PUMStylePink: 1,
+  PUMStyleGreen: 2,
+  PUMStyleBlue: 3,
+  PUMStylePurple: 4,
+  PUMStyleGrey: 5,
+};
+
 /**
  * The PUMTxnParam class defines properties related to Transaction.
  * @param {String} key: Key related to the merchant

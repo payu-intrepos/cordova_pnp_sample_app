@@ -7,6 +7,7 @@ import android.util.Log;
 import com.payumoney.core.PayUmoneyConfig;
 import com.payumoney.core.PayUmoneySdkInitializer;
 import com.payumoney.core.entity.TransactionResponse;
+import com.payumoney.sdkui.ui.utils.PPConfig;
 import com.payumoney.sdkui.ui.utils.PayUmoneyFlowManager;
 import com.payumoney.sdkui.ui.utils.ResultModel;
 
@@ -31,6 +32,9 @@ public class PayUMoneyPNPPlugin extends CordovaPlugin {
 
     private static final String TAG = "PayUMoneyPNPPlugin" ;
 
+    private boolean disableCompletionScreen;
+    private int appTheme = 0;
+
     private HashMap<String, CallbackContext> contextHashMap;
     @Override
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
@@ -41,32 +45,209 @@ public class PayUMoneyPNPPlugin extends CordovaPlugin {
     }
 
     @Override
-    public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONException {
-        if (action.equals( "showPaymentView")) {
-            final JSONObject paymentJsonObject = args.getJSONObject(0);
-            cordova.getActivity().runOnUiThread(new Runnable() {
-                public void run() {
-                    launchPayUMoneyFlow(paymentJsonObject, callbackContext);
-                }
-            });
+    public boolean execute( final String action, final JSONArray args, final CallbackContext callbackContext) throws JSONException {
+        Log.i(TAG, "execute(): "+action +", args = "+args );
 
-            return true;
+        switch ( action ){
+            case  "showPaymentView":
+                Log.d( TAG, "to showPaymentView()" );
+                final JSONObject paymentJsonObject = args.getJSONObject(0);
+                cordova.getActivity().runOnUiThread(new Runnable() {
+                    public void run() {
+                        launchPayUMoneyFlow(paymentJsonObject, callbackContext);
+                    }
+                });
+
+                return true;
+
+
+
+            case "disableWallet":
+                try {
+                    final boolean toDisableWallet = args.getBoolean(0);
+                    Log.d( TAG, "disableWallet(): setting to " +toDisableWallet );
+                    disableWallet( toDisableWallet, callbackContext );
+                } catch ( Exception e) {
+                    e.printStackTrace();
+                    callbackContext.error( e.getMessage() );
+                }
+                return true;
+
+
+            case "disableCards":
+                try {
+                    final boolean toDisableCards = args.getBoolean(0);
+                    Log.d( TAG, "disableCards(): setting to " +toDisableCards );
+                    disableCards( toDisableCards, callbackContext );
+                } catch ( Exception e) {
+                    e.printStackTrace();
+                    callbackContext.error( e.getMessage() );
+                }
+                return true;
+
+
+
+            case "disableNetbanking":
+                try {
+                    final boolean todisableNetBanking = args.getBoolean(0);
+                    Log.d( TAG, "disableNetBanking(): setting to " +todisableNetBanking );
+                    disableNetBanking( todisableNetBanking, callbackContext );
+                } catch ( Exception e) {
+                    e.printStackTrace();
+                    callbackContext.error( e.getMessage() );
+                }
+                return true;
+
+            case "disableThirdPartyWallet":
+                try {
+                    final boolean toDsisableThirdPartyWallets = args.getBoolean(0);
+                    Log.d( TAG, "disableThirdPartyWallets(): setting to " +toDsisableThirdPartyWallets);
+                    disableThirdPartyWallets( toDsisableThirdPartyWallets, callbackContext );
+                } catch ( Exception e) {
+                    e.printStackTrace();
+                    callbackContext.error( e.getMessage() );
+                }
+                return true;
+
+            case "disableEMI":
+                try {
+                    final boolean toDisabledisableEmi = args.getBoolean(0);
+                    Log.d( TAG, "disableEmi(): setting to " +toDisabledisableEmi);
+                    disableEmi( toDisabledisableEmi, callbackContext );
+                } catch ( Exception e) {
+                    e.printStackTrace();
+                    callbackContext.error( e.getMessage() );
+                }
+                return true;
+
+            case "disableExitAlertOnCheckoutPage":
+                try {
+                    final boolean toDisableExitAlertOnCheckoutPage = args.getBoolean(0);
+                    Log.d( TAG, "disableExitAlertOnCheckoutPage(): setting to " +toDisableExitAlertOnCheckoutPage);
+                    disableExitAlertOnCheckoutPage( toDisableExitAlertOnCheckoutPage, callbackContext );
+                } catch ( Exception e) {
+                    e.printStackTrace();
+                    callbackContext.error( e.getMessage() );
+                }
+                return true;
+
+            case "disableCompletionScreen":
+                try {
+                    final boolean toDisableCompletionScreen = args.getBoolean(0);
+                    Log.d( TAG, "disableCompletionScreen(): setting to " +toDisableCompletionScreen);
+                    disableCompletionScreen( toDisableCompletionScreen, callbackContext );
+                } catch ( Exception e) {
+                    e.printStackTrace();
+                    callbackContext.error( e.getMessage() );
+                }
+
+                return true;
+
+            case "setScreenTitle":
+                try {
+                    final String screenTitle = args.getString(0);
+                    Log.d( TAG, "setScreenTitle(): setting to " +screenTitle );
+                    setScreenTitle( screenTitle, callbackContext );
+                } catch ( Exception e) {
+                    e.printStackTrace();
+                    callbackContext.error( e.getMessage() );
+                }
+                return true;
+
+
+            case "setDoneButtonText":
+                try {
+                    final String doneBtnText = args.getString(0);
+                    Log.d( TAG, "setDoneButtonText(): setting to " +doneBtnText );
+                    setDoneButtonText( doneBtnText, callbackContext );
+                } catch ( Exception e) {
+                    e.printStackTrace();
+                    callbackContext.error( e.getMessage() );
+                }
+                return true;
+
+
+            case "setAppTheme":
+                try {
+                    final int theme = args.getInt(0);
+                    Log.d( TAG, "setAppTheme(): setting to " +theme );
+                    setTheme( theme, callbackContext );
+                } catch ( Exception e) {
+                    e.printStackTrace();
+                    callbackContext.error( e.getMessage() );
+                }
+                return true;
+
         }
+
         return false;
     }
 
-    private void setPayuMoneyConfig( final boolean exitConfirmationDisabled, final String doneBtnText, final String screenTitle ){
+    private void disableWallet( final boolean disableWallet , final CallbackContext callbackContext ){
+        PPConfig.getInstance().disableWallet( disableWallet );
+        callbackContext.success( "Wallet disabled : "+disableWallet );
+    }
+
+    private void disableCards( final boolean disableCards , final CallbackContext callbackContext ){
+        PPConfig.getInstance().disableSavedCards( disableCards );
+        callbackContext.success( "Cards disabled : "+disableCards );
+    }
+
+    private void disableNetBanking( final boolean disableNb , final CallbackContext callbackContext ){
+        PPConfig.getInstance().disableNetBanking( disableNb );
+        callbackContext.success( "NetBanking disabled : "+disableNb );
+    }
+
+    private void disableThirdPartyWallets( final boolean disableThirdPartyWallets , final CallbackContext callbackContext ){
+        PPConfig.getInstance().disableThirdPartyWallets( disableThirdPartyWallets );
+        callbackContext.success( "ThirdPartyWallets disabled : "+disableThirdPartyWallets );
+    }
+
+    private void disableEmi( final boolean disableEmi , final CallbackContext callbackContext ){
+        PPConfig.getInstance().disableEmi( disableEmi );
+        callbackContext.success( "EMI disabled : "+disableEmi);
+    }
+
+    private void disableCompletionScreen( final boolean disable, final CallbackContext callbackContext ) {
+        this.disableCompletionScreen = disable ;
+        callbackContext.success("set disableCompletionScreen flag to : " + disable);
+    }
+
+    private void disableExitAlertOnCheckoutPage( final boolean disable, final CallbackContext callbackContext ){
+        PayUmoneyConfig payUmoneyConfig = PayUmoneyConfig.getInstance();
+        payUmoneyConfig.disableExitConfirmation( disable );
+        callbackContext.success( "set disableExitAlertOnCheckoutPage flag to : "+disable);
+    }
+
+    private void setDoneButtonText( final String doneBtnText, final CallbackContext callbackContext) {
+        PayUmoneyConfig payUmoneyConfig = PayUmoneyConfig.getInstance();
+        payUmoneyConfig.setDoneButtonText( doneBtnText );
+        callbackContext.success( "Set DoneButtonText to : "+doneBtnText);
+    }
+
+    private void setScreenTitle( final String screenTitle, final CallbackContext callbackContext) {
+        PayUmoneyConfig payUmoneyConfig = PayUmoneyConfig.getInstance();
+        payUmoneyConfig.setPayUmoneyActivityTitle( screenTitle );
+        callbackContext.success( "Set ScreenTitle to : "+screenTitle);
+    }
+
+    private void setTheme( final int theme, final CallbackContext callbackContext ) {
+        this.appTheme = theme ;
+        callbackContext.success("set theme to : " + theme);
+    }
+
+    /*private void setPayuMoneyConfig( final boolean exitConfirmationDisabled, final String doneBtnText, final String screenTitle ){
         PayUmoneyConfig payUmoneyConfig = PayUmoneyConfig.getInstance();
         payUmoneyConfig.disableExitConfirmation( exitConfirmationDisabled );
         payUmoneyConfig.setDoneButtonText( doneBtnText );
-        payUmoneyConfig.setPayUmoneyActivityTitle( screenTitle );
-    }
+
+    }*/
 
     private void launchPayUMoneyFlow( final JSONObject jsonObject , final CallbackContext callbackContext){
 
         Log.d(TAG, "launchPayUMoneyFlow(): "+jsonObject );
 
-        setPayuMoneyConfig( false, "Done", "MyTitle" );
+        //  setPayuMoneyConfig( false, "Done", "MyTitle" );
         
         try {
             final double amount = jsonObject.getDouble( "amount");
@@ -82,18 +263,44 @@ public class PayUMoneyPNPPlugin extends CordovaPlugin {
             final String fUrl = jsonObject.getString( "furl");
 
             // 0 == production, 1 == sandbox
-            /*final int environment = jsonObject.getInt( "environment" );
-            final boolean isDebug = environment == 0 ? false : true ;*/
+            final int environment = jsonObject.getInt( "environment" );
+            final boolean isDebug = environment == 0 ? false : true ;
 
             // Use only test as of now... as we have hardcoded salt
-            final boolean isDebug = true;
+            // final boolean isDebug = true;
 
             final String merchantKey = jsonObject.getString( "key");
             final String merchant_ID = jsonObject.getString( "merchantid");
             final String hash = jsonObject.getString( "hashValue");
 
-            // final int style = jsonObject.getInt( "style" ); // TODO
-            final int style = com.payumoney.sdkui.R.style.AppTheme_default;
+            final int style;
+            switch ( this.appTheme ){
+                default:
+                case 0:
+                    style = com.payumoney.sdkui.R.style.AppTheme_default;
+                    break;
+
+                case 1:
+                    style = com.payu.cordova.sample.R.style.AppTheme_pink;
+                    break;
+
+                case 2:
+                    style = com.payu.cordova.sample.R.style.AppTheme_Green;
+                    break;
+
+                case 3:
+                    style = com.payu.cordova.sample.R.style.AppTheme_blue;
+                    break;
+
+                case 4:
+                    style = com.payu.cordova.sample.R.style.AppTheme_purple;
+                    break;
+
+                case 5:
+                    style = com.payu.cordova.sample.R.style.AppTheme_Grey;
+                    break;
+
+            }
 
             final String udf1 = jsonObject.getString( "udf1");
             final String udf2 = jsonObject.getString( "udf2");
@@ -107,11 +314,15 @@ public class PayUMoneyPNPPlugin extends CordovaPlugin {
             final String udf9 = jsonObject.getString( "udf9");
             final String udf10 = jsonObject.getString( "udf10");
 
-            Log.i(TAG, "launchPayUMoneyFlow(): " + amount+", "+txnId+", "+ phone+", "+ email+", "
-                    +firstName+", "+ productName+", "+ sUrl+", "+fUrl+", "+ isDebug+", "+ merchantKey+", "+ merchant_ID+", "+hash);
+            Log.i(TAG, "launchPayUMoneyFlow(): amount = " + amount+", txnId = "+txnId+", phone = "+ phone+", email = "+ email+", firstName = "
+                    +firstName+", productName = "+ productName+", sUrl = "+ sUrl+", fUrl = "+fUrl+", isDebug = "+ isDebug+", merchantKey = "+ merchantKey+", merchant_ID = "+ merchant_ID+", "+hash);
+
+            Log.i(TAG, "launchPayUMoneyFlow(): disableCompletionScreen = " + disableCompletionScreen );
+
+            Log.i(TAG, "launchPayUMoneyFlow(): isDebug = " + isDebug );
 
             launchPayUMoneyFlow( amount, txnId, phone, email, firstName, productName, sUrl, fUrl, isDebug, merchantKey, merchant_ID, hash,
-                                            style, udf1, udf2, udf3, udf4, udf5, udf6, udf7, udf8, udf9, udf10, false, callbackContext );
+                                            style, udf1, udf2, udf3, udf4, udf5, udf6, udf7, udf8, udf9, udf10, this.disableCompletionScreen, callbackContext );
         }catch ( Exception e){
             e.printStackTrace();
             callbackContext.error( e.getMessage() );
@@ -131,6 +342,8 @@ public class PayUMoneyPNPPlugin extends CordovaPlugin {
         contextHashMap.put( ""+PayUmoneyFlowManager.REQUEST_CODE_PAYMENT, callbackContext );
 
         PayUmoneySdkInitializer.PaymentParam.Builder builder = new PayUmoneySdkInitializer.PaymentParam.Builder();
+
+
 
         builder.setAmount(amount)
                 .setTxnId(txnId)
@@ -161,9 +374,9 @@ public class PayUMoneyPNPPlugin extends CordovaPlugin {
             Log.v(TAG, "launchPayUMoneyFlow(): hash = "+hash );
             paymentParam.setMerchantHash( hash );
 
-            if (style != -1) {
-                PayUmoneyFlowManager.startPayUMoneyFlow(paymentParam, cordova.getActivity(), style, isOverrideResultScreen);
-            }
+
+            final Intent intent = PayUmoneyFlowManager.getIntentToStartPayUMoneyFlow( paymentParam, cordova.getActivity(), style, isOverrideResultScreen);
+            cordova.startActivityForResult( this, intent, 1 );
         } catch ( Exception e ) {
             // oops some exception.
             e.printStackTrace();
@@ -216,7 +429,7 @@ public class PayUMoneyPNPPlugin extends CordovaPlugin {
         super.onActivityResult(requestCode, resultCode, data);
 
         Log.d(TAG, "onActivityResult(): request code " + requestCode + " resultcode " + resultCode);
-        if( requestCode == PayUmoneyFlowManager.REQUEST_CODE_PAYMENT ) {
+        if( requestCode == 1 ) {
             final CallbackContext callbackContext = contextHashMap.get( ""+PayUmoneyFlowManager.REQUEST_CODE_PAYMENT );
 
             if (  resultCode == RESULT_OK && data != null) {
