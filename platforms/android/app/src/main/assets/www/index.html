@@ -61,12 +61,18 @@
 &nbsp;<input type="radio" id="env_test"         name="env" value="Test" checked>Test&nbsp;&nbsp;
 &nbsp;<input type="radio" id="env_production"   name="env" value="Production">Production&nbsp;&nbsp;
 
-<br/><br/>
 
-<br/><br/>&nbsp;&nbsp;Theme name: <input type="text" name="themeName" id="themeName" value="AppTheme.Green"><br>
+<br/><br/>&nbsp;&nbsp;Android Theme name: <input type="text" name="themeName" id="themeName" value="AppTheme.default"><br>
+&nbsp;&nbsp;Or select from below:<br/>
+&nbsp;<input type="radio" name="style" id="style_default" value="default" checked><span style="color:#F3A62E">Default</span>&nbsp;&nbsp;
+&nbsp;<input type="radio" name="style" id="style_pink"    value="pink"><span style="color:#C0175C">Pink</span>&nbsp;&nbsp;
+&nbsp;<input type="radio" name="style" id="style_grey"    value="grey"><span style="color:#424242">Grey</span>&nbsp;&nbsp;<br>
+&nbsp;<input type="radio" name="style" id="style_green"   value="green"><span style="color:#0A927A">Green</span>&nbsp;&nbsp;
+&nbsp;<input type="radio" name="style" id="style_purple"  value="purple"><span style="color:#7A1FA2">Purple</span>&nbsp;&nbsp;
+&nbsp;<input type="radio" name="style" id="style_blue"    value="blue"><span style="color:#4C63E2">Blue</span>&nbsp;&nbsp;
 
 <br/><br/>
-&nbsp;&nbsp;<button id='Pay'>Pay</button><br/>
+&nbsp;&nbsp;<button id='Pay'>Pay</button><br/><br/>
 
 
 
@@ -84,7 +90,34 @@
                 document.getElementById('disableEmi').addEventListener('click', disableEmiClicked );
                 document.getElementById('disableExitAlertOnCheckoutPage').addEventListener('click', disableExitAlertOnCheckoutPageClicked );
                 document.getElementById('disableCompletionScreen').addEventListener('click', disableCompletionScreenClicked );
+
+                document.getElementById('style_default').addEventListener('click', themeRadioButtonClicked );
+                document.getElementById('style_pink').addEventListener('click', themeRadioButtonClicked );
+                document.getElementById('style_grey').addEventListener('click', themeRadioButtonClicked );
+                document.getElementById('style_green').addEventListener('click', themeRadioButtonClicked );
+                document.getElementById('style_purple').addEventListener('click', themeRadioButtonClicked );
+                document.getElementById('style_blue').addEventListener('click', themeRadioButtonClicked );
             }
+
+           var themeRadioButtonClicked = function () {
+
+                var theme_value;
+                if (document.getElementById('style_default').checked) {
+                    theme_value = "AppTheme.default" ;
+                }else if (document.getElementById('style_pink').checked) {
+                    theme_value = "AppTheme.pink" ;
+                }else if (document.getElementById('style_grey').checked) {
+                    theme_value = "AppTheme.Grey" ;
+                }else if (document.getElementById('style_green').checked) {
+                    theme_value = "AppTheme.Green" ;
+                }else if (document.getElementById('style_purple').checked) {
+                    theme_value = "AppTheme.purple" ;
+                }else if (document.getElementById('style_blue').checked) {
+                    theme_value = "AppTheme.blue" ;
+                }
+
+                document.getElementById('themeName').value = theme_value;
+        }
 
         var payButtonClicked = function () {
             var themeName = document.getElementById( "themeName" ).value;
