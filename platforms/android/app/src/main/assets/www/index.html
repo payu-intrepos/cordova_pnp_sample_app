@@ -57,20 +57,22 @@
 &nbsp;<input type="checkbox" id="disableExitAlertOnCheckoutPage"/>Disable Exit Alert On Checkout Page<br/>
 &nbsp;<input type="checkbox" id="disableCompletionScreen"/>Override Result Screen<br/>
 
+<br/>&nbsp;&nbsp;Select environment:<br/>
+&nbsp;<input type="radio" id="env_test"         name="env" value="Test" checked>Test&nbsp;&nbsp;
+&nbsp;<input type="radio" id="env_production"   name="env" value="Production">Production&nbsp;&nbsp;
 
 
-<br/>&nbsp;&nbsp;Select style:<br/>
-&nbsp;<input type="radio" name="style" value="default" checked><span style="color:#F3A62E">Default</span>&nbsp;&nbsp;
-&nbsp;<input type="radio" name="style" value="pink"><span style="color:#C0175C">Pink</span>&nbsp;&nbsp;
-&nbsp;<input type="radio" name="style" value="grey"><span style="color:#424242">Grey</span>&nbsp;&nbsp;
-&nbsp;<input type="radio" name="style" value="green"><span style="color:#0A927A">Green</span>&nbsp;&nbsp;
-&nbsp;<input type="radio" name="style" value="purple"><span style="color:#7A1FA2">Purple</span>
-
-<br/><br/>&nbsp;&nbsp;Screen Title: <input type="text" name="screenTitle" id="screenTitle" value="My Title"><br>
-<br/>&nbsp;&nbsp;Done button text: <input type="text" name="doneButtonText" id="doneButtonText" value="Continue Shopping"><br>
+<br/><br/>&nbsp;&nbsp;Android Theme name: <input type="text" name="themeName" id="themeName" value="AppTheme.default"><br>
+&nbsp;&nbsp;Or select from below:<br/>
+&nbsp;<input type="radio" name="style" id="style_default" value="default" checked><span style="color:#F3A62E">Default</span>&nbsp;&nbsp;
+&nbsp;<input type="radio" name="style" id="style_pink"    value="pink"><span style="color:#C0175C">Pink</span>&nbsp;&nbsp;
+&nbsp;<input type="radio" name="style" id="style_grey"    value="grey"><span style="color:#424242">Grey</span>&nbsp;&nbsp;<br>
+&nbsp;<input type="radio" name="style" id="style_green"   value="green"><span style="color:#0A927A">Green</span>&nbsp;&nbsp;
+&nbsp;<input type="radio" name="style" id="style_purple"  value="purple"><span style="color:#7A1FA2">Purple</span>&nbsp;&nbsp;
+&nbsp;<input type="radio" name="style" id="style_blue"    value="blue"><span style="color:#4C63E2">Blue</span>&nbsp;&nbsp;
 
 <br/><br/>
-&nbsp;&nbsp;<button id='Pay'>Pay</button><br/>
+&nbsp;&nbsp;<button id='Pay'>Pay</button><br/><br/>
 
 
 
@@ -88,37 +90,59 @@
                 document.getElementById('disableEmi').addEventListener('click', disableEmiClicked );
                 document.getElementById('disableExitAlertOnCheckoutPage').addEventListener('click', disableExitAlertOnCheckoutPageClicked );
                 document.getElementById('disableCompletionScreen').addEventListener('click', disableCompletionScreenClicked );
+
+                document.getElementById('style_default').addEventListener('click', themeRadioButtonClicked );
+                document.getElementById('style_pink').addEventListener('click', themeRadioButtonClicked );
+                document.getElementById('style_grey').addEventListener('click', themeRadioButtonClicked );
+                document.getElementById('style_green').addEventListener('click', themeRadioButtonClicked );
+                document.getElementById('style_purple').addEventListener('click', themeRadioButtonClicked );
+                document.getElementById('style_blue').addEventListener('click', themeRadioButtonClicked );
             }
 
+           var themeRadioButtonClicked = function () {
+
+                var theme_value;
+                if (document.getElementById('style_default').checked) {
+                    theme_value = "AppTheme.default" ;
+                }else if (document.getElementById('style_pink').checked) {
+                    theme_value = "AppTheme.pink" ;
+                }else if (document.getElementById('style_grey').checked) {
+                    theme_value = "AppTheme.Grey" ;
+                }else if (document.getElementById('style_green').checked) {
+                    theme_value = "AppTheme.Green" ;
+                }else if (document.getElementById('style_purple').checked) {
+                    theme_value = "AppTheme.purple" ;
+                }else if (document.getElementById('style_blue').checked) {
+                    theme_value = "AppTheme.blue" ;
+                }
+
+                document.getElementById('themeName').value = theme_value;
+        }
+
         var payButtonClicked = function () {
-            var screenTitle = document.getElementById( "screenTitle" ).value;
-            cordova.plugins.PayUMoneyPNPPlugin.setScreenTitle( function (response) {
-                                                                    console.log('setScreenTitle received Success ');
+            var themeName = document.getElementById( "themeName" ).value;
+            cordova.plugins.PayUMoneyPNPPlugin.setAndroidAppThemeName( function (response) {
+                                                                    console.log('setAndroidAppThemeName received Success ');
                                                                  },
 
                                                                  function (response){
-                                                                    console.log('setScreenTitle received Failure '.concat(response) );
+                                                                    console.log('setAndroidAppThemeName received Failure '.concat(response) );
                                                                  },
 
-                                                                 screenTitle );
-
-
-            var doneButtonText = document.getElementById( "doneButtonText" ).value;
-            cordova.plugins.PayUMoneyPNPPlugin.setDoneButtonText( function (response) {
-                                                                    console.log('setDoneButtonText received Success ');
-                                                                 },
-
-                                                                 function (response){
-                                                                    console.log('setDoneButtonText received Failure '.concat(response) );
-                                                                 },
-
-                                                                 doneButtonText );
+                                                                 themeName );
 
             var phoneNumber = document.getElementById("PhoneNumber").value;
             var email = document.getElementById("Email").value;
             var amount = document.getElementById("Amount").value;
 
-            var txnParam = new PUMTxnParam("LLKwG0","393463","12",amount,phoneNumber,email,"UserFirstName","https://www.payumoney.com/mobileapp/payumoney/success.php","https://www.payumoney.com/mobileapp/payumoney/failure.php","iPhone7",PUMEnvironment.PUMEnvironmentProduction,"28b25ce0f3f2bd7f550a9343c41ccfefa15c6b8d77114853ae782b888e4fd90a13b074b4d4fed42e4d4c3f7d5915cb30e71dcfeb22e6c7313c26b5525bb07f2a","","");
+            var environment_value;
+            if (document.getElementById('env_test').checked) {
+                environment_value = PUMEnvironment.PUMEnvironmentTest;
+            }else{
+                environment_value = PUMEnvironment.PUMEnvironmentProduction;
+            }
+
+            var txnParam = new PUMTxnParam("LLKwG0","393463","12",amount,phoneNumber,email,"UserFirstName","https://www.payumoney.com/mobileapp/payumoney/success.php","https://www.payumoney.com/mobileapp/payumoney/failure.php","iPhone7",environment_value,"28b25ce0f3f2bd7f550a9343c41ccfefa15c6b8d77114853ae782b888e4fd90a13b074b4d4fed42e4d4c3f7d5915cb30e71dcfeb22e6c7313c26b5525bb07f2a","","");
             cordova.plugins.PayUMoneyPNPPlugin.showPaymentView( function (response) {
                                                                     console.log('showPaymentView received Success ');
                                                                     alert(JSON.stringify(response));
@@ -270,6 +294,8 @@
 
                                                                                         toDisable);
         }
+
+
 
 
             </script>

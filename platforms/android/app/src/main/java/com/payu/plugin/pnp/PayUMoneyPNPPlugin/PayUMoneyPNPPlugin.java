@@ -34,7 +34,11 @@ public class PayUMoneyPNPPlugin extends CordovaPlugin {
     private static final String TAG = "PayUMoneyPNPPlugin" ;
 
     private boolean disableCompletionScreen;
+<<<<<<< HEAD
     private String themeName;
+=======
+    private int appTheme = 0;
+>>>>>>> 912ab8a8ca28d05d3f81c6283ad6511070dc5598
 
     private HashMap<String, CallbackContext> contextHashMap;
     @Override
@@ -120,6 +124,7 @@ public class PayUMoneyPNPPlugin extends CordovaPlugin {
                 } catch ( Exception e) {
                     e.printStackTrace();
                     callbackContext.error( e.getMessage() );
+<<<<<<< HEAD
                 }
                 return true;
 
@@ -181,6 +186,69 @@ public class PayUMoneyPNPPlugin extends CordovaPlugin {
                 }
                 return true;
 
+=======
+                }
+                return true;
+
+            case "disableExitAlertOnCheckoutPage":
+                try {
+                    final boolean toDisableExitAlertOnCheckoutPage = args.getBoolean(0);
+                    Log.d( TAG, "disableExitAlertOnCheckoutPage(): setting to " +toDisableExitAlertOnCheckoutPage);
+                    disableExitAlertOnCheckoutPage( toDisableExitAlertOnCheckoutPage, callbackContext );
+                } catch ( Exception e) {
+                    e.printStackTrace();
+                    callbackContext.error( e.getMessage() );
+                }
+                return true;
+
+            case "disableCompletionScreen":
+                try {
+                    final boolean toDisableCompletionScreen = args.getBoolean(0);
+                    Log.d( TAG, "disableCompletionScreen(): setting to " +toDisableCompletionScreen);
+                    disableCompletionScreen( toDisableCompletionScreen, callbackContext );
+                } catch ( Exception e) {
+                    e.printStackTrace();
+                    callbackContext.error( e.getMessage() );
+                }
+
+                return true;
+
+            case "setScreenTitle":
+                try {
+                    final String screenTitle = args.getString(0);
+                    Log.d( TAG, "setScreenTitle(): setting to " +screenTitle );
+                    setScreenTitle( screenTitle, callbackContext );
+                } catch ( Exception e) {
+                    e.printStackTrace();
+                    callbackContext.error( e.getMessage() );
+                }
+                return true;
+
+
+            case "setDoneButtonText":
+                try {
+                    final String doneBtnText = args.getString(0);
+                    Log.d( TAG, "setDoneButtonText(): setting to " +doneBtnText );
+                    setDoneButtonText( doneBtnText, callbackContext );
+                } catch ( Exception e) {
+                    e.printStackTrace();
+                    callbackContext.error( e.getMessage() );
+                }
+                return true;
+
+
+            case "setAppTheme":
+                try {
+                    final int theme = args.getInt(0);
+                    Log.d( TAG, "setAppTheme(): setting to " +theme );
+                    setTheme( theme, callbackContext );
+                } catch ( Exception e) {
+                    e.printStackTrace();
+                    callbackContext.error( e.getMessage() );
+                }
+                return true;
+
+>>>>>>> 912ab8a8ca28d05d3f81c6283ad6511070dc5598
         }
 
         return false;
@@ -232,6 +300,7 @@ public class PayUMoneyPNPPlugin extends CordovaPlugin {
         PayUmoneyConfig payUmoneyConfig = PayUmoneyConfig.getInstance();
         payUmoneyConfig.setPayUmoneyActivityTitle( screenTitle );
         callbackContext.success( "Set ScreenTitle to : "+screenTitle);
+<<<<<<< HEAD
     }
 
     private void setAndroidAppThemeName( final String themeName, final CallbackContext callbackContext ) {
@@ -255,12 +324,31 @@ public class PayUMoneyPNPPlugin extends CordovaPlugin {
         }
 
         return theme;
+=======
+>>>>>>> 912ab8a8ca28d05d3f81c6283ad6511070dc5598
     }
+
+    private void setTheme( final int theme, final CallbackContext callbackContext ) {
+        this.appTheme = theme ;
+        callbackContext.success("set theme to : " + theme);
+    }
+
+    /*private void setPayuMoneyConfig( final boolean exitConfirmationDisabled, final String doneBtnText, final String screenTitle ){
+        PayUmoneyConfig payUmoneyConfig = PayUmoneyConfig.getInstance();
+        payUmoneyConfig.disableExitConfirmation( exitConfirmationDisabled );
+        payUmoneyConfig.setDoneButtonText( doneBtnText );
+
+    }*/
 
     private void launchPayUMoneyFlow( final JSONObject jsonObject , final CallbackContext callbackContext){
 
         Log.d(TAG, "launchPayUMoneyFlow(): "+jsonObject );
 
+<<<<<<< HEAD
+=======
+        //  setPayuMoneyConfig( false, "Done", "MyTitle" );
+        
+>>>>>>> 912ab8a8ca28d05d3f81c6283ad6511070dc5598
         try {
             final double amount = jsonObject.getDouble( "amount");
             final String txnId = System.currentTimeMillis() + "";
@@ -277,12 +365,49 @@ public class PayUMoneyPNPPlugin extends CordovaPlugin {
             // 0 == production, 1 == sandbox
             final int environment = jsonObject.getInt( "environment" );
             final boolean isDebug = environment == 0 ? false : true ;
+<<<<<<< HEAD
+=======
+
+            // Use only test as of now... as we have hardcoded salt
+            // final boolean isDebug = true;
+>>>>>>> 912ab8a8ca28d05d3f81c6283ad6511070dc5598
 
             final String merchantKey = jsonObject.getString( "key");
             final String merchant_ID = jsonObject.getString( "merchantid");
             final String hash = jsonObject.getString( "hashValue");
 
+<<<<<<< HEAD
             final int style = getTheme( this.themeName );
+=======
+            final int style;
+            switch ( this.appTheme ){
+                default:
+                case 0:
+                    style = com.payumoney.sdkui.R.style.AppTheme_default;
+                    break;
+
+                case 1:
+                    style = com.payu.cordova.sample.R.style.AppTheme_pink;
+                    break;
+
+                case 2:
+                    style = com.payu.cordova.sample.R.style.AppTheme_Green;
+                    break;
+
+                case 3:
+                    style = com.payu.cordova.sample.R.style.AppTheme_blue;
+                    break;
+
+                case 4:
+                    style = com.payu.cordova.sample.R.style.AppTheme_purple;
+                    break;
+
+                case 5:
+                    style = com.payu.cordova.sample.R.style.AppTheme_Grey;
+                    break;
+
+            }
+>>>>>>> 912ab8a8ca28d05d3f81c6283ad6511070dc5598
 
             final String udf1 = jsonObject.getString( "udf1");
             final String udf2 = jsonObject.getString( "udf2");
@@ -296,8 +421,11 @@ public class PayUMoneyPNPPlugin extends CordovaPlugin {
             final String udf9 = jsonObject.getString( "udf9");
             final String udf10 = jsonObject.getString( "udf10");
 
+<<<<<<< HEAD
             Log.i(TAG, "launchPayUMoneyFlow(): launching with style id = " + style );
 
+=======
+>>>>>>> 912ab8a8ca28d05d3f81c6283ad6511070dc5598
             Log.i(TAG, "launchPayUMoneyFlow(): amount = " + amount+", txnId = "+txnId+", phone = "+ phone+", email = "+ email+", firstName = "
                     +firstName+", productName = "+ productName+", sUrl = "+ sUrl+", fUrl = "+fUrl+", isDebug = "+ isDebug+", merchantKey = "+ merchantKey+", merchant_ID = "+ merchant_ID+", "+hash);
 
