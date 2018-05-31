@@ -3,5 +3,5 @@ repositories{
 }
 
 dependencies {
-    compile 'com.payumoney.sdkui:plug-n-play:1.4.0-beta'
+    compile 'com.payumoney.sdkui:plug-n-play:1.4.0-cordova4'
 }

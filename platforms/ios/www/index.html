@@ -60,6 +60,8 @@
             }
         
         var payButtonClicked = function () {
+            cordova.plugins.PayUMoneyPNPPlugin.setiOSAppTheme(null, null, "111111", "FFFFFF", "FF0000", "0000FF");
+            
             var phoneNumber = document.getElementById("PhoneNumber").value;
             var email = document.getElementById("Email").value;
             var amount = document.getElementById("Amount").value;
@@ -70,7 +72,9 @@
                                                                  alert(JSON.stringify(response)) },
                                                                  function (response){
                                                                  console.log('Received Failure ');
-                                                                 alert(JSON.stringify(response))},txnParam);                                  }
+                                                                 alert(JSON.stringify(response))},txnParam);
+                
+        }
         
         
             </script>

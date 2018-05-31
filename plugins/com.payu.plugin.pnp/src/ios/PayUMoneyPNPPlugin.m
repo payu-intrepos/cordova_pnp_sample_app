@@ -6,18 +6,18 @@
 @interface PayUMoneyPNPPlugin : CDVPlugin {
     // Member variables go here.
 }
-    @end
+@end
 
 @implementation PayUMoneyPNPPlugin
-    
+
 #pragma mark - Helpers -
-    
+
 - (void)setObject:(id)object withProperties:(NSDictionary *)params {
     for (NSString *key in params) {
         [object setValue:[params valueForKey:key] forKey:key];
     }
 }
-    
+
 - (UIColor *) colorWithHexString: (NSString *) hexString {
     NSString *colorString = [[hexString stringByReplacingOccurrencesOfString: @"#" withString: @""] uppercaseString];
     CGFloat alpha, red, blue, green;
@@ -52,7 +52,7 @@
     }
     return [UIColor colorWithRed: red green: green blue: blue alpha: alpha];
 }
-    
+
 - (CGFloat) colorComponentFrom: (NSString *) string start: (NSUInteger) start length: (NSUInteger) length {
     NSString *substring = [string substringWithRange: NSMakeRange(start, length)];
     NSString *fullHex = length == 2 ? substring : [NSString stringWithFormat: @"%@%@", substring, substring];
@@ -60,10 +60,30 @@
     [[NSScanner scannerWithString: fullHex] scanHexInt: &hexComponent];
     return hexComponent / 255.0;
 }
-    
+
+- (void)topBarColor:(NSString *)colorHex {
+    UIColor *color = [self colorWithHexString:colorHex];
+    [PlugNPlay setTopBarColor:color];
+}
+
+- (void)topTitleTextColor:(NSString *)colorHex {
+    UIColor *color = [self colorWithHexString:colorHex];
+    [PlugNPlay setTopTitleTextColor:color];
+}
+
+- (void)buttonColor:(NSString *)colorHex {
+    UIColor *color = [self colorWithHexString:colorHex];
+    [PlugNPlay setButtonColor:color];
+}
+
+- (void)buttonTextColor:(NSString *)colorHex {
+    UIColor *color = [self colorWithHexString:colorHex];
+    [PlugNPlay setButtonTextColor:color];
+}
+
 #pragma mark - PNP -
-    
-    //This method should be called before any other method
+
+//This method should be called before any other method
 - (void)showPaymentView:(CDVInvokedUrlCommand *)command {
     
     NSDictionary *params = [command argumentAtIndex:0];
@@ -98,7 +118,7 @@
     
     
 }
-    
+
 - (void)orderDetails:(CDVInvokedUrlCommand *)command {
     NSArray *orderDetails = [command argumentAtIndex:0];
     NSError *error = [PlugNPlay setOrderDetails:orderDetails];
@@ -113,150 +133,91 @@
     
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
-    
+
 - (void)merchantDisplayName:(CDVInvokedUrlCommand *)command {
     NSString *merchantName = [command argumentAtIndex:0];
     [PlugNPlay setMerchantDisplayName:merchantName];
     CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
-    
+
 - (void)disableWallet:(CDVInvokedUrlCommand *)command {
     BOOL disable = [[command argumentAtIndex:0] boolValue];
     [PlugNPlay setDisableWallet:disable];
     CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
-    
+
 - (void)disableCards:(CDVInvokedUrlCommand *)command {
     BOOL disable = [[command argumentAtIndex:0] boolValue];
     [PlugNPlay setDisableCards:disable];
     CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
-    
+
 - (void)disableNetbanking:(CDVInvokedUrlCommand *)command {
     BOOL disable = [[command argumentAtIndex:0] boolValue];
     [PlugNPlay setDisableNetbanking:disable];
     CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
-    
+
 - (void)disableThirdPartyWallet:(CDVInvokedUrlCommand *)command {
     BOOL disable = [[command argumentAtIndex:0] boolValue];
     [PlugNPlay setDisableThirdPartyWallet:disable];
     CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
-    
+
 - (void)disableEMI:(CDVInvokedUrlCommand *)command {
     BOOL disable = [[command argumentAtIndex:0] boolValue];
     [PlugNPlay setDisableEMI:disable];
     CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
-    
+
 - (void)disableCompletionScreen:(CDVInvokedUrlCommand *)command {
     BOOL disable = [[command argumentAtIndex:0] boolValue];
     [PlugNPlay setDisableCompletionScreen:disable];
     CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
-    
+
 - (void)disableExitAlertOnCheckoutPage:(CDVInvokedUrlCommand *)command {
     BOOL disable = [[command argumentAtIndex:0] boolValue];
     [PlugNPlay setExitAlertOnCheckoutPageDisabled:disable];
     CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
-    
+
 - (void)disableExitAlertOnBankPage:(CDVInvokedUrlCommand *)command {
     BOOL disable = [[command argumentAtIndex:0] boolValue];
     [PlugNPlay setExitAlertOnBankPageDisabled:disable];
     CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
-    
-- (void)topBarColor:(CDVInvokedUrlCommand *)command {
-    NSString *colorHex = [command argumentAtIndex:0];
-    UIColor *color = [self colorWithHexString:colorHex];
+
+- (void)setiOSAppTheme:(CDVInvokedUrlCommand *)command {
+    NSString *topBarColor = [[command argumentAtIndex:0] integerValue];
+    NSString *topTitleTextColor = [[command argumentAtIndex:0] integerValue];
+    NSString *buttonColor = [[command argumentAtIndex:0] integerValue];
+    NSString *buttonTextColor = [[command argumentAtIndex:0] integerValue];
+
     CDVPluginResult *pluginResult;
     
-    if (color) {
-        [PlugNPlay setTopBarColor:color];
+    if (topBarColor && topTitleTextColor && buttonColor && buttonTextColor) {
+        [self topBarColor:topBarColor];
+        [self topTitleTextColor:topTitleTextColor];
+        [self buttonColor:buttonColor];
+        [self buttonTextColor:buttonTextColor];
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
     }
     else {
-        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Color value %@ is invalid.  It should be a hex value of the form #RBG, #ARGB, #RRGGBB, or #AARRGGBB"];
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"All the colors are not provided."];
     }
     
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
-    
-- (void)topTitleTextColor:(CDVInvokedUrlCommand *)command {
-    NSString *colorHex = [command argumentAtIndex:0];
-    UIColor *color = [self colorWithHexString:colorHex];
-    CDVPluginResult *pluginResult;
-    
-    if (color) {
-        [PlugNPlay setTopTitleTextColor:color];
-        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
-    }
-    else {
-        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Color value %@ is invalid.  It should be a hex value of the form #RBG, #ARGB, #RRGGBB, or #AARRGGBB"];
-    }
-    
-    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-}
-    
-- (void)buttonColor:(CDVInvokedUrlCommand *)command {
-    NSString *colorHex = [command argumentAtIndex:0];
-    UIColor *color = [self colorWithHexString:colorHex];
-    CDVPluginResult *pluginResult;
-    
-    if (color) {
-        [PlugNPlay setButtonColor:color];
-        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
-    }
-    else {
-        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Color value %@ is invalid.  It should be a hex value of the form #RBG, #ARGB, #RRGGBB, or #AARRGGBB"];
-    }
-    
-    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-}
-    
-- (void)buttonTextColor:(CDVInvokedUrlCommand *)command {
-    NSString *colorHex = [command argumentAtIndex:0];
-    UIColor *color = [self colorWithHexString:colorHex];
-    CDVPluginResult *pluginResult;
-    
-    if (color) {
-        [PlugNPlay setButtonTextColor:color];
-        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
-    }
-    else {
-        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Color value %@ is invalid.  It should be a hex value of the form #RBG, #ARGB, #RRGGBB, or #AARRGGBB"];
-    }
-    
-    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-}
-    
-- (void)indicatorTintColor:(CDVInvokedUrlCommand *)command {
-    NSString *colorHex = [command argumentAtIndex:0];
-    UIColor *color = [self colorWithHexString:colorHex];
-    CDVPluginResult *pluginResult;
-    
-    if (color) {
-        [PlugNPlay setIndicatorTintColor:color];
-        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
-    }
-    else {
-        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Color value %@ is invalid.  It should be a hex value of the form #RBG, #ARGB, #RRGGBB, or #AARRGGBB"];
-    }
-    
-    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-}
-    
-    
-    @end
+
+@end
 
