@@ -75,6 +75,7 @@ typedef NS_ENUM(NSInteger, PUMSDKErrorCode)
     PUMErrorEMIOptionUnavailable,
     PUMErrorSplitNotAllowedWithEMI,
     PUMErrorInternationalCardWithEMI,
+    PUMErrorDebitCardWithEMI,
     PUMInvalidReviewOrder
 };
 

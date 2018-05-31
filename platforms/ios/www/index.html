@@ -45,9 +45,9 @@
     <body onLoad="codeAddress();">
         <div id="deviceready"></div>
         <table text-align: left>
-            <tr><th>Phone Number</th> <th><input type="text" id="PhoneNumber" value="9876543210"></th></tr>
-            <tr><th>Email</th> <th><input type="text" id="Email" value="a@bc.cc"></th></tr>
-            <tr><th>Amount</th> <th><input type="text" id="Amount" value="11"></th></tr>
+            <tr><th>Phone Number</th> <th><input type="text" id="PhoneNumber" value="6907896622"></th></tr>
+            <tr><th>Email</th> <th><input type="text" id="Email" value="customerwebfrontwithpoints@yopmail.com"></th></tr>
+            <tr><th>Amount</th> <th><input type="text" id="Amount" value="100"></th></tr>
         </table>
         <button id='Pay'>Pay</button>
         <script type="text/javascript" src="cordova.js"></script>
@@ -66,7 +66,7 @@
             var email = document.getElementById("Email").value;
             var amount = document.getElementById("Amount").value;
 
-            var txnParam = new PUMTxnParam("mdyCKV","4914106","12",amount,phoneNumber,email,"UserFirstName","https://www.payumoney.com/mobileapp/payumoney/success.php","https://www.payumoney.com/mobileapp/payumoney/failure.php","iPhone7",PUMEnvironment.PUMEnvironmentProduction,"28b25ce0f3f2bd7f550a9343c41ccfefa15c6b8d77114853ae782b888e4fd90a13b074b4d4fed42e4d4c3f7d5915cb30e71dcfeb22e6c7313c26b5525bb07f2a","as","sad");
+            var txnParam = new PUMTxnParam("Aqryi8","397202","12",amount,phoneNumber,email,"UserFirstName","https://www.payumoney.com/mobileapp/payumoney/success.php","https://www.payumoney.com/mobileapp/payumoney/failure.php","iPhone7",4,"8950f7cb371cf658759c7fed1b638e2a864150614ab270edbd49914aa67c97dfe34c592ecf514e31ee1303824c0ccf828af9e4cf734cf915287d673de96cebc7","as","sad");
             cordova.plugins.PayUMoneyPNPPlugin.showPaymentView(function (response) {
                                                                  console.log('Received Success ');
                                                                  alert(JSON.stringify(response)) },

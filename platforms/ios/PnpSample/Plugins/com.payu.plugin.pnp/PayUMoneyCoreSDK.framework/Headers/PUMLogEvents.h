@@ -110,7 +110,7 @@ static NSString *const kPUMAInvalidCVV = @"Invalid CVV";
 
 +(void)EMICardSaved:(NSString *)cardScheme bankName:(NSString *)bankName amount:(NSString *)amount;
 
-+(void)EMIBankChanged:(NSString *)bankName page:(NSString *)page amount:(NSString *)amount;
++(void)EMIBankChangedWithSelectedBank:(NSString *)bankName prevBank:(NSString *)prevBank page:(NSString *)page amount:(NSString *)amount;
 
 +(void)invalidPaymentInfoWithPaymentMethod:(NSString *)paymentMethod withReason:(NSString *) reason;
 
