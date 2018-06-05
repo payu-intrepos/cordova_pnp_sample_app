@@ -104,16 +104,14 @@
                                                  message = [[paymentResponse objectForKey:@"result"] valueForKey:@"error_Message"];
                                                  if ([message isEqual:[NSNull null]] || [message length] == 0 || [message isEqualToString:@"No Error"]) {
                                                      message = [[paymentResponse objectForKey:@"result"] valueForKey:@"status"];
-                                                     pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:[[paymentResponse objectForKey:@"result"] valueForKey:@"status"]];
-                                                     
+                                                     pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:message];
                                                  }
                                              }
                                              else {
-                                                 pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:[paymentResponse valueForKey:@"status"]];
+                                                 pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:[NSString stringWithFormat:@"Failed with status: %@",[paymentResponse valueForKey:@"status"]]];
                                              }
-                                             
-                                             [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
                                          }
+                                         [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
                                      }];
     
     

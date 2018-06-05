@@ -18,67 +18,307 @@
  under the License.
  -->
 <html>
-    <head>
-        <!--
-         Customize this policy to fit your own app's needs. For more guidance, see:
-         https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-         Some notes:
-         * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-         * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-         * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-         * Enable inline JS: add 'unsafe-inline' to default-src
-         -->
-            <meta name="format-detection" content="telephone=no">
-                <meta name="msapplication-tap-highlight" content="no">
-                    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-                        <link rel="stylesheet" type="text/css" href="css/index.css">
-                            <title>Hello World</title>
-                            <style>
-                            
+<head>
+    <!--
+     Customize this policy to fit your own app's needs. For more guidance, see:
+     https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+     Some notes:
+     * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+     * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+     * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+     * Enable inline JS: add 'unsafe-inline' to default-src
+     -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Hello World</title>
+    <style>
+
                             td, th {
                                 text-align: left;
                                 padding: 8px;
                             }
-                            
+
                             </style>
-    </head>
-    <body onLoad="codeAddress();">
-        <div id="deviceready"></div>
-        <table text-align: left>
-            <tr><th>Phone Number</th> <th><input type="text" id="PhoneNumber" value="6907896622"></th></tr>
-            <tr><th>Email</th> <th><input type="text" id="Email" value="customerwebfrontwithpoints@yopmail.com"></th></tr>
-            <tr><th>Amount</th> <th><input type="text" id="Amount" value="100"></th></tr>
-        </table>
-        <button id='Pay'>Pay</button>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript" src="js/PayU-Helper.js"></script>
-        <script type="text/javascript">
-            
+</head>
+<body onLoad="codeAddress();">
+<div id="deviceready"></div>
+<table>
+    <tr><th>Phone Number</th> <th><input type="text" id="PhoneNumber" value="6907896622"></th></tr>
+    <tr><th>Email</th> <th><input type="text" id="Email" value="customerwebfrontwithpoints@yopmail.com"></th></tr>
+    <tr><th>Amount</th> <th><input type="text" id="Amount" value="100"></th></tr>
+</table>
+&nbsp;<input type="checkbox" id="disableWallet"/>Disable Wallet<br/>
+&nbsp;<input type="checkbox" id="disableCards"/>Disable Cards<br/>
+&nbsp;<input type="checkbox" id="disableNetBanking"/>Disable Netbanking<br/>
+&nbsp;<input type="checkbox" id="disableThirdPartyWallets"/>Disable Third Party Wallets<br/>
+&nbsp;<input type="checkbox" id="disableEmi"/>Disable Emi<br/>
+&nbsp;<input type="checkbox" id="disableExitAlertOnCheckoutPage"/>Disable Exit Alert On Checkout Page<br/>
+&nbsp;<input type="checkbox" id="disableCompletionScreen"/>Override Result Screen<br/>
+
+<br/>&nbsp;&nbsp;Select environment:<br/>
+&nbsp;<input type="radio" id="env_test"         name="env" value="Test" checked>Test&nbsp;&nbsp;
+&nbsp;<input type="radio" id="env_production"   name="env" value="Production">Production&nbsp;&nbsp;
+
+
+<br/><br/>&nbsp;&nbsp;Android Theme name: <input type="text" name="themeName" id="themeName" value="AppTheme.default"><br>
+&nbsp;&nbsp;Or select from below:<br/>
+&nbsp;<input type="radio" name="style" id="style_default" value="default" checked><span style="color:#F3A62E">Default</span>&nbsp;&nbsp;
+&nbsp;<input type="radio" name="style" id="style_pink"    value="pink"><span style="color:#C0175C">Pink</span>&nbsp;&nbsp;
+&nbsp;<input type="radio" name="style" id="style_grey"    value="grey"><span style="color:#424242">Grey</span>&nbsp;&nbsp;<br>
+&nbsp;<input type="radio" name="style" id="style_green"   value="green"><span style="color:#0A927A">Green</span>&nbsp;&nbsp;
+&nbsp;<input type="radio" name="style" id="style_purple"  value="purple"><span style="color:#7A1FA2">Purple</span>&nbsp;&nbsp;
+&nbsp;<input type="radio" name="style" id="style_blue"    value="blue"><span style="color:#4C63E2">Blue</span>&nbsp;&nbsp;
+
+<br/><br/>
+&nbsp;&nbsp;<button id='Pay'>Pay</button><br/><br/>
+
+
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/PayU-Helper.js"></script>
+<script type="text/javascript" src="js/sha.js"></script>
+<script type="text/javascript">
+
             function codeAddress(){
                 document.getElementById('Pay').addEventListener('click', payButtonClicked);
+                document.getElementById('disableWallet').addEventListener('click', disableWalletClicked );
+                document.getElementById('disableCards').addEventListener('click', disableCardsClicked );
+                document.getElementById('disableNetBanking').addEventListener('click', disableNetBankingClicked );
+                document.getElementById('disableThirdPartyWallets').addEventListener('click', disableThirdPartyWalletsClicked );
+                document.getElementById('disableEmi').addEventListener('click', disableEmiClicked );
+                document.getElementById('disableExitAlertOnCheckoutPage').addEventListener('click', disableExitAlertOnCheckoutPageClicked );
+                document.getElementById('disableCompletionScreen').addEventListener('click', disableCompletionScreenClicked );
+
+                document.getElementById('style_default').addEventListener('click', themeRadioButtonClicked );
+                document.getElementById('style_pink').addEventListener('click', themeRadioButtonClicked );
+                document.getElementById('style_grey').addEventListener('click', themeRadioButtonClicked );
+                document.getElementById('style_green').addEventListener('click', themeRadioButtonClicked );
+                document.getElementById('style_purple').addEventListener('click', themeRadioButtonClicked );
+                document.getElementById('style_blue').addEventListener('click', themeRadioButtonClicked );
             }
-        
+
+           var themeRadioButtonClicked = function () {
+
+                var theme_value;
+                if (document.getElementById('style_default').checked) {
+                    theme_value = "AppTheme.default" ;
+                }else if (document.getElementById('style_pink').checked) {
+                    theme_value = "AppTheme.pink" ;
+                }else if (document.getElementById('style_grey').checked) {
+                    theme_value = "AppTheme.Grey" ;
+                }else if (document.getElementById('style_green').checked) {
+                    theme_value = "AppTheme.Green" ;
+                }else if (document.getElementById('style_purple').checked) {
+                    theme_value = "AppTheme.purple" ;
+                }else if (document.getElementById('style_blue').checked) {
+                    theme_value = "AppTheme.blue" ;
+                }
+
+                document.getElementById('themeName').value = theme_value;
+        }
+
         var payButtonClicked = function () {
-            cordova.plugins.PayUMoneyPNPPlugin.setiOSAppTheme(null, null, "111111", "FFFFFF", "FF0000", "0000FF");
-            
+            var themeName = document.getElementById( "themeName" ).value;
+            cordova.plugins.PayUMoneyPNPPlugin.setAndroidAppThemeName( function (response) {
+                                                                    console.log('setAndroidAppThemeName received Success ');
+                                                                 },
+
+                                                                 function (response){
+                                                                    console.log('setAndroidAppThemeName received Failure '.concat(response) );
+                                                                 },
+
+                                                                 themeName );
+
             var phoneNumber = document.getElementById("PhoneNumber").value;
             var email = document.getElementById("Email").value;
             var amount = document.getElementById("Amount").value;
 
-            var txnParam = new PUMTxnParam("Aqryi8","397202","12",amount,phoneNumber,email,"UserFirstName","https://www.payumoney.com/mobileapp/payumoney/success.php","https://www.payumoney.com/mobileapp/payumoney/failure.php","iPhone7",4,"8950f7cb371cf658759c7fed1b638e2a864150614ab270edbd49914aa67c97dfe34c592ecf514e31ee1303824c0ccf828af9e4cf734cf915287d673de96cebc7","as","sad");
-            cordova.plugins.PayUMoneyPNPPlugin.showPaymentView(function (response) {
-                                                                 console.log('Received Success ');
-                                                                 alert(JSON.stringify(response)) },
-                                                                 function (response){
-                                                                 console.log('Received Failure ');
-                                                                 alert(JSON.stringify(response))},txnParam);
-                
-        }
-        
-        
-            </script>
-    </body>
-</html>
+            var environment_value;
+            if (document.getElementById('env_test').checked) {
+                environment_value = 4;
+            }else{
+                environment_value = PUMEnvironment.PUMEnvironmentProduction;
+            }
 
+             var key = getEnv() == PUMEnvironment.PUMEnvironmentProduction ? "O15vkB" : "Aqryi8";
+             var merchantID = getEnv() == PUMEnvironment.PUMEnvironmentProduction ? "4819816" : "397202";
+
+
+            var txnParam = new PUMTxnParam(key,merchantID,"12",amount,phoneNumber,email,"UserFirstName","https://www.payumoney.com/mobileapp/payumoney/success.php","https://www.payumoney.com/mobileapp/payumoney/failure.php","iPhone7",4,"","as","sad");
+            txnParam.hashValue = getHash(txnParam);
+            cordova.plugins.PayUMoneyPNPPlugin.showPaymentView( function (response) {
+                                                                    console.log('showPaymentView received Success ');
+                                                                    alert(JSON.stringify(response));
+                                                                 },
+
+                                                                 function (response){
+                                                                    console.log('showPaymentView received Failure ');
+                                                                    alert(JSON.stringify(response));
+                                                                 },
+
+                                                                 txnParam );
+        }
+
+
+
+        var disableWalletClicked = function () {
+                var checkBoxWallet = document.getElementById( "disableWallet" );
+                var toDisable = checkBoxWallet.checked;
+
+                cordova.plugins.PayUMoneyPNPPlugin.disableWallet( function (response) {
+                                                                        console.log('disableWallet Received Success ');
+                                                                        alert(JSON.stringify(response));
+                                                                     },
+
+                                                                     function (response){
+                                                                        console.log('disableWallet Received Failure ');
+                                                                        alert(JSON.stringify(response));
+                                                                        checkBoxWallet.checked = !toDisable;
+                                                                     },
+
+                                                                     toDisable);
+        }
+
+
+        var disableCardsClicked = function () {
+                var checkBoxSavedCards = document.getElementById( "disableCards" );
+                var toDisable = checkBoxSavedCards.checked;
+
+                cordova.plugins.PayUMoneyPNPPlugin.disableCards(   function (response) {
+                                                                             console.log('disableCards Received Success ');
+                                                                             alert(JSON.stringify(response));
+                                                                        },
+
+
+                                                                        function (response){
+                                                                            console.log('disableCards Received Failure ');
+                                                                            alert(JSON.stringify(response));
+                                                                            checkBoxSavedCards.checked = !toDisable;
+                                                                        },
+
+                                                                        toDisable);
+        }
+
+
+
+        var disableNetBankingClicked = function () {
+                var checkBoxNb = document.getElementById( "disableNetBanking" );
+                var toDisable = checkBoxNb.checked;
+
+                cordova.plugins.PayUMoneyPNPPlugin.disableNetbanking(   function (response) {
+                                                                             console.log( 'disableNetBanking Received Success' );
+                                                                             alert(JSON.stringify(response));
+                                                                         },
+
+                                                                        function (response){
+                                                                            console.log( 'disableNetBanking Received Failure' );
+                                                                            alert(JSON.stringify(response));
+                                                                            checkBoxNb.checked = !toDisable;
+                                                                        },
+
+                                                                        toDisable);
+        }
+
+
+
+
+        var disableThirdPartyWalletsClicked = function () {
+                var checkBoxDisableThirdPartyWallets = document.getElementById( "disableThirdPartyWallets" );
+                var toDisable = checkBoxDisableThirdPartyWallets.checked;
+
+                cordova.plugins.PayUMoneyPNPPlugin.disableThirdPartyWallet(    function (response) {
+                                                                                     console.log( 'disableThirdPartyWallets Received Success' );
+                                                                                     alert(JSON.stringify(response));
+                                                                                 },
+
+                                                                                 function (response){
+                                                                                     console.log('disableThirdPartyWallets Received Failure ');
+                                                                                     alert(JSON.stringify(response))
+                                                                                     checkBoxDisableThirdPartyWallets.checked = !toDisable;
+                                                                                 },
+
+                                                                                 toDisable);
+        }
+
+
+
+        var disableEmiClicked = function () {
+                var checkBoxEmi = document.getElementById( "disableEmi" );
+                var toDisable = checkBoxEmi.checked;
+
+                cordova.plugins.PayUMoneyPNPPlugin.disableEMI(      function (response) {
+                                                                         console.log( 'disableEmi Received Success' );
+                                                                         alert( JSON.stringify(response) );
+                                                                    },
+
+                                                                    function (response){
+                                                                        console.log('disableEmi Received Failure ');
+                                                                        alert( JSON.stringify(response) );
+                                                                        checkBoxEmi.checked = !toDisable;
+                                                                    },
+
+                                                                    toDisable);
+        }
+
+
+        var disableExitAlertOnCheckoutPageClicked = function () {
+                var checkBoxDisableExitScreenCheckout = document.getElementById( "disableExitAlertOnCheckoutPage" );
+                var toDisable = checkBoxDisableExitScreenCheckout.checked;
+
+                cordova.plugins.PayUMoneyPNPPlugin.disableExitAlertOnCheckoutPage(      function (response) {
+                                                                                             console.log( 'disableExitAlertOnCheckoutPage Received Success' );
+                                                                                             alert( JSON.stringify(response) );
+                                                                                        },
+
+                                                                                        function (response){
+                                                                                            console.log('disableExitAlertOnCheckoutPage Received Failure ');
+                                                                                            alert( JSON.stringify(response) );
+                                                                                            checkBoxDisableExitScreenCheckout.checked = !toDisable;
+                                                                                        },
+
+                                                                                        toDisable);
+        }
+
+
+        var disableCompletionScreenClicked = function () {
+                var checkBoxDisableCompletionScreenClicked= document.getElementById( "disableCompletionScreen" );
+                var toDisable = checkBoxDisableCompletionScreenClicked.checked;
+
+                cordova.plugins.PayUMoneyPNPPlugin.disableCompletionScreen(      function (response) {
+                                                                                             console.log( 'disableCompletionScreen Received Success' );
+                                                                                             alert( JSON.stringify(response) );
+                                                                                        },
+
+                                                                                        function (response){
+                                                                                            console.log('disableCompletionScreen Received Failure ');
+                                                                                            alert( JSON.stringify(response) );
+                                                                                            checkBoxDisableCompletionScreenClicked.checked = !toDisable;
+                                                                                        },
+
+                                                                                        toDisable);
+        }
+
+        var getEnv = function () {
+            if (document.getElementById('env_test').checked) {
+                return 4;
+            }else{
+                return PUMEnvironment.PUMEnvironmentProduction;
+            }
+        }
+
+        var getHash = function (txnParam) {
+            var salt = getEnv() == PUMEnvironment.PUMEnvironmentProduction ? "LU1EhObh" : "ZRC9Xgru";
+            var hashSequence = txnParam.key + '|' + txnParam.txnID + '|' + txnParam.amount + '|' + txnParam.productInfo + '|' + txnParam.firstname + '|' + txnParam.email + '|' + txnParam.udf1 + '|' + txnParam.udf2 + '|' + txnParam.udf3 + '|' + txnParam.udf4 + '|' + txnParam.udf5 + '|' + txnParam.udf6 + '|' + txnParam.udf7 + '|' + txnParam.udf8 + '|' + txnParam.udf9 + '|' + txnParam.udf10 + '|' + salt;
+            return SHA512(hashSequence);
+        }
+
+
+
+
+            </script>
+</body>
+</html>
 
