@@ -135,6 +135,23 @@
                                                                  merchantName );
 
             var themeName = document.getElementById( "themeName" ).value;
+
+            var colors = getiOSColor();
+
+            if (colors.length == 4) {
+                cordova.plugins.PayUMoneyPNPPlugin.setiOSAppTheme( function (response) {
+                                                                    console.log('setiOSAppThemeName received Success ');
+                                                                 },
+
+                                                                 function (response){
+                                                                    console.log('setiOSAppThemeName received Failure '.concat(response) );
+                                                                 },
+
+                                                                  colors[0],colors[1],colors[2],colors[3]);
+            }
+
+            
+
             cordova.plugins.PayUMoneyPNPPlugin.setAndroidAppThemeName( function (response) {
                                                                     console.log('setAndroidAppThemeName received Success ');
                                                                  },
@@ -306,6 +323,34 @@
                                                                                         },
 
                                                                                         toDisable);
+        }
+        /*
+
+"default" checked><span style="color:#F3A62E">Default</span>&nbsp;&nbsp;
+"pink"><span style="color:#C0175C">Pink</span>&nbsp;&nbsp;
+"grey"><span style="color:#424242">Grey</span>&nbsp;&nbsp;<br>
+"green"><span style="color:#0A927A">Green</span>&nbsp;&nbsp;
+"purple"><span style="color:#7A1FA2">Purple</span>&nbsp;&nbsp;
+"blue"><span style="color:#4C63E2">Blue</span>&nbsp;&nbsp;
+        */
+
+        var getiOSColor = function () {
+            var themeName = document.getElementById( "themeName" ).value;
+            switch (themeName) {
+                case 'AppTheme.pink':
+                return ['C0175C','ffffff','C0175C','ffffff'];
+                case 'AppTheme.Grey':
+                return ['424242','000000','424242','000000'];
+                case 'AppTheme.Green':
+                return ['0A927A','ffffff','0A927A','ffffff'];
+                case 'AppTheme.purple':
+                return ['7A1FA2','ffffff','7A1FA2','ffffff'];
+                case 'AppTheme.blue':
+                return ['4C63E2','ffffff','4C63E2','ffffff'];
+                break
+                return [];
+            }
+
         }
 
         var getEnv = function () {
