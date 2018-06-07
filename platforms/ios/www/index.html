@@ -48,6 +48,7 @@
     <tr><th>Phone Number</th> <th><input type="text" id="PhoneNumber" value="6907896622"></th></tr>
     <tr><th>Email</th> <th><input type="text" id="Email" value="customerwebfrontwithpoints@yopmail.com"></th></tr>
     <tr><th>Amount</th> <th><input type="text" id="Amount" value="100"></th></tr>
+    <tr><th>Merchant Name</th> <th><input type="text" id="MerchantName" value="Test Name"></th></tr>
 </table>
 &nbsp;<input type="checkbox" id="disableWallet"/>Disable Wallet<br/>
 &nbsp;<input type="checkbox" id="disableCards"/>Disable Cards<br/>
@@ -121,6 +122,18 @@
         }
 
         var payButtonClicked = function () {
+            
+            var merchantName = document.getElementById( "MerchantName" ).value;
+            cordova.plugins.PayUMoneyPNPPlugin.merchantDisplayName( function (response) {
+                                                                    console.log('setAndroidAppThemeName received Success ');
+                                                                 },
+
+                                                                 function (response){
+                                                                    console.log('setAndroidAppThemeName received Failure '.concat(response) );
+                                                                 },
+
+                                                                 merchantName );
+
             var themeName = document.getElementById( "themeName" ).value;
             cordova.plugins.PayUMoneyPNPPlugin.setAndroidAppThemeName( function (response) {
                                                                     console.log('setAndroidAppThemeName received Success ');
@@ -136,16 +149,10 @@
             var email = document.getElementById("Email").value;
             var amount = document.getElementById("Amount").value;
 
-            var environment_value;
-            if (document.getElementById('env_test').checked) {
-                environment_value = 4;
-            }else{
-                environment_value = PUMEnvironment.PUMEnvironmentProduction;
-            }
+            var environment_value = getEnv();
 
-             var key = getEnv() == PUMEnvironment.PUMEnvironmentProduction ? "O15vkB" : "Aqryi8";
-             var merchantID = getEnv() == PUMEnvironment.PUMEnvironmentProduction ? "4819816" : "397202";
-
+            var key = getEnv() == PUMEnvironment.PUMEnvironmentProduction ? "O15vkB" : "Aqryi8";
+            var merchantID = getEnv() == PUMEnvironment.PUMEnvironmentProduction ? "4819816" : "397202";
 
             var txnParam = new PUMTxnParam(key,merchantID,"12",amount,phoneNumber,email,"UserFirstName","https://www.payumoney.com/mobileapp/payumoney/success.php","https://www.payumoney.com/mobileapp/payumoney/failure.php","iPhone7",4,"","as","sad");
             txnParam.hashValue = getHash(txnParam);
