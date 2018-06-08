@@ -123,6 +123,18 @@
         }
 
         var payButtonClicked = function () {
+
+            var orderDetails = [{"From":"Delhi"},{"To":"Pune"}];
+            cordova.plugins.PayUMoneyPNPPlugin.orderDetails( function (response) {
+                                                                    console.log('Order details received Success ');
+                                                                 },
+
+                                                                 function (response){
+                                                                    console.log('Order details received Failure '.concat(response) );
+                                                                 },
+
+                                                                 orderDetails );
+                                                                 
             
             var merchantName = document.getElementById( "MerchantName" ).value;
             cordova.plugins.PayUMoneyPNPPlugin.merchantDisplayName( function (response) {
