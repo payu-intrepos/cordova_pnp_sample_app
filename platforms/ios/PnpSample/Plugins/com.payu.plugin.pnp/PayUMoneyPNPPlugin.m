@@ -139,41 +139,6 @@
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
-- (void)disableWallet:(CDVInvokedUrlCommand *)command {
-    BOOL disable = [[command argumentAtIndex:0] boolValue];
-    [PlugNPlay setDisableWallet:disable];
-    CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
-    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-}
-
-- (void)disableCards:(CDVInvokedUrlCommand *)command {
-    BOOL disable = [[command argumentAtIndex:0] boolValue];
-    [PlugNPlay setDisableCards:disable];
-    CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
-    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-}
-
-- (void)disableNetbanking:(CDVInvokedUrlCommand *)command {
-    BOOL disable = [[command argumentAtIndex:0] boolValue];
-    [PlugNPlay setDisableNetbanking:disable];
-    CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
-    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-}
-
-- (void)disableThirdPartyWallet:(CDVInvokedUrlCommand *)command {
-    BOOL disable = [[command argumentAtIndex:0] boolValue];
-    [PlugNPlay setDisableThirdPartyWallet:disable];
-    CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
-    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-}
-
-- (void)disableEMI:(CDVInvokedUrlCommand *)command {
-    BOOL disable = [[command argumentAtIndex:0] boolValue];
-    [PlugNPlay setDisableEMI:disable];
-    CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
-    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-}
-
 - (void)disableCompletionScreen:(CDVInvokedUrlCommand *)command {
     BOOL disable = [[command argumentAtIndex:0] boolValue];
     [PlugNPlay setDisableCompletionScreen:disable];
