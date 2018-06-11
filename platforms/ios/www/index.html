@@ -181,10 +181,10 @@
 
             var environment_value = getEnv();
 
-            var key = getEnv() == PUMEnvironment.PUMEnvironmentProduction ? "O15vkB" : "Aqryi8";
-            var merchantID = getEnv() == PUMEnvironment.PUMEnvironmentProduction ? "4819816" : "397202";
+            var key = environment_value == PUMEnvironment.PUMEnvironmentProduction ? "O15vkB" : "Aqryi8";
+            var merchantID = environment_value == PUMEnvironment.PUMEnvironmentProduction ? "4819816" : "397202";
 
-            var txnParam = new PUMTxnParam(key,merchantID,"12",amount,phoneNumber,email,"UserFirstName","https://www.payumoney.com/mobileapp/payumoney/success.php","https://www.payumoney.com/mobileapp/payumoney/failure.php","iPhone7",4,"","as","sad");
+            var txnParam = new PUMTxnParam(key,merchantID,"12",amount,phoneNumber,email,"UserFirstName","https://www.payumoney.com/mobileapp/payumoney/success.php","https://www.payumoney.com/mobileapp/payumoney/failure.php","iPhone7",environment_value,"","as","sad");
             txnParam.hashValue = getHash(txnParam);
             cordova.plugins.PayUMoneyPNPPlugin.showPaymentView( function (response) {
                                                                     console.log('showPaymentView received Success ');
