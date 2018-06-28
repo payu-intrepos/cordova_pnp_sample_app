@@ -151,7 +151,11 @@
 
             var phoneNumber = document.getElementById("PhoneNumber").value;
             var email = document.getElementById("Email").value;
-            var amount = document.getElementById("Amount").value;
+
+            var amountEntered = document.getElementById("Amount").value;
+            var amountEnteredFloat = parseFloat(amountEntered);
+            var amount = amountEnteredFloat.toFixed(Math.max(1, (amountEnteredFloat.toString().split('.')[1] || []).length));
+            console.log('payButtonClicked(): amount '.concat(amount) );
 
             var environment_value = getEnv();
 
@@ -225,8 +229,14 @@
 
         var getHash = function (txnParam) {
             var salt = getEnv() == PUMEnvironment.PUMEnvironmentProduction ? "LU1EhObh" : "x4rmTrFm";
+            console.log('getHash(): salt = '.concat(salt) );
+
             var hashSequence = txnParam.key + '|' + txnParam.txnID + '|' + txnParam.amount + '|' + txnParam.productInfo + '|' + txnParam.firstname + '|' + txnParam.email + '|' + txnParam.udf1 + '|' + txnParam.udf2 + '|' + txnParam.udf3 + '|' + txnParam.udf4 + '|' + txnParam.udf5 + '|' + txnParam.udf6 + '|' + txnParam.udf7 + '|' + txnParam.udf8 + '|' + txnParam.udf9 + '|' + txnParam.udf10 + '|' + salt;
-            return SHA512(hashSequence);
+            console.log('getHash(): hashSequence = '.concat(hashSequence) );
+
+            var hash = SHA512(hashSequence);
+            console.log('getHash(): hash = '.concat(hash) );
+            return hash;
         }
 
 
