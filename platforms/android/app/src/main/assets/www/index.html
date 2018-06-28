@@ -32,7 +32,7 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <title>Hello World</title>
+    <title>PayUmoney</title>
     <style>
 
                             td, th {
@@ -48,6 +48,7 @@
     <tr><th>Phone Number</th> <th><input type="text" id="PhoneNumber" value="6907896622"></th></tr>
     <tr><th>Email</th> <th><input type="text" id="Email" value="customerwebfrontwithpoints@yopmail.com"></th></tr>
     <tr><th>Amount</th> <th><input type="text" id="Amount" value="11"></th></tr>
+    <tr><th>Merchant Name</th> <th><input type="text" id="MerchantName" value="Test Name"></th></tr>
 </table>
 
 &nbsp;<input type="checkbox" id="disableExitAlertOnCheckoutPage"/>Disable Exit Alert On Checkout Page<br/>
@@ -75,6 +76,7 @@
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" src="js/PayU-Helper.js"></script>
+<script type="text/javascript" src="js/sha.js"></script>
 <script type="text/javascript">
 
             function codeAddress(){
@@ -112,13 +114,37 @@
         }
 
         var payButtonClicked = function () {
-            var themeName = document.getElementById( "themeName" ).value;
-            cordova.plugins.PayUMoneyPNPPlugin.setAndroidAppThemeName( function (response) {
-                                                                    console.log('setAndroidAppThemeName received Success ');
+            var orderDetails = [{"From":"Delhi"},{"To":"Pune"},{"Date":"18/02/2018"},{"Time":"08:45"},{"Total":"4123.45"}];
+            cordova.plugins.PayUMoneyPNPPlugin.orderDetails( function (response) {
+                                                                    console.log('payButtonClicked(): Order details received Success ');
                                                                  },
 
                                                                  function (response){
-                                                                    console.log('setAndroidAppThemeName received Failure '.concat(response) );
+                                                                    console.log('payButtonClicked(): Order details received Failure '.concat(response) );
+                                                                 },
+
+                                                                 orderDetails );
+
+
+            var merchantName = document.getElementById( "MerchantName" ).value;
+            cordova.plugins.PayUMoneyPNPPlugin.merchantDisplayName( function (response) {
+                                                                    console.log('payButtonClicked(): merchantDisplayName received Success ');
+                                                                 },
+
+                                                                 function (response){
+                                                                    console.log('payButtonClicked(): merchantDisplayName received Failure '.concat(response) );
+                                                                 },
+
+                                                                 merchantName );
+
+
+            var themeName = document.getElementById( "themeName" ).value;
+            cordova.plugins.PayUMoneyPNPPlugin.setAndroidAppThemeName( function (response) {
+                                                                    console.log('payButtonClicked(): setAndroidAppThemeName received Success ');
+                                                                 },
+
+                                                                 function (response){
+                                                                    console.log('payButtonClicked(): setAndroidAppThemeName received Failure '.concat(response) );
                                                                  },
 
                                                                  themeName );
@@ -127,21 +153,23 @@
             var email = document.getElementById("Email").value;
             var amount = document.getElementById("Amount").value;
 
-            var environment_value;
-            if (document.getElementById('env_test').checked) {
-                environment_value = PUMEnvironment.PUMEnvironmentTest;
-            }else{
-                environment_value = PUMEnvironment.PUMEnvironmentProduction;
-            }
+            var environment_value = getEnv();
 
-            var txnParam = new PUMTxnParam("tPJM2e","4824899","12",amount,phoneNumber,email,"UserFirstName","https://www.payumoney.com/mobileapp/payumoney/success.php","https://www.payumoney.com/mobileapp/payumoney/failure.php","iPhone7",environment_value,"28b25ce0f3f2bd7f550a9343c41ccfefa15c6b8d77114853ae782b888e4fd90a13b074b4d4fed42e4d4c3f7d5915cb30e71dcfeb22e6c7313c26b5525bb07f2a","","");
+            var key = environment_value == PUMEnvironment.PUMEnvironmentProduction ? "O15vkB" : "tPJM2e";
+            var merchantID = environment_value == PUMEnvironment.PUMEnvironmentProduction ? "4819816" : "4824899";
+
+            console.log('payButtonClicked(): key = '.concat(key) );
+            console.log('payButtonClicked(): merchantID = '.concat(merchantID) );
+
+            var txnParam = new PUMTxnParam( key, merchantID,"12",amount,phoneNumber,email,"UserFirstName","https://www.payumoney.com/mobileapp/payumoney/success.php","https://www.payumoney.com/mobileapp/payumoney/failure.php","iPhone7",environment_value,"","","");
+            txnParam.hashValue = getHash(txnParam);
             cordova.plugins.PayUMoneyPNPPlugin.showPaymentView( function (response) {
-                                                                    console.log('showPaymentView received Success ');
+                                                                    console.log('payButtonClicked(): showPaymentView received Success ');
                                                                     alert(JSON.stringify(response));
                                                                  },
 
                                                                  function (response){
-                                                                    console.log('showPaymentView received Failure ');
+                                                                    console.log('payButtonClicked(): showPaymentView received Failure ');
                                                                     alert(JSON.stringify(response));
                                                                  },
 
@@ -186,6 +214,20 @@
                                                                                         toDisable);
         }
 
+
+        var getEnv = function () {
+            if (document.getElementById('env_test').checked) {
+                return PUMEnvironment.PUMEnvironmentTest;
+            }else{
+                return PUMEnvironment.PUMEnvironmentProduction;
+            }
+        }
+
+        var getHash = function (txnParam) {
+            var salt = getEnv() == PUMEnvironment.PUMEnvironmentProduction ? "LU1EhObh" : "x4rmTrFm";
+            var hashSequence = txnParam.key + '|' + txnParam.txnID + '|' + txnParam.amount + '|' + txnParam.productInfo + '|' + txnParam.firstname + '|' + txnParam.email + '|' + txnParam.udf1 + '|' + txnParam.udf2 + '|' + txnParam.udf3 + '|' + txnParam.udf4 + '|' + txnParam.udf5 + '|' + txnParam.udf6 + '|' + txnParam.udf7 + '|' + txnParam.udf8 + '|' + txnParam.udf9 + '|' + txnParam.udf10 + '|' + salt;
+            return SHA512(hashSequence);
+        }
 
 
 
