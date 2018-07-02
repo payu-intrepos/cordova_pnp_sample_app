@@ -152,9 +152,7 @@
             var phoneNumber = document.getElementById("PhoneNumber").value;
             var email = document.getElementById("Email").value;
 
-            var amountEntered = document.getElementById("Amount").value;
-            var amountEnteredFloat = parseFloat(amountEntered);
-            var amount = amountEnteredFloat.toFixed(Math.max(1, (amountEnteredFloat.toString().split('.')[1] || []).length));
+            var amount = document.getElementById("Amount").value;
             console.log('payButtonClicked(): amount '.concat(amount) );
 
             var environment_value = getEnv();
@@ -180,6 +178,11 @@
                                                                  txnParam );
         }
 
+        var getAmountInString = function () {
+            var amountEntered       = document.getElementById("Amount").value;
+            var amountEnteredFloat  = parseFloat(amountEntered);
+            var amount              = amountEnteredFloat.toFixed(Math.max(1, (amountEnteredFloat.toString().split('.')[1] || []).length));
+        }
 
         var disableExitAlertOnCheckoutPageClicked = function () {
                 var checkBoxDisableExitScreenCheckout = document.getElementById( "disableExitAlertOnCheckoutPage" );
