@@ -7,9 +7,9 @@
  to you under the Apache License, Version 2.0 (the
  "License"); you may not use this file except in compliance
  with the License.  You may obtain a copy of the License at
- 
+
  http://www.apache.org/licenses/LICENSE-2.0
- 
+
  Unless required by applicable law or agreed to in writing,
  software distributed under the License is distributed on an
  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -178,7 +178,10 @@
             console.log('payButtonClicked(): key = '.concat(key) );
             console.log('payButtonClicked(): merchantID = '.concat(merchantID) );
 
-            var txnParam = new PUMTxnParam( key, merchantID,"12",amount,phoneNumber,email,"UserFirstName","https://www.payumoney.com/mobileapp/payumoney/success.php","https://www.payumoney.com/mobileapp/payumoney/failure.php","iPhone7",environment_value,"","","");
+            var txnId = getRandomTxnId( );
+            console.log('payButtonClicked(): txnId = '.concat(txnId) );
+
+            var txnParam = new PUMTxnParam( key, merchantID, txnId ,amount,phoneNumber,email,"UserFirstName","https://www.payumoney.com/mobileapp/payumoney/success.php","https://www.payumoney.com/mobileapp/payumoney/failure.php","iPhone7",environment_value,"","","");
             txnParam.hashValue = getHash(txnParam);
             cordova.plugins.PayUMoneyPNPPlugin.showPaymentView( function (response) {
                                                                     console.log('payButtonClicked(): showPaymentView received Success ');
@@ -275,7 +278,11 @@
             return hash;
         }
 
-
+        function getRandomTxnId() {
+            var randomValue = Math.floor((Math.random() * 10000) + 1);
+            console.log('getRandomTxnId(): txn id = '.concat(randomValue) );
+            return randomValue;
+        }
 
             </script>
 </body>
