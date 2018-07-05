@@ -44,6 +44,7 @@
 </head>
 <body onLoad="codeAddress();">
 <div id="deviceready"></div>
+<div style="margin-top: 40px"></div>
 <table>
     <tr><th>Phone Number</th> <th><input type="text" id="PhoneNumber" value="6907896622"></th></tr>
     <tr><th>Email</th> <th><input type="text" id="Email" value="customerwebfrontwithpoints@yopmail.com"></th></tr>
@@ -139,6 +140,20 @@
 
 
             var themeName = document.getElementById( "themeName" ).value;
+
+            var colors = getiOSColor();
+            if (colors.length == 4) {
+                cordova.plugins.PayUMoneyPNPPlugin.setiOSAppTheme( function (response) {
+                                                                    console.log('payButtonClicked(): setiOSAppThemeName received Success ');
+                                                                 },
+
+                                                                 function (response){
+                                                                    console.log('payButtonClicked(): setiOSAppThemeName received Failure '.concat(response) );
+                                                                 },
+
+                                                                  colors[0],colors[1],colors[2],colors[3]);
+            }
+
             cordova.plugins.PayUMoneyPNPPlugin.setAndroidAppThemeName( function (response) {
                                                                     console.log('payButtonClicked(): setAndroidAppThemeName received Success ');
                                                                  },
@@ -221,6 +236,24 @@
                                                                                         toDisable);
         }
 
+        var getiOSColor = function () {
+            var themeName = document.getElementById( "themeName" ).value;
+            switch (themeName) {
+                case 'AppTheme.pink':
+                return ['C0175C','ffffff','C0175C','ffffff'];
+                case 'AppTheme.Grey':
+                return ['424242','000000','424242','000000'];
+                case 'AppTheme.Green':
+                return ['0A927A','ffffff','0A927A','ffffff'];
+                case 'AppTheme.purple':
+                return ['7A1FA2','ffffff','7A1FA2','ffffff'];
+                case 'AppTheme.blue':
+                return ['4C63E2','ffffff','4C63E2','ffffff'];
+                default:
+                return [];
+            }
+
+        }
 
         var getEnv = function () {
             if (document.getElementById('env_test').checked) {
