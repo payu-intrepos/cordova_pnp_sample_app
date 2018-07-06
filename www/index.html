@@ -142,6 +142,8 @@
             var themeName = document.getElementById( "themeName" ).value;
 
             var colors = getiOSColor();
+            console.log('payButtonClicked(): getiOSColor = '.concat(colors) );
+            console.log('payButtonClicked(): colors.length = '.concat(colors.length) );
             if (colors.length == 4) {
                 cordova.plugins.PayUMoneyPNPPlugin.setiOSAppTheme( function (response) {
                                                                     console.log('payButtonClicked(): setiOSAppThemeName received Success ');
@@ -242,6 +244,9 @@
         var getiOSColor = function () {
             var themeName = document.getElementById( "themeName" ).value;
             switch (themeName) {
+                default:
+                case 'AppTheme.default':
+                return ['F3A62E','ffffff','F3A62E','ffffff'];
                 case 'AppTheme.pink':
                 return ['C0175C','ffffff','C0175C','ffffff'];
                 case 'AppTheme.Grey':
@@ -252,8 +257,6 @@
                 return ['7A1FA2','ffffff','7A1FA2','ffffff'];
                 case 'AppTheme.blue':
                 return ['4C63E2','ffffff','4C63E2','ffffff'];
-                default:
-                return [];
             }
 
         }
