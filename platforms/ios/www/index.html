@@ -7,9 +7,9 @@
  to you under the Apache License, Version 2.0 (the
  "License"); you may not use this file except in compliance
  with the License.  You may obtain a copy of the License at
- 
+
  http://www.apache.org/licenses/LICENSE-2.0
- 
+
  Unless required by applicable law or agreed to in writing,
  software distributed under the License is distributed on an
  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -32,7 +32,7 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <title>Hello World</title>
+    <title>PayUmoney</title>
     <style>
 
                             td, th {
@@ -48,9 +48,10 @@
 <table>
     <tr><th>Phone Number</th> <th><input type="text" id="PhoneNumber" value="6907896622"></th></tr>
     <tr><th>Email</th> <th><input type="text" id="Email" value="customerwebfrontwithpoints@yopmail.com"></th></tr>
-    <tr><th>Amount</th> <th><input type="text" id="Amount" value="100"></th></tr>
+    <tr><th>Amount</th> <th><input type="text" id="Amount" value="11"></th></tr>
     <tr><th>Merchant Name</th> <th><input type="text" id="MerchantName" value="Test Name"></th></tr>
 </table>
+
 &nbsp;<input type="checkbox" id="disableExitAlertOnCheckoutPage"/>Disable Exit Alert On Checkout Page<br/>
 &nbsp;<input type="checkbox" id="disableCompletionScreen"/>Override Result Screen<br/>
 
@@ -81,6 +82,7 @@
 
             function codeAddress(){
                 document.getElementById('Pay').addEventListener('click', payButtonClicked);
+
                 document.getElementById('disableExitAlertOnCheckoutPage').addEventListener('click', disableExitAlertOnCheckoutPageClicked );
                 document.getElementById('disableCompletionScreen').addEventListener('click', disableCompletionScreenClicked );
 
@@ -113,82 +115,94 @@
         }
 
         var payButtonClicked = function () {
-
-            var orderDetails = [{"From":"Delhi"},{"To":"Pune"},{"Date":"18/02/2018"},{"Time":"08:45"},{"Total":"4123.45"}];
+            var orderDetails = [{"From":"Delhi"},{"To":"Pune"},{"Date":"18-02-2018"},{"Time":"08:45"},{"Total":"4123.45"}];
             cordova.plugins.PayUMoneyPNPPlugin.orderDetails( function (response) {
-                                                                    console.log('Order details received Success ');
+                                                                    console.log('payButtonClicked(): Order details received Success ');
                                                                  },
 
                                                                  function (response){
-                                                                    console.log('Order details received Failure '.concat(response) );
+                                                                    console.log('payButtonClicked(): Order details received Failure '.concat(response) );
                                                                  },
 
                                                                  orderDetails );
-                                                                 
-            
+
+
             var merchantName = document.getElementById( "MerchantName" ).value;
             cordova.plugins.PayUMoneyPNPPlugin.merchantDisplayName( function (response) {
-                                                                    console.log('setAndroidAppThemeName received Success ');
+                                                                    console.log('payButtonClicked(): merchantDisplayName received Success ');
                                                                  },
 
                                                                  function (response){
-                                                                    console.log('setAndroidAppThemeName received Failure '.concat(response) );
+                                                                    console.log('payButtonClicked(): merchantDisplayName received Failure '.concat(response) );
                                                                  },
 
                                                                  merchantName );
 
+
             var themeName = document.getElementById( "themeName" ).value;
 
             var colors = getiOSColor();
-
+            console.log('payButtonClicked(): getiOSColor = '.concat(colors) );
+            console.log('payButtonClicked(): colors.length = '.concat(colors.length) );
             if (colors.length == 4) {
                 cordova.plugins.PayUMoneyPNPPlugin.setiOSAppTheme( function (response) {
-                                                                    console.log('setiOSAppThemeName received Success ');
+                                                                    console.log('payButtonClicked(): setiOSAppThemeName received Success ');
                                                                  },
 
                                                                  function (response){
-                                                                    console.log('setiOSAppThemeName received Failure '.concat(response) );
+                                                                    console.log('payButtonClicked(): setiOSAppThemeName received Failure '.concat(response) );
                                                                  },
 
                                                                   colors[0],colors[1],colors[2],colors[3]);
             }
 
-            
-
             cordova.plugins.PayUMoneyPNPPlugin.setAndroidAppThemeName( function (response) {
-                                                                    console.log('setAndroidAppThemeName received Success ');
+                                                                    console.log('payButtonClicked(): setAndroidAppThemeName received Success ');
                                                                  },
 
                                                                  function (response){
-                                                                    console.log('setAndroidAppThemeName received Failure '.concat(response) );
+                                                                    console.log('payButtonClicked(): setAndroidAppThemeName received Failure '.concat(response) );
                                                                  },
 
                                                                  themeName );
 
             var phoneNumber = document.getElementById("PhoneNumber").value;
             var email = document.getElementById("Email").value;
+
             var amount = document.getElementById("Amount").value;
+            console.log('payButtonClicked(): amount '.concat(amount) );
 
             var environment_value = getEnv();
 
-            var key = environment_value == PUMEnvironment.PUMEnvironmentProduction ? "O15vkB" : "Aqryi8";
-            var merchantID = environment_value == PUMEnvironment.PUMEnvironmentProduction ? "4819816" : "397202";
+            var key = environment_value == PUMEnvironment.PUMEnvironmentProduction ? "O15vkB" : "tPJM2e";
+            var merchantID = environment_value == PUMEnvironment.PUMEnvironmentProduction ? "4819816" : "4824899";
 
-            var txnParam = new PUMTxnParam(key,merchantID,"12",amount,phoneNumber,email,"UserFirstName","https://www.payumoney.com/mobileapp/payumoney/success.php","https://www.payumoney.com/mobileapp/payumoney/failure.php","iPhone7",environment_value,"","as","sad");
+            console.log('payButtonClicked(): key = '.concat(key) );
+            console.log('payButtonClicked(): merchantID = '.concat(merchantID) );
+
+            var txnId = getRandomTxnId( );
+            console.log('payButtonClicked(): txnId = '.concat(txnId) );
+
+            var txnParam = new PUMTxnParam( key, merchantID, txnId.toString() ,amount,phoneNumber,email,"UserFirstName","https://www.payumoney.com/mobileapp/payumoney/success.php","https://www.payumoney.com/mobileapp/payumoney/failure.php","iPhone7",environment_value,"","","");
             txnParam.hashValue = getHash(txnParam);
             cordova.plugins.PayUMoneyPNPPlugin.showPaymentView( function (response) {
-                                                                    console.log('showPaymentView received Success ');
+                                                                    console.log('payButtonClicked(): showPaymentView received Success ');
                                                                     alert(JSON.stringify(response));
                                                                  },
 
                                                                  function (response){
-                                                                    console.log('showPaymentView received Failure ');
+                                                                    console.log('payButtonClicked(): showPaymentView received Failure ');
                                                                     alert(JSON.stringify(response));
                                                                  },
 
                                                                  txnParam );
         }
 
+        var getAmountInString = function () {
+            var amountEntered       = document.getElementById("Amount").value;
+            var amountEnteredFloat  = parseFloat(amountEntered);
+            var amount              = amountEnteredFloat.toFixed(Math.max(1, (amountEnteredFloat.toString().split('.')[1] || []).length));
+        }
 
         var disableExitAlertOnCheckoutPageClicked = function () {
                 var checkBoxDisableExitScreenCheckout = document.getElementById( "disableExitAlertOnCheckoutPage" );
@@ -226,19 +240,13 @@
 
                                                                                         toDisable);
         }
-        /*
-
-"default" checked><span style="color:#F3A62E">Default</span>&nbsp;&nbsp;
-"pink"><span style="color:#C0175C">Pink</span>&nbsp;&nbsp;
-"grey"><span style="color:#424242">Grey</span>&nbsp;&nbsp;<br>
-"green"><span style="color:#0A927A">Green</span>&nbsp;&nbsp;
-"purple"><span style="color:#7A1FA2">Purple</span>&nbsp;&nbsp;
-"blue"><span style="color:#4C63E2">Blue</span>&nbsp;&nbsp;
-        */
 
         var getiOSColor = function () {
             var themeName = document.getElementById( "themeName" ).value;
             switch (themeName) {
+                default:
+                case 'AppTheme.default':
+                return ['F3A62E','ffffff','F3A62E','ffffff'];
                 case 'AppTheme.pink':
                 return ['C0175C','ffffff','C0175C','ffffff'];
                 case 'AppTheme.Grey':
@@ -249,28 +257,35 @@
                 return ['7A1FA2','ffffff','7A1FA2','ffffff'];
                 case 'AppTheme.blue':
                 return ['4C63E2','ffffff','4C63E2','ffffff'];
-                default:
-                return [];
             }
 
         }
 
         var getEnv = function () {
             if (document.getElementById('env_test').checked) {
-                return 4;
+                return PUMEnvironment.PUMEnvironmentTest;
             }else{
                 return PUMEnvironment.PUMEnvironmentProduction;
             }
         }
 
         var getHash = function (txnParam) {
-            var salt = getEnv() == PUMEnvironment.PUMEnvironmentProduction ? "LU1EhObh" : "ZRC9Xgru";
+            var salt = getEnv() == PUMEnvironment.PUMEnvironmentProduction ? "LU1EhObh" : "x4rmTrFm";
+            console.log('getHash(): salt = '.concat(salt) );
+
             var hashSequence = txnParam.key + '|' + txnParam.txnID + '|' + txnParam.amount + '|' + txnParam.productInfo + '|' + txnParam.firstname + '|' + txnParam.email + '|' + txnParam.udf1 + '|' + txnParam.udf2 + '|' + txnParam.udf3 + '|' + txnParam.udf4 + '|' + txnParam.udf5 + '|' + txnParam.udf6 + '|' + txnParam.udf7 + '|' + txnParam.udf8 + '|' + txnParam.udf9 + '|' + txnParam.udf10 + '|' + salt;
-            return SHA512(hashSequence);
+            console.log('getHash(): hashSequence = '.concat(hashSequence) );
+
+            var hash = SHA512(hashSequence);
+            console.log('getHash(): hash = '.concat(hash) );
+            return hash;
         }
 
-
-
+        function getRandomTxnId() {
+            var randomValue = Math.floor((Math.random() * 10000) + 1);
+            console.log('getRandomTxnId(): txn id = '.concat(randomValue) );
+            return randomValue;
+        }
 
             </script>
 </body>

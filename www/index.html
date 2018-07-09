@@ -183,7 +183,7 @@
             var txnId = getRandomTxnId( );
             console.log('payButtonClicked(): txnId = '.concat(txnId) );
 
-            var txnParam = new PUMTxnParam( key, merchantID, txnId ,amount,phoneNumber,email,"UserFirstName","https://www.payumoney.com/mobileapp/payumoney/success.php","https://www.payumoney.com/mobileapp/payumoney/failure.php","iPhone7",environment_value,"","","");
+            var txnParam = new PUMTxnParam( key, merchantID, txnId.toString() ,amount,phoneNumber,email,"UserFirstName","https://www.payumoney.com/mobileapp/payumoney/success.php","https://www.payumoney.com/mobileapp/payumoney/failure.php","iPhone7",environment_value,"","","");
             txnParam.hashValue = getHash(txnParam);
             cordova.plugins.PayUMoneyPNPPlugin.showPaymentView( function (response) {
                                                                     console.log('payButtonClicked(): showPaymentView received Success ');
