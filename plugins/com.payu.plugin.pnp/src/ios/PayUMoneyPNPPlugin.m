@@ -104,16 +104,14 @@
                                                  message = [[paymentResponse objectForKey:@"result"] valueForKey:@"error_Message"];
                                                  if ([message isEqual:[NSNull null]] || [message length] == 0 || [message isEqualToString:@"No Error"]) {
                                                      message = [[paymentResponse objectForKey:@"result"] valueForKey:@"status"];
-                                                     pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:[[paymentResponse objectForKey:@"result"] valueForKey:@"status"]];
-                                                     
                                                  }
+                                                 pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:message];
                                              }
                                              else {
-                                                 pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:[paymentResponse valueForKey:@"status"]];
+                                                 pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:[NSString stringWithFormat:@"Failed with status: %@",[paymentResponse valueForKey:@"status"]]];
                                              }
-                                             
-                                             [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
                                          }
+                                         [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
                                      }];
     
     
@@ -141,41 +139,6 @@
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
-- (void)disableWallet:(CDVInvokedUrlCommand *)command {
-    BOOL disable = [[command argumentAtIndex:0] boolValue];
-    [PlugNPlay setDisableWallet:disable];
-    CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
-    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-}
-
-- (void)disableCards:(CDVInvokedUrlCommand *)command {
-    BOOL disable = [[command argumentAtIndex:0] boolValue];
-    [PlugNPlay setDisableCards:disable];
-    CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
-    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-}
-
-- (void)disableNetbanking:(CDVInvokedUrlCommand *)command {
-    BOOL disable = [[command argumentAtIndex:0] boolValue];
-    [PlugNPlay setDisableNetbanking:disable];
-    CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
-    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-}
-
-- (void)disableThirdPartyWallet:(CDVInvokedUrlCommand *)command {
-    BOOL disable = [[command argumentAtIndex:0] boolValue];
-    [PlugNPlay setDisableThirdPartyWallet:disable];
-    CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
-    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-}
-
-- (void)disableEMI:(CDVInvokedUrlCommand *)command {
-    BOOL disable = [[command argumentAtIndex:0] boolValue];
-    [PlugNPlay setDisableEMI:disable];
-    CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
-    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-}
-
 - (void)disableCompletionScreen:(CDVInvokedUrlCommand *)command {
     BOOL disable = [[command argumentAtIndex:0] boolValue];
     [PlugNPlay setDisableCompletionScreen:disable];
@@ -198,10 +161,10 @@
 }
 
 - (void)setiOSAppTheme:(CDVInvokedUrlCommand *)command {
-    NSString *topBarColor = [[command argumentAtIndex:0] integerValue];
-    NSString *topTitleTextColor = [[command argumentAtIndex:0] integerValue];
-    NSString *buttonColor = [[command argumentAtIndex:0] integerValue];
-    NSString *buttonTextColor = [[command argumentAtIndex:0] integerValue];
+    NSString *topBarColor = [command argumentAtIndex:0];
+    NSString *topTitleTextColor = [command argumentAtIndex:1];
+    NSString *buttonColor = [command argumentAtIndex:2];
+    NSString *buttonTextColor = [command argumentAtIndex:3];
 
     CDVPluginResult *pluginResult;
     
@@ -216,6 +179,13 @@
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"All the colors are not provided."];
     }
     
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+}
+
+- (void)setAndroidAppThemeName:(CDVInvokedUrlCommand *)command {
+    CDVPluginResult *pluginResult;
+    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"iOS plugin cannot set theme for Android platform."];
+
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 

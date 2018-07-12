@@ -111,7 +111,8 @@ typedef enum {
  */
 
 +(double)calculateConvFeesForPaymentMode:(NSString*)paymentMode
-                             andModeType:(NSString*)modeType;
+                             andModeType:(NSString*)modeType
+                        isWalletSelected:(BOOL)isWalletSelected;
 
 + (double)calculateConvFeesForPayment:(PUMPaymentParam *)paymentParam;
 

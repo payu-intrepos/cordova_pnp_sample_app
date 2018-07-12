@@ -8,7 +8,6 @@ import android.util.Log;
 import com.payumoney.core.PayUmoneyConfig;
 import com.payumoney.core.PayUmoneySdkInitializer;
 import com.payumoney.core.entity.TransactionResponse;
-import com.payumoney.sdkui.ui.utils.PPConfig;
 import com.payumoney.sdkui.ui.utils.PayUmoneyFlowManager;
 import com.payumoney.sdkui.ui.utils.ResultModel;
 
@@ -25,6 +24,15 @@ import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 
 import static android.app.Activity.RESULT_OK;
+import static android.app.Activity.RESULT_CANCELED;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import com.payu.custombrowser.bean.ReviewOrderBundle;
+import com.payu.custombrowser.bean.ReviewOrderData;
+import com.payumoney.core.listener.ReviewOrderImpl;
+import android.content.Context;
+import android.text.TextUtils;
 
 /**
  * This class echoes a string called from JavaScript.
@@ -63,66 +71,6 @@ public class PayUMoneyPNPPlugin extends CordovaPlugin {
 
                 return true;
 
-
-
-            case "disableWallet":
-                try {
-                    final boolean toDisableWallet = args.getBoolean(0);
-                    Log.d( TAG, "disableWallet(): setting to " +toDisableWallet );
-                    disableWallet( toDisableWallet, callbackContext );
-                } catch ( Exception e) {
-                    e.printStackTrace();
-                    callbackContext.error( e.getMessage() );
-                }
-                return true;
-
-
-            case "disableCards":
-                try {
-                    final boolean toDisableCards = args.getBoolean(0);
-                    Log.d( TAG, "disableCards(): setting to " +toDisableCards );
-                    disableCards( toDisableCards, callbackContext );
-                } catch ( Exception e) {
-                    e.printStackTrace();
-                    callbackContext.error( e.getMessage() );
-                }
-                return true;
-
-
-
-            case "disableNetbanking":
-                try {
-                    final boolean todisableNetBanking = args.getBoolean(0);
-                    Log.d( TAG, "disableNetBanking(): setting to " +todisableNetBanking );
-                    disableNetBanking( todisableNetBanking, callbackContext );
-                } catch ( Exception e) {
-                    e.printStackTrace();
-                    callbackContext.error( e.getMessage() );
-                }
-                return true;
-
-            case "disableThirdPartyWallet":
-                try {
-                    final boolean toDsisableThirdPartyWallets = args.getBoolean(0);
-                    Log.d( TAG, "disableThirdPartyWallets(): setting to " +toDsisableThirdPartyWallets);
-                    disableThirdPartyWallets( toDsisableThirdPartyWallets, callbackContext );
-                } catch ( Exception e) {
-                    e.printStackTrace();
-                    callbackContext.error( e.getMessage() );
-                }
-                return true;
-
-            case "disableEMI":
-                try {
-                    final boolean toDisabledisableEmi = args.getBoolean(0);
-                    Log.d( TAG, "disableEmi(): setting to " +toDisabledisableEmi);
-                    disableEmi( toDisabledisableEmi, callbackContext );
-                } catch ( Exception e) {
-                    e.printStackTrace();
-                    callbackContext.error( e.getMessage() );
-                }
-                return true;
-
             case "disableExitAlertOnCheckoutPage":
                 try {
                     final boolean toDisableExitAlertOnCheckoutPage = args.getBoolean(0);
@@ -146,6 +94,7 @@ public class PayUMoneyPNPPlugin extends CordovaPlugin {
 
                 return true;
 
+            case "merchantDisplayName" :
             case "setScreenTitle":
                 try {
                     final String screenTitle = args.getString(0);
@@ -181,34 +130,89 @@ public class PayUMoneyPNPPlugin extends CordovaPlugin {
                 }
                 return true;
 
+            case "orderDetails":
+                try {
+                    final String orderDetails = args.getString(0);
+                    Log.d( TAG, "setOrderDetails(): setting orderDetails to " +orderDetails );
+                    setOrderDetails( orderDetails, callbackContext );
+                } catch ( Exception e) {
+                    e.printStackTrace();
+                    callbackContext.error( e.getMessage() );
+                }
+                return true;
+
         }
 
         return false;
     }
 
-    private void disableWallet( final boolean disableWallet , final CallbackContext callbackContext ){
-        PPConfig.getInstance().disableWallet( disableWallet );
-        callbackContext.success( "Wallet disabled : "+disableWallet );
-    }
+    private void setOrderDetails( String strOrderDetails, final CallbackContext callbackContext  ){
 
-    private void disableCards( final boolean disableCards , final CallbackContext callbackContext ){
-        PPConfig.getInstance().disableSavedCards( disableCards );
-        callbackContext.success( "Cards disabled : "+disableCards );
-    }
+        try {
+            // String strOrderDetails = "{\"From\":\"Delhi\"},{\"To\":\"Pune\"},{\"Date\":\"18022018\"},{\"Time\":\"08:45\"},{\"Total\":\"4123.45\"}" ;
+            Pattern p = Pattern.compile("\\{([^}]*)\\}");
+            Matcher m = p.matcher(strOrderDetails);
 
-    private void disableNetBanking( final boolean disableNb , final CallbackContext callbackContext ){
-        PPConfig.getInstance().disableNetBanking( disableNb );
-        callbackContext.success( "NetBanking disabled : "+disableNb );
-    }
+            ReviewOrderBundle reviewOrderBundle = null;
+            while (m.find()) {
+                final String strSingleOrder = m.group(1);
+                System.out.println(strSingleOrder);
 
-    private void disableThirdPartyWallets( final boolean disableThirdPartyWallets , final CallbackContext callbackContext ){
-        PPConfig.getInstance().disableThirdPartyWallets( disableThirdPartyWallets );
-        callbackContext.success( "ThirdPartyWallets disabled : "+disableThirdPartyWallets );
-    }
+                final String[] singleOrderKeyValues = strSingleOrder.split(":");
+                if (singleOrderKeyValues.length == 2) {
 
-    private void disableEmi( final boolean disableEmi , final CallbackContext callbackContext ){
-        PPConfig.getInstance().disableEmi( disableEmi );
-        callbackContext.success( "EMI disabled : "+disableEmi);
+                    String key = singleOrderKeyValues[0];
+                    String value = singleOrderKeyValues[1];
+
+                    Log.v( "setOrderDetails", "Got Key = " + key + ", value = " + value);
+
+                    if( !TextUtils.isEmpty(key) && !TextUtils.isEmpty(value )){
+                        if( key.startsWith( "\"" )  ){
+                            key = key.substring( 1 );
+                        }
+                        if( key.endsWith( "\"" )  ){
+                            key = key.substring( 0, key.length()-1 );
+                        }
+
+                        if( value.startsWith( "\"" )  ){
+                            value = value.substring( 1 );
+                        }
+                        if( value.endsWith( "\"" )  ){
+                            value = value.substring( 0, value.length()-1 );
+                        }
+
+                        if( !TextUtils.isEmpty(key) && !TextUtils.isEmpty(value )) {
+                            Log.v( "setOrderDetails", "Setting an OrderDetails with Key = " + key + ", value = " + value);
+                            if (reviewOrderBundle == null) {
+                                reviewOrderBundle = new ReviewOrderBundle();
+                            }
+                            reviewOrderBundle.addOrderDetails(key, value);
+                        }
+                    }
+                }
+            }
+
+            if( reviewOrderBundle == null ){
+                Log.d( "setOrderDetails" ,"No OrderDetails to set") ;
+                callbackContext.error("Order details not set");
+            }else {
+                Log.d( "setOrderDetails" ,"Order Details set") ;
+                PayUmoneyConfig.getInstance().setReviewOrderBundle(reviewOrderBundle);
+                PayUmoneyConfig.getInstance().setReviewOrderImpl(new ReviewOrderImpl() {
+                    @Override
+                    public Intent getReviewOrderScreenIntent(Context context) {
+                        return null;
+                    }
+                });
+
+                PayUmoneyConfig.getInstance().setEnableReviewOrder( true );
+
+                callbackContext.success("Order details set");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            callbackContext.error("Order details not set");
+        }
     }
 
     private void disableCompletionScreen( final boolean disable, final CallbackContext callbackContext ) {
@@ -254,6 +258,10 @@ public class PayUMoneyPNPPlugin extends CordovaPlugin {
             Log.w(TAG, "getTheme(): Exception = " + e + ", setting default theme = " + theme );
         }
 
+        if( theme <= 0 ){
+            theme = com.payumoney.sdkui.R.style.AppTheme_default;
+        }
+
         return theme;
     }
 
@@ -262,8 +270,10 @@ public class PayUMoneyPNPPlugin extends CordovaPlugin {
         Log.d(TAG, "launchPayUMoneyFlow(): "+jsonObject );
 
         try {
-            final double amount = jsonObject.getDouble( "amount");
-            final String txnId = System.currentTimeMillis() + "";
+            final String amount = jsonObject.getString( "amount");
+            Log.d(TAG, "launchPayUMoneyFlow(): amount = "+amount );
+
+            final String txnId = jsonObject.getString( "txnID");
             Log.d(TAG, "launchPayUMoneyFlow(): txnId = "+txnId );
 
             final String phone = jsonObject.getString( "phone");
@@ -316,7 +326,7 @@ public class PayUMoneyPNPPlugin extends CordovaPlugin {
 
 
 
-    private void launchPayUMoneyFlow(final double amount, final String txnId, final String phone, final String email, final String firstName,
+    private void launchPayUMoneyFlow(final String amount, final String txnId, final String phone, final String email, final String firstName,
                                      final String productName, final String sUrl, final String fUrl, final boolean isDebug,
                                      final String merchantKey, final String merchant_ID, String hash, final int style,
                                      final String udf1, final String udf2, final String udf3, final String udf4, final String udf5,
@@ -353,9 +363,6 @@ public class PayUMoneyPNPPlugin extends CordovaPlugin {
 
         try {
             PayUmoneySdkInitializer.PaymentParam paymentParam = builder.build();
-
-            hash = calculateServerSideHashAndInitiatePayment1( amount, txnId, email, firstName, productName, merchantKey, merchant_ID);
-            Log.v(TAG, "launchPayUMoneyFlow(): hash = "+hash );
             paymentParam.setMerchantHash( hash );
 
 
@@ -366,26 +373,6 @@ public class PayUMoneyPNPPlugin extends CordovaPlugin {
             e.printStackTrace();
             callbackContext.error( e.getMessage() );
         }
-
-
-    }
-
-    private String calculateServerSideHashAndInitiatePayment1( final double amount, final String txnId, final String email, final String firstName,
-                                                               final String productName,
-                                                               final String merchantKey, final String merchant_ID ) {
-
-        StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append( merchantKey + "|" );
-        stringBuilder.append( txnId + "|" );
-        stringBuilder.append( amount + "|" );
-        stringBuilder.append( productName + "|" );
-        stringBuilder.append( firstName + "|" );
-        stringBuilder.append( email + "|" );
-        stringBuilder.append("||||||||||");
-        stringBuilder.append( "qauKbEAJ");
-        String hash = hashCal(stringBuilder.toString());
-
-        return hash;
     }
 
     public static String hashCal(String str) {
@@ -416,34 +403,54 @@ public class PayUMoneyPNPPlugin extends CordovaPlugin {
         if( requestCode == 1 ) {
             final CallbackContext callbackContext = contextHashMap.get( ""+PayUmoneyFlowManager.REQUEST_CODE_PAYMENT );
 
-            if (  resultCode == RESULT_OK && data != null) {
-                TransactionResponse transactionResponse = data.getParcelableExtra(PayUmoneyFlowManager
-                        .INTENT_EXTRA_TRANSACTION_RESPONSE);
+            if (  resultCode == RESULT_OK ) {
+                if( data != null ) {
+                    TransactionResponse transactionResponse = data.getParcelableExtra(PayUmoneyFlowManager
+                            .INTENT_EXTRA_TRANSACTION_RESPONSE);
 
-                ResultModel resultModel = data.getParcelableExtra(PayUmoneyFlowManager.ARG_RESULT);
-                // Check which object is non-null
-                if (transactionResponse != null && transactionResponse.getPayuResponse() != null) {
-                    if (transactionResponse.getTransactionStatus().equals(TransactionResponse.TransactionStatus.SUCCESSFUL)) {
-                        //Success Transaction
+                    ResultModel resultModel = data.getParcelableExtra(PayUmoneyFlowManager.ARG_RESULT);
+                    // Check which object is non-null
+                    if (transactionResponse != null && transactionResponse.getPayuResponse() != null) {
+
+                        final TransactionResponse.TransactionStatus transactionStatus = transactionResponse.getTransactionStatus();
+
+                        switch (transactionStatus) {
+                            case FAILED:
+                                callbackContext.error("Transaction failed");
+                                break;
+
+                            case SUCCESSFUL:
+                                callbackContext.success("Transaction Successful");
+                                break;
+
+                            case CANCELLED:
+                                callbackContext.error("Transaction Cancelled");
+                                break;
+
+                            default:
+                                callbackContext.error(transactionStatus.name());
+                                break;
+                        }
+
+                        // Response from Payumoney
+                        String payuResponse = transactionResponse.getPayuResponse();
+
+                        // Response from SURl and FURL
+                        String merchantResponse = transactionResponse.getTransactionDetails();
+
+                    } else if (resultModel != null && resultModel.getError() != null) {
+                        Log.d(TAG, "Error response : " + resultModel.getError().getTransactionResponse());
+                        callbackContext.error("Transaction failed");
                     } else {
-                        //Failure Transaction
+                        Log.d(TAG, "Both objects are null!");
+                        callbackContext.success("Transaction Successful");
                     }
-
-                    // Response from Payumoney
-                    String payuResponse = transactionResponse.getPayuResponse();
-
-                    // Response from SURl and FURL
-                    String merchantResponse = transactionResponse.getTransactionDetails();
-
-                } else if (resultModel != null && resultModel.getError() != null) {
-                    Log.d(TAG, "Error response : " + resultModel.getError().getTransactionResponse());
-                } else {
-                    Log.d(TAG, "Both objects are null!");
+                }else {
+                    callbackContext.error( "Transaction Failed" );
                 }
-
-                callbackContext.success( "Transaction Successful" );
-
-            } else {
+            }else if (  resultCode == RESULT_CANCELED ) {
+                callbackContext.error("Transaction Cancelled");
+            }else {
                 callbackContext.error( "Transaction Failed" );
             }
         }

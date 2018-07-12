@@ -11,9 +11,11 @@
 @interface PUMEMI : PUMCCDC
 
 /// eg., AXIS, HDFC, SBI etc
-@property (strong, nonatomic) NSString * bankCode;
+@property (strong, nonatomic) NSString *bankCode;
 
 /// eg., AXIS03, AXIS06, HDFC03, HDFC09 etc
-@property (strong, nonatomic) NSString * emiType;
+@property (strong, nonatomic) NSString *emiType;
+
+@property (assign, nonatomic) BOOL isCreditCard;
 
 @end

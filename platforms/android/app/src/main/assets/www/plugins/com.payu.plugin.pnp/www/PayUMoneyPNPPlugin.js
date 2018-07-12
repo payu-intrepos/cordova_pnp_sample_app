@@ -112,7 +112,6 @@ exports.disableExitAlertOnBankPage = function (success, error, shouldDisable) {
 };
 
 /**
-<<<<<<< HEAD
  * This method is used for setting Android app's theme.
  * @param success: The success block which is called when function is successfully executed
  * @param error: The failure block which is called when some proble occurs.
@@ -135,24 +134,5 @@ exports.setiOSAppTheme = function (success, error, topBarColor, topTitleTextColo
     exec(success, error, 'PayUMoneyPNPPlugin', 'setiOSAppTheme', [topBarColor, topTitleTextColor, buttonColor, buttonTextColor]);
 };
 
-=======
- * This method is used for setting app theme.
- * @param success: The success block which is called when function is successfully executed
- * @param error: The failure block which is called when some proble occurs.
- * @param {PUMStyle} style: The theme will be decided on the basis of this param.
- */
-exports.setAppTheme = function (success, error, style) {
-    exec(success, error, 'PayUMoneyPNPPlugin', 'setAppTheme', [style]);
-};
-
-exports.setScreenTitle = function (success, error, title) {
-    exec(success, error, 'PayUMoneyPNPPlugin', 'setScreenTitle', [title]);
-};
-
-exports.setDoneButtonText = function (success, error, doneButtonText ) {
-    exec(success, error, 'PayUMoneyPNPPlugin', 'setDoneButtonText', [doneButtonText]);
-};
-
->>>>>>> 912ab8a8ca28d05d3f81c6283ad6511070dc5598
 
 });

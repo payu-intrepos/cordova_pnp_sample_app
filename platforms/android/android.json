@@ -18,6 +18,90 @@
             }
           ]
         }
+      },
+      "AndroidManifest.xml": {
+        "parents": {
+          "/manifest/uses-permission": [
+            {
+              "xml": "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />",
+              "count": 1,
+              "mode": "merge",
+              "plugin": "com.payu.plugin.pnp",
+              "oldAttrib": {
+                "android:name": "android.permission.INTERNET"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.RECEIVE_SMS\" android:protectionLevel=\"normal\" />",
+              "count": 1,
+              "mode": "merge",
+              "plugin": "com.payu.plugin.pnp",
+              "oldAttrib": {
+                "android:name": "android.permission.ACCESS_WIFI_STATE"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+              "count": 1,
+              "mode": "merge",
+              "plugin": "com.payu.plugin.pnp",
+              "oldAttrib": {
+                "android:name": "android.permission.RECEIVE_SMS",
+                "android:protectionLevel": "normal"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.READ_SMS\" />",
+              "count": 1,
+              "mode": "merge",
+              "plugin": "com.payu.plugin.pnp",
+              "oldAttrib": {
+                "android:name": "android.permission.INTERNET",
+                "android:protectionLevel": "normal"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />",
+              "count": 1,
+              "mode": "merge",
+              "plugin": "com.payu.plugin.pnp",
+              "oldAttrib": {
+                "android:name": "android.permission.READ_SMS",
+                "android:protectionLevel": "normal"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+              "count": 1,
+              "mode": "merge",
+              "plugin": "com.payu.plugin.pnp",
+              "oldAttrib": {
+                "android:name": "android.permission.READ_PHONE_STATE",
+                "android:protectionLevel": "normal"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />",
+              "count": 1,
+              "mode": "merge",
+              "plugin": "com.payu.plugin.pnp",
+              "oldAttrib": {
+                "android:name": "android.permission.ACCESS_NETWORK_STATE",
+                "android:protectionLevel": "normal"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />",
+              "count": 1,
+              "mode": "merge",
+              "plugin": "com.payu.plugin.pnp",
+              "oldAttrib": {
+                "android:name": "android.permission.ACCESS_COARSE_LOCATION",
+                "android:protectionLevel": "normal"
+              }
+            }
+          ]
+        }
       }
     }
   },

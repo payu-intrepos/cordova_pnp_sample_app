@@ -37,16 +37,18 @@ var PUMStyle = {
  * @param {String} udf1-udf10: User defined properties
  */
 function PUMTxnParam(key,merchantid,txnID,amount,phone,email,firstname,surl,furl,productInfo,environment,hashValue,udf1,udf2,udf3,udf4,udf5,udf6,udf7,udf8,udf9,udf10) {
-    if (!udf1) udf1 = "";
-    if (!udf2) udf2 = "";
-    if (!udf3) udf3 = "";
-    if (!udf4) udf4 = "";
-    if (!udf5) udf5 = "";
-    if (!udf6) udf6 = "";
-    if (!udf7) udf7 = "";
-    if (!udf8) udf8 = "";
-    if (!udf9) udf9 = "";
-    if (!udf10) udf10 = "";
+
+  // Setting default value here as on older iOS devices JS Functions with default values don't work properly
+  if (!udf1) udf1 = "";
+  if (!udf2) udf2 = "";
+  if (!udf3) udf3 = "";
+  if (!udf4) udf4 = "";
+  if (!udf5) udf5 = "";
+  if (!udf6) udf6 = "";
+  if (!udf7) udf7 = "";
+  if (!udf8) udf8 = "";
+  if (!udf9) udf9 = "";
+  if (!udf10) udf10 = "";
   this.key = key;
   this.merchantid = merchantid;
   this.txnID = txnID;

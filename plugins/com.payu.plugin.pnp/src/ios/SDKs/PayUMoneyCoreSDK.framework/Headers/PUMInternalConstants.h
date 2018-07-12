@@ -27,7 +27,7 @@
 
 #define DOWNLOAD_BANKIMAGE                          @"media/images/payment/payment/netbanking/"
 #define CC_BIN_DETAILS                              @"payment/op/v1/getBinDetails" // params bin=541891
-#define ADD_PAYMENT                                 @"payment/app/v1/addPayment"
+#define ADD_PAYMENT                                 @"payment/app/v2/addPayment"
 #define SEND_PAYMENT_OTP                            @"auth/op/sendPaymentOTP"
 #define USER_REG_AND_LOGIN                          @"auth/op/registerAndLogin"
 #define USER_GENERATE_WALLET_CODE                   @"/auth/app/generateWalletCode"
@@ -68,7 +68,7 @@
 // ONE_TAP_ENABLE
 #define ENABLE_ONE_TAP                              @"auth/app/setUserPaymentOption"  //params oneClickTxn=-1 OR 0 OR 1 <POST
 //#define KVAULT_TEST_URL                             @"http://tvapaymon.payubiz.in/vault/getToken" //POST
-#define KVAULT_TEST_URL                             @"http://pp41.payumoney.com/oneclick/getToken" //POST
+#define KVAULT_TEST_URL                             @"https://pp41.payumoney.com/oneclick/getToken" //POST
 #define KVAULT_DELETE_TOKEN_URL_TEST                @"http://tvapaymon.payubiz.in/vault/deleteToken"
 #define KVAULT_PROD_URL                             @"https://www.payumoney.com/oneclick/getToken" //POST
 #define KVAULT_DELETE_TOKEN_URL_PROD                @"https://www.payumoney.com/oneclick/deleteToken"
@@ -220,16 +220,16 @@
 //API URLs
 #define ENVIRONMENT_PRODUCTION_API_URL                          @"https://www.payumoney.com/"
 #define ENVIRONMENT_TEST_API_URL                                @"https://www.payumoney.com/sandbox/"
-#define ENVIRONMENT_PP42_API_URL                                @"http://pp42.payumoney.com/"
-#define ENVIRONMENT_PP25_API_URL                                @"http://pp25.payumoney.com/"
-#define ENVIRONMENT_PP48_API_URL                                @"http://pp51.payumoney.com/"
-#define ENVIRONMENT_PP41_API_URL                                @"http://pp41.payumoney.com/"
-#define ENVIRONMENT_PP10_API_URL                                @"http://pp10.payumoney.com/"
-#define ENVIRONMENT_PP0_API_URL                                 @"http://pp0.payumoney.com/"
-#define ENVIRONMENT_PP4_API_URL                                 @"http://pp4.payumoney.com/"
-#define ENVIRONMENT_PP22_API_URL                                 @"http://pp22.payumoney.com/"
+#define ENVIRONMENT_PP42_API_URL                                @"https://pp42.payumoney.com/"
+#define ENVIRONMENT_PP25_API_URL                                @"https://pp25.payumoney.com/"
+#define ENVIRONMENT_PP48_API_URL                                @"https://pp51.payumoney.com/"
+#define ENVIRONMENT_PP41_API_URL                                @"https://pp41.payumoney.com/"
+#define ENVIRONMENT_PP10_API_URL                                @"https://pp10.payumoney.com/"
+#define ENVIRONMENT_PP0_API_URL                                 @"https://pp0.payumoney.com/"
+#define ENVIRONMENT_PP4_API_URL                                 @"https://pp4.payumoney.com/"
+#define ENVIRONMENT_PP22_API_URL                                @"https://pp22.payumoney.com/"
 #define ENVIRONMENT_MOBILE_TEST_API_URL                         @"https://mobiletest.payumoney.com/"
-#define ENVIRONMENT_PP44_API_URL                                 @"http://pp44.payumoney.com/"
+#define ENVIRONMENT_PP44_API_URL                                @"https://pp44.payumoney.com/"
 
 //Web URLs
 #define ENVIRONMENT_PRODUCTION_WEB_URL                          @"https://secure.payu.in/_payment"
@@ -239,7 +239,7 @@
 #define ENVIRONMENT_PP41_WEB_URL                                @"http://pp41.secure.payu.in/_payment"
 #define ENVIRONMENT_PP10_WEB_URL                                @"http://pp10.secure.payu.in/_payment"
 #define ENVIRONMENT_PP0_WEB_URL                                 @"http://pp0.secure.payu.in/_payment"
-#define ENVIRONMENT_PP48_WEB_URL                                 @"http://pp51.secure.payu.in/_payment"
+#define ENVIRONMENT_PP48_WEB_URL                                @"http://pp51.secure.payu.in/_payment"
 #define ENVIRONMENT_PP4_WEB_URL                                 @"http://pp4.secure.payu.in/_payment"
 #define ENVIRONMENT_MOBILE_TEST_WEB_URL                         @"http://mobiletest.payu.in/_payment"
 #define ENVIRONMENT_PP22_WEB_URL                                @"http://pp22.secure.payu.in/_payment"
