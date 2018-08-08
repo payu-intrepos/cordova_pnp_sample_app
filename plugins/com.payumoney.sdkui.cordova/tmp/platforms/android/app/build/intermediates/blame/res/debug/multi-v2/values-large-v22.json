@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/vinay/StudioProjects/cordova/pnpcordova/tmp/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v22/values-large-v22.xml",
+            "map": [
+                {
+                    "source": "/root/.gradle/caches/transforms-1/files-1.1/payu-custom-browser-7.2.1.aar/8bca720b17af6f316e86dc4019487fb0/res/values-large-v22/values-large-v22.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,148",
+                        "endLines": "2,5",
+                        "endColumns": "92,12",
+                        "endOffsets": "143,310"
+                    }
+                }
+            ]
+        }
+    ]
+}

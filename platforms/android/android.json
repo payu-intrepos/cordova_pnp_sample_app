@@ -14,7 +14,7 @@
             },
             {
               "xml": "<feature name=\"PayUmoneyPnP\"><param name=\"android-package\" value=\"com.payumoney.sdkui.cordova.PayUmoneyPnP\" /></feature>",
-              "count": 1
+              "count": 2
             }
           ]
         }

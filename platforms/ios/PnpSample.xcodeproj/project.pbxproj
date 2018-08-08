@@ -13,13 +13,13 @@
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
-		1FB38C472E944B1580CC74C3 /* PayUMoneyPNPPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 725E3005A7D245A58F3688FD /* PayUMoneyPNPPlugin.m */; };
-		D1FA51B121E745119FFA76C8 /* CitrusGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1FE9B83A3F74C71A3E7386F /* CitrusGraphics.framework */; };
-		9C3FEA594FBA4B5AB0C31A01 /* CitrusGraphics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1FE9B83A3F74C71A3E7386F /* CitrusGraphics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		9B6F2B2F568A4396BA82EB54 /* PayUMoneyCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7575821553CA45608B399495 /* PayUMoneyCoreSDK.framework */; };
-		03BE23AF97B849ADA6BD43C8 /* PayUMoneyCoreSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7575821553CA45608B399495 /* PayUMoneyCoreSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		27F7C0083FCD4D14B306CB76 /* PlugNPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E5892748FA4AD385EF02C8 /* PlugNPlay.framework */; };
-		13543F916F134ADD992E5797 /* PlugNPlay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3E5892748FA4AD385EF02C8 /* PlugNPlay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BA5B44AB22C941D1992D4B3E /* PayUMoneyPNPPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC00D5E114A406BA6AEE49F /* PayUMoneyPNPPlugin.m */; };
+		C2C549CA1AC6469483F452AC /* CitrusGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2153A0B4270C4D43B65653B9 /* CitrusGraphics.framework */; };
+		335A195D90724A55BE4B4087 /* CitrusGraphics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2153A0B4270C4D43B65653B9 /* CitrusGraphics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A56B9A877BEC460281F7C5D7 /* PayUMoneyCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCA06F2206C4CA59E320B63 /* PayUMoneyCoreSDK.framework */; };
+		AB54902177F04078B8D66367 /* PayUMoneyCoreSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DBCA06F2206C4CA59E320B63 /* PayUMoneyCoreSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		476F4419A1684A6CBE7DD8AA /* PlugNPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99EF095845A743A49A6455E3 /* PlugNPlay.framework */; };
+		ED025D60707C456481565431 /* PlugNPlay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 99EF095845A743A49A6455E3 /* PlugNPlay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +59,9 @@
 				9C3FEA594FBA4B5AB0C31A01 /* CitrusGraphics.framework in Embed Frameworks */,
 				03BE23AF97B849ADA6BD43C8 /* PayUMoneyCoreSDK.framework in Embed Frameworks */,
 				13543F916F134ADD992E5797 /* PlugNPlay.framework in Embed Frameworks */,
+				335A195D90724A55BE4B4087 /* CitrusGraphics.framework in Embed Frameworks */,
+				AB54902177F04078B8D66367 /* PayUMoneyCoreSDK.framework in Embed Frameworks */,
+				ED025D60707C456481565431 /* PlugNPlay.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,10 +89,10 @@
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = PnpSample/config.xml; sourceTree = "<group>"; };
-		725E3005A7D245A58F3688FD /* PayUMoneyPNPPlugin.m */ = {isa = PBXFileReference; name = "PayUMoneyPNPPlugin.m"; path = "com.payu.plugin.pnp/PayUMoneyPNPPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		A1FE9B83A3F74C71A3E7386F /* CitrusGraphics.framework */ = {isa = PBXFileReference; name = "CitrusGraphics.framework"; path = "PnpSample/Plugins/com.payu.plugin.pnp/CitrusGraphics.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		7575821553CA45608B399495 /* PayUMoneyCoreSDK.framework */ = {isa = PBXFileReference; name = "PayUMoneyCoreSDK.framework"; path = "PnpSample/Plugins/com.payu.plugin.pnp/PayUMoneyCoreSDK.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		B3E5892748FA4AD385EF02C8 /* PlugNPlay.framework */ = {isa = PBXFileReference; name = "PlugNPlay.framework"; path = "PnpSample/Plugins/com.payu.plugin.pnp/PlugNPlay.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		4AC00D5E114A406BA6AEE49F /* PayUMoneyPNPPlugin.m */ = {isa = PBXFileReference; name = "PayUMoneyPNPPlugin.m"; path = "com.payumoney.sdkui.cordova/PayUMoneyPNPPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		2153A0B4270C4D43B65653B9 /* CitrusGraphics.framework */ = {isa = PBXFileReference; name = "CitrusGraphics.framework"; path = "PnpSample/Plugins/com.payumoney.sdkui.cordova/CitrusGraphics.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		DBCA06F2206C4CA59E320B63 /* PayUMoneyCoreSDK.framework */ = {isa = PBXFileReference; name = "PayUMoneyCoreSDK.framework"; path = "PnpSample/Plugins/com.payumoney.sdkui.cordova/PayUMoneyCoreSDK.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		99EF095845A743A49A6455E3 /* PlugNPlay.framework */ = {isa = PBXFileReference; name = "PlugNPlay.framework"; path = "PnpSample/Plugins/com.payumoney.sdkui.cordova/PlugNPlay.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,9 +171,9 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A1FE9B83A3F74C71A3E7386F /* CitrusGraphics.framework */,
-				7575821553CA45608B399495 /* PayUMoneyCoreSDK.framework */,
-				B3E5892748FA4AD385EF02C8 /* PlugNPlay.framework */,
+				2153A0B4270C4D43B65653B9 /* CitrusGraphics.framework */,
+				DBCA06F2206C4CA59E320B63 /* PayUMoneyCoreSDK.framework */,
+				99EF095845A743A49A6455E3 /* PlugNPlay.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -197,7 +200,7 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				725E3005A7D245A58F3688FD /* PayUMoneyPNPPlugin.m */,
+				4AC00D5E114A406BA6AEE49F /* PayUMoneyPNPPlugin.m */,
 			);
 			name = Plugins;
 			path = PnpSample/Plugins;
@@ -326,7 +329,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				1FB38C472E944B1580CC74C3 /* PayUMoneyPNPPlugin.m in Sources */,
+				BA5B44AB22C941D1992D4B3E /* PayUMoneyPNPPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +387,9 @@
 					"\"PnpSample/Plugins/com.payu.plugin.pnp\"",
 					"\"PnpSample/Plugins/com.payu.plugin.pnp\"",
 					"\"PnpSample/Plugins/com.payu.plugin.pnp\"",
+					"\"PnpSample/Plugins/com.payumoney.sdkui.cordova\"",
+					"\"PnpSample/Plugins/com.payumoney.sdkui.cordova\"",
+					"\"PnpSample/Plugins/com.payumoney.sdkui.cordova\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -396,6 +402,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_NAME = PnpSample;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+				);
 			};
 			name = Debug;
 		};
@@ -442,6 +451,9 @@
 					"\"PnpSample/Plugins/com.payu.plugin.pnp\"",
 					"\"PnpSample/Plugins/com.payu.plugin.pnp\"",
 					"\"PnpSample/Plugins/com.payu.plugin.pnp\"",
+					"\"PnpSample/Plugins/com.payumoney.sdkui.cordova\"",
+					"\"PnpSample/Plugins/com.payumoney.sdkui.cordova\"",
+					"\"PnpSample/Plugins/com.payumoney.sdkui.cordova\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PnpSample/PnpSample-Prefix.pch";
@@ -452,6 +464,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_NAME = PnpSample;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+				);
 			};
 			name = Release;
 		};

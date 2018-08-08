@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com-snaphappi-plugin-camera-roll-location" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>CameraRollLocation</name>
+    <js-module name="CameraRollLocation" src="www/CameraRollLocation.js">
+        <clobbers target="cordova.plugins.CameraRollLocation" />
+        <clobbers target="snappi_CameraRollLocation" />
+    </js-module>
+
+     <!-- ios -->
+    <platform name="ios">
+      <config-file target="config.xml" parent="/*">
+        <feature name="CameraRollLocation">
+          <param name="ios-package" value="CameraRollLocation" />
+        </feature>
+      </config-file>
+      <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
+        <string>Photo Library Access Warning</string>
+      </config-file>
+      <source-file src="src/ios/CameraRollLocation.swift" />
+      <source-file src="src/ios/PhotoWithLocationService.swift" />
+    </platform>
+</plugin>

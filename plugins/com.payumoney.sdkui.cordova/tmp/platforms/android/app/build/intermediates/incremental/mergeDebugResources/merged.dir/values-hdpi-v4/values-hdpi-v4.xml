@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_amount_layout_amount">20sp</dimen>
+    <dimen name="dimen_emi_interest">13sp</dimen>
+    <dimen name="dimen_emi_tenure">13sp</dimen>
+    <dimen name="dimen_emi_tenure_margin">10dp</dimen>
+    <dimen name="dimen_emi_tenure_margin2">5dp</dimen>
+    <dimen name="dimen_emi_value">13sp</dimen>
+    <dimen name="dimen_review_order_title_size">14sp</dimen>
+    <dimen name="sdk_review_order_title_size">14sp</dimen>
+    <dimen name="twelve">12dp</dimen>
+    <style name="Base.Widget.AppCompat.DrawerArrowToggle" parent="Base.Widget.AppCompat.DrawerArrowToggle.Common">
+          <item name="barLength">18.66dp</item>
+          <item name="gapBetweenBars">3.33dp</item>
+          <item name="drawableSize">24dp</item>
+     </style>
+</resources>
