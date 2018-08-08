@@ -116,7 +116,7 @@
 
         var payButtonClicked = function () {
             var orderDetails = [{"From":"Delhi"},{"To":"Pune"},{"Date":"18-02-2018"},{"Time":"08:45"},{"Total":"4123.45"}];
-            cordova.plugins.PayUMoneyPNPPlugin.orderDetails( function (response) {
+            cordova.plugins.PayUmoneyPnP.orderDetails( function (response) {
                                                                     console.log('payButtonClicked(): Order details received Success ');
                                                                  },
 
@@ -128,7 +128,7 @@
 
 
             var merchantName = document.getElementById( "MerchantName" ).value;
-            cordova.plugins.PayUMoneyPNPPlugin.merchantDisplayName( function (response) {
+            cordova.plugins.PayUmoneyPnP.merchantDisplayName( function (response) {
                                                                     console.log('payButtonClicked(): merchantDisplayName received Success ');
                                                                  },
 
@@ -143,7 +143,7 @@
 
             var colors = getiOSColor();
             if (colors.length == 4) {
-                cordova.plugins.PayUMoneyPNPPlugin.setiOSAppTheme( function (response) {
+                cordova.plugins.PayUmoneyPnP.setiOSAppTheme( function (response) {
                                                                     console.log('payButtonClicked(): setiOSAppThemeName received Success ');
                                                                  },
 
@@ -154,7 +154,7 @@
                                                                   colors[0],colors[1],colors[2],colors[3]);
             }
 
-            cordova.plugins.PayUMoneyPNPPlugin.setAndroidAppThemeName( function (response) {
+            cordova.plugins.PayUmoneyPnP.setAndroidAppThemeName( function (response) {
                                                                     console.log('payButtonClicked(): setAndroidAppThemeName received Success ');
                                                                  },
 
@@ -183,7 +183,7 @@
 
             var txnParam = new PUMTxnParam( key, merchantID, txnId ,amount,phoneNumber,email,"UserFirstName","https://www.payumoney.com/mobileapp/payumoney/success.php","https://www.payumoney.com/mobileapp/payumoney/failure.php","iPhone7",environment_value,"","","");
             txnParam.hashValue = getHash(txnParam);
-            cordova.plugins.PayUMoneyPNPPlugin.showPaymentView( function (response) {
+            cordova.plugins.PayUmoneyPnP.showPaymentView( function (response) {
                                                                     console.log('payButtonClicked(): showPaymentView received Success ');
                                                                     alert(JSON.stringify(response));
                                                                  },
@@ -206,7 +206,7 @@
                 var checkBoxDisableExitScreenCheckout = document.getElementById( "disableExitAlertOnCheckoutPage" );
                 var toDisable = checkBoxDisableExitScreenCheckout.checked;
 
-                cordova.plugins.PayUMoneyPNPPlugin.disableExitAlertOnCheckoutPage(      function (response) {
+                cordova.plugins.PayUmoneyPnP.disableExitAlertOnCheckoutPage(      function (response) {
                                                                                              console.log( 'disableExitAlertOnCheckoutPage Received Success' );
                                                                                              alert( JSON.stringify(response) );
                                                                                         },
@@ -225,7 +225,7 @@
                 var checkBoxDisableCompletionScreenClicked= document.getElementById( "disableCompletionScreen" );
                 var toDisable = checkBoxDisableCompletionScreenClicked.checked;
 
-                cordova.plugins.PayUMoneyPNPPlugin.disableCompletionScreen(      function (response) {
+                cordova.plugins.PayUmoneyPnP.disableCompletionScreen(      function (response) {
                                                                                              console.log( 'disableCompletionScreen Received Success' );
                                                                                              alert( JSON.stringify(response) );
                                                                                         },

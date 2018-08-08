@@ -91,7 +91,7 @@ ext {
 }
 
 // PLUGIN GRADLE EXTENSIONS START
-apply from: "../com.payu.plugin.pnp/sample-build.gradle"
+apply from: "../com.payumoney.sdkui.cordova/sample-build.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras = file('build-extras.gradle').exists()
