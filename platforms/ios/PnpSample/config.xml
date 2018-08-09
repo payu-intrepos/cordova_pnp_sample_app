@@ -19,7 +19,7 @@
         <param name="ios-package" value="CDVGestureHandler" />
         <param name="onload" value="true" />
     </feature>
-    <feature name="PayUmoneyPnP">
+    <feature name="PayUMoneyPNPPlugin">
         <param name="ios-package" value="PayUMoneyPNPPlugin" />
     </feature>
     <name>PnpSample</name>

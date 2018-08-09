@@ -1,11 +1,11 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
   {
-    "id": "com.payumoney.sdkui.cordova.PayUmoneyPnP",
-    "file": "plugins/com.payumoney.sdkui.cordova/www/PayUMoneyPNPPlugin.js",
-    "pluginId": "com.payumoney.sdkui.cordova",
+    "id": "com.payu.plugin.pnp.PayUMoneyPNPPlugin",
+    "file": "plugins/com.payu.plugin.pnp/www/PayUMoneyPNPPlugin.js",
+    "pluginId": "com.payu.plugin.pnp",
     "clobbers": [
-      "cordova.plugins.PayUmoneyPnP"
+      "cordova.plugins.PayUMoneyPNPPlugin"
     ]
   }
 ];
@@ -13,7 +13,7 @@ module.exports.metadata =
 // TOP OF METADATA
 {
   "cordova-plugin-whitelist": "1.3.3",
-  "com.payumoney.sdkui.cordova": "0.0.1"
+  "com.payu.plugin.pnp": "1.0.0"
 };
 // BOTTOM OF METADATA
 });

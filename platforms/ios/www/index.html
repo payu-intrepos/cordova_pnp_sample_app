@@ -116,7 +116,7 @@
 
         var payButtonClicked = function () {
             var orderDetails = [{"From":"Delhi"},{"To":"Pune"},{"Date":"18-02-2018"},{"Time":"08:45"},{"Total":"4123.45"}];
-            cordova.plugins.PayUmoneyPnP.orderDetails( function (response) {
+            cordova.plugins.PayUMoneyPNPPlugin.orderDetails( function (response) {
                                                                     console.log('payButtonClicked(): Order details received Success ');
                                                                  },
 
@@ -128,7 +128,7 @@
 
 
             var merchantName = document.getElementById( "MerchantName" ).value;
-            cordova.plugins.PayUmoneyPnP.merchantDisplayName( function (response) {
+            cordova.plugins.PayUMoneyPNPPlugin.merchantDisplayName( function (response) {
                                                                     console.log('payButtonClicked(): merchantDisplayName received Success ');
                                                                  },
 
@@ -142,8 +142,10 @@
             var themeName = document.getElementById( "themeName" ).value;
 
             var colors = getiOSColor();
+            console.log('payButtonClicked(): getiOSColor = '.concat(colors) );
+            console.log('payButtonClicked(): colors.length = '.concat(colors.length) );
             if (colors.length == 4) {
-                cordova.plugins.PayUmoneyPnP.setiOSAppTheme( function (response) {
+                cordova.plugins.PayUMoneyPNPPlugin.setiOSAppTheme( function (response) {
                                                                     console.log('payButtonClicked(): setiOSAppThemeName received Success ');
                                                                  },
 
@@ -154,7 +156,7 @@
                                                                   colors[0],colors[1],colors[2],colors[3]);
             }
 
-            cordova.plugins.PayUmoneyPnP.setAndroidAppThemeName( function (response) {
+            cordova.plugins.PayUMoneyPNPPlugin.setAndroidAppThemeName( function (response) {
                                                                     console.log('payButtonClicked(): setAndroidAppThemeName received Success ');
                                                                  },
 
@@ -172,8 +174,8 @@
 
             var environment_value = getEnv();
 
-            var key = "0P61t4V0";
-            var merchantID = "5805351";
+            var key = environment_value == PUMEnvironment.PUMEnvironmentProduction ? "O15vkB" : "tPJM2e";
+            var merchantID = environment_value == PUMEnvironment.PUMEnvironmentProduction ? "4819816" : "4824899";
 
             console.log('payButtonClicked(): key = '.concat(key) );
             console.log('payButtonClicked(): merchantID = '.concat(merchantID) );
@@ -181,9 +183,9 @@
             var txnId = getRandomTxnId( );
             console.log('payButtonClicked(): txnId = '.concat(txnId) );
 
-            var txnParam = new PUMTxnParam( key, merchantID, txnId + '' ,amount,phoneNumber,email,"UserFirstName","https://www.payumoney.com/mobileapp/payumoney/success.php","https://www.payumoney.com/mobileapp/payumoney/failure.php","iPhone7",environment_value,"","","");
+            var txnParam = new PUMTxnParam( key, merchantID, txnId.toString() ,amount,phoneNumber,email,"UserFirstName","https://www.payumoney.com/mobileapp/payumoney/success.php","https://www.payumoney.com/mobileapp/payumoney/failure.php","iPhone7",environment_value,"","","");
             txnParam.hashValue = getHash(txnParam);
-            cordova.plugins.PayUmoneyPnP.showPaymentView( function (response) {
+            cordova.plugins.PayUMoneyPNPPlugin.showPaymentView( function (response) {
                                                                     console.log('payButtonClicked(): showPaymentView received Success ');
                                                                     alert(JSON.stringify(response));
                                                                  },
@@ -206,7 +208,7 @@
                 var checkBoxDisableExitScreenCheckout = document.getElementById( "disableExitAlertOnCheckoutPage" );
                 var toDisable = checkBoxDisableExitScreenCheckout.checked;
 
-                cordova.plugins.PayUmoneyPnP.disableExitAlertOnCheckoutPage(      function (response) {
+                cordova.plugins.PayUMoneyPNPPlugin.disableExitAlertOnCheckoutPage(      function (response) {
                                                                                              console.log( 'disableExitAlertOnCheckoutPage Received Success' );
                                                                                              alert( JSON.stringify(response) );
                                                                                         },
@@ -225,7 +227,7 @@
                 var checkBoxDisableCompletionScreenClicked= document.getElementById( "disableCompletionScreen" );
                 var toDisable = checkBoxDisableCompletionScreenClicked.checked;
 
-                cordova.plugins.PayUmoneyPnP.disableCompletionScreen(      function (response) {
+                cordova.plugins.PayUMoneyPNPPlugin.disableCompletionScreen(      function (response) {
                                                                                              console.log( 'disableCompletionScreen Received Success' );
                                                                                              alert( JSON.stringify(response) );
                                                                                         },
@@ -242,6 +244,9 @@
         var getiOSColor = function () {
             var themeName = document.getElementById( "themeName" ).value;
             switch (themeName) {
+                default:
+                case 'AppTheme.default':
+                return ['F3A62E','ffffff','F3A62E','ffffff'];
                 case 'AppTheme.pink':
                 return ['C0175C','ffffff','C0175C','ffffff'];
                 case 'AppTheme.Grey':
@@ -252,8 +257,6 @@
                 return ['7A1FA2','ffffff','7A1FA2','ffffff'];
                 case 'AppTheme.blue':
                 return ['4C63E2','ffffff','4C63E2','ffffff'];
-                default:
-                return [];
             }
 
         }
@@ -267,7 +270,7 @@
         }
 
         var getHash = function (txnParam) {
-            var salt = "9mF4voMh97";
+            var salt = getEnv() == PUMEnvironment.PUMEnvironmentProduction ? "LU1EhObh" : "x4rmTrFm";
             console.log('getHash(): salt = '.concat(salt) );
 
             var hashSequence = txnParam.key + '|' + txnParam.txnID + '|' + txnParam.amount + '|' + txnParam.productInfo + '|' + txnParam.firstname + '|' + txnParam.email + '|' + txnParam.udf1 + '|' + txnParam.udf2 + '|' + txnParam.udf3 + '|' + txnParam.udf4 + '|' + txnParam.udf5 + '|' + txnParam.udf6 + '|' + txnParam.udf7 + '|' + txnParam.udf8 + '|' + txnParam.udf9 + '|' + txnParam.udf10 + '|' + salt;
