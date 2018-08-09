@@ -172,8 +172,8 @@
 
             var environment_value = getEnv();
 
-            var key = environment_value == PUMEnvironment.PUMEnvironmentProduction ? "O15vkB" : "tPJM2e";
-            var merchantID = environment_value == PUMEnvironment.PUMEnvironmentProduction ? "4819816" : "4824899";
+            var key = "0P61t4V0";
+            var merchantID = "5805351";
 
             console.log('payButtonClicked(): key = '.concat(key) );
             console.log('payButtonClicked(): merchantID = '.concat(merchantID) );
@@ -181,7 +181,7 @@
             var txnId = getRandomTxnId( );
             console.log('payButtonClicked(): txnId = '.concat(txnId) );
 
-            var txnParam = new PUMTxnParam( key, merchantID, txnId ,amount,phoneNumber,email,"UserFirstName","https://www.payumoney.com/mobileapp/payumoney/success.php","https://www.payumoney.com/mobileapp/payumoney/failure.php","iPhone7",environment_value,"","","");
+            var txnParam = new PUMTxnParam( key, merchantID, txnId + '' ,amount,phoneNumber,email,"UserFirstName","https://www.payumoney.com/mobileapp/payumoney/success.php","https://www.payumoney.com/mobileapp/payumoney/failure.php","iPhone7",environment_value,"","","");
             txnParam.hashValue = getHash(txnParam);
             cordova.plugins.PayUmoneyPnP.showPaymentView( function (response) {
                                                                     console.log('payButtonClicked(): showPaymentView received Success ');
@@ -267,7 +267,7 @@
         }
 
         var getHash = function (txnParam) {
-            var salt = getEnv() == PUMEnvironment.PUMEnvironmentProduction ? "LU1EhObh" : "x4rmTrFm";
+            var salt = "9mF4voMh97";
             console.log('getHash(): salt = '.concat(salt) );
 
             var hashSequence = txnParam.key + '|' + txnParam.txnID + '|' + txnParam.amount + '|' + txnParam.productInfo + '|' + txnParam.firstname + '|' + txnParam.email + '|' + txnParam.udf1 + '|' + txnParam.udf2 + '|' + txnParam.udf3 + '|' + txnParam.udf4 + '|' + txnParam.udf5 + '|' + txnParam.udf6 + '|' + txnParam.udf7 + '|' + txnParam.udf8 + '|' + txnParam.udf9 + '|' + txnParam.udf10 + '|' + salt;
