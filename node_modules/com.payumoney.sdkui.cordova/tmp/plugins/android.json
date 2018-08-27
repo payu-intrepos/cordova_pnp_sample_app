@@ -1,0 +1,18 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "com.payumoney.sdkui.cordova": {
+      "PACKAGE_NAME": "com.rjfun.demo"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.rjfun.demo"
+    }
+  },
+  "dependent_plugins": {}
+}

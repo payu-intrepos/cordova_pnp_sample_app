@@ -1,0 +1,64 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/home/vinay/StudioProjects/cordova/pnpcordova",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/home/vinay/StudioProjects/cordova/pnpcordova",
+        "spec": "/home/vinay/StudioProjects/cordova/pnpcordova",
+        "type": "directory"
+      },
+      "/home/vinay/StudioProjects/cordova/cordovasampleapp"
+    ]
+  ],
+  "_from": "../pnpcordova",
+  "_id": "com.payumoney.sdkui.cordova@1.0.1",
+  "_inCache": true,
+  "_location": "/com.payumoney.sdkui.cordova",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/home/vinay/StudioProjects/cordova/pnpcordova",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/home/vinay/StudioProjects/cordova/pnpcordova",
+    "spec": "/home/vinay/StudioProjects/cordova/pnpcordova",
+    "type": "directory"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "file:../pnpcordova",
+  "_shasum": "d6beb2213bd3791c8c4dcd332e5e018c89c76fb3",
+  "_shrinkwrap": null,
+  "_spec": "/home/vinay/StudioProjects/cordova/pnpcordova",
+  "_where": "/home/vinay/StudioProjects/cordova/cordovasampleapp",
+  "author": {
+    "name": "PayU Payments Private Limited"
+  },
+  "cordova": {
+    "id": "com.payumoney.sdkui.cordova",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "dependencies": {},
+  "description": "PayUmoney PNP Plugin",
+  "devDependencies": {},
+  "gitHead": "a45bbdce0e8dfe97cabfd207c6a5672933290044",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "license": "Apache 2.0",
+  "name": "com.payumoney.sdkui.cordova",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "readmeFilename": "README.md",
+  "version": "1.0.1"
+}

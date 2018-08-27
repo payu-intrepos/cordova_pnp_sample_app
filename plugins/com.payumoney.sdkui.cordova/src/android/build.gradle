@@ -1,0 +1,40 @@
+repositories{
+    mavenCentral()
+    jcenter()
+
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    //  'com.payumoney.sdkui:plug-n-play:1.4.3_test4'
+    compile(name:'plug-n-play-cordova-release', ext:'aar')
+    compile(name:'payumoney-sdk-cordova-release', ext:'aar')
+
+    // Dependencies of Core SDK added here
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.payu.custombrowser:payu-custom-browser:7.2.1'
+    compile 'com.payu.magicretry:magicretry:1.0.5'
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile 'com.android.support:design:23.2.1'
+
+    // Dependencies of PNP SDK added here
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile 'com.android.support:design:23.2.1'
+    compile 'com.android.support:cardview-v7:23.2.1'
+    compile 'com.android.support:support-v4:23.2.1'
+    compile 'com.github.aakira:expandable-layout:1.6.0@aar'
+
+    // implementation project(':Assetsdownloadlibray')
+    compile 'com.payumoney.graphics:asset-download-sdk:0.3.2'
+
+
+}
+
+android {
+    packagingOptions {
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+    }
+}
