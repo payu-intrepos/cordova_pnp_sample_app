@@ -1,7 +1,0 @@
-repositories{
-  mavenCentral()
-}
-
-dependencies {
-    compile 'com.payumoney.sdkui:plug-n-play:1.4.3_test4'
-}
