@@ -7,18 +7,10 @@
     "is_top_level": true,
     "variables": {}
   },
-  "com.payu.plugin.pnp": {
-    "source": {
-      "type": "local",
-      "path": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/node_modules/com.payu.plugin.pnp"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
   "com.payumoney.sdkui.cordova": {
     "source": {
       "type": "local",
-      "path": "/home/vinay/StudioProjects/cordova/cordovasampleapp/node_modules/com.payumoney.sdkui.cordova"
+      "path": "/Users/vinay.setia/StudioProjects/cordova/cordovasampleapp/node_modules/com.payumoney.sdkui.cordova"
     },
     "is_top_level": true,
     "variables": {}
