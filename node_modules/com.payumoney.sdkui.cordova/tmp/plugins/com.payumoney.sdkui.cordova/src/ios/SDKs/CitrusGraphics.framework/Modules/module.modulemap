@@ -1,6 +1,0 @@
-framework module CitrusGraphics {
-  umbrella header "CitrusGraphics.h"
-
-  export *
-  module * { export * }
-}
