@@ -13,7 +13,7 @@ module.exports.metadata =
 // TOP OF METADATA
 {
   "cordova-plugin-whitelist": "1.3.3",
-  "com.payumoney.sdkui.cordova": "1.1.0"
+  "com.payumoney.sdkui.cordova": "1.1.1"
 };
 // BOTTOM OF METADATA
 });
