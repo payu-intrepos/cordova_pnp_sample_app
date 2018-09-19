@@ -1,0 +1,37 @@
+# Non-project-specific build files:
+build.xml
+local.properties
+/gradlew
+/gradlew.bat
+/gradle
+# Ant builds
+ant-build
+ant-gen
+# Eclipse builds
+gen
+out
+# Gradle builds
+/build
+/app/build
+/app/build/intermediates/res/merged/androidTest/debug/
+
+# Android Studio
+.gradle
+gradlew
+gradlew.bat
+build/
+.idea/
+/*/local.properties
+/*/out
+/*/*/build
+/*/*/production
+*.iml
+*~
+*.swp
+*.ipr
+*.iws
+/src/main/res/values/com_crashlytics_export_strings.xml
+/src/main/assets/crashlytics-build.properties
+
+# backup files
+*.bak

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.payumoney.sdkui.cordova" version="1.1.1">
+
+    <name>PayUmoneyPnP</name>
+    <js-module name="PayUmoneyPnP" src="www/PayUMoneyPNPPlugin.js">
+        <clobbers target="cordova.plugins.PayUmoneyPnP" />
+    </js-module>
+    <asset src="www/PayU-Helper.js" target="js/PayU-Helper.js" />
+
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="PayUmoneyPnP">
+                <param name="ios-package" value="PayUMoneyPNPPlugin" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/PayUMoneyPNPPlugin.m" />
+        <framework src="src/ios/SDKs/CitrusGraphics.framework" custom="true" embed="true"/>
+        <framework src="src/ios/SDKs/PayUMoneyCoreSDK.framework" custom="true" embed="true"/>
+        <framework src="src/ios/SDKs/PlugNPlay.framework" custom="true" embed="true"/>
+    </platform>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="PayUmoneyPnP">
+                <param name="android-package" value="com.payumoney.sdkui.cordova.PayUmoneyPnP" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml" />
+
+        <edit-config file="AndroidManifest.xml" target="/manifest/uses-permission" mode="merge">
+            <!-- Taken from payumoney core sdk -->
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+            <uses-permission android:name="android.permission.RECEIVE_SMS" android:protectionLevel="normal" />
+            <uses-permission android:name="android.permission.INTERNET" />
+            <!-- Require below permissions for reading sms and otp assist feature -->
+            <uses-permission android:name="android.permission.READ_SMS" />
+            <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+
+            <!-- Taken from PNP sdk -->
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+            <!-- Taken from sample app -->
+            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        </edit-config>
+
+        <source-file src="src/android/PayUmoneyPnP.java" target-dir="src/com/payumoney/sdkui/cordova/" />
+        <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
+        <!--<resource-file src="src/android/libs/plug-n-play-cordova-release.aar" target="/platforms/android/app/libs/plug-n-play-cordova-release.aar" />
+        <resource-file src="src/android/libs/payumoney-sdk-cordova-release.aar" target="/platforms/android/app/libs/payumoney-sdk-cordova-release.aar" />-->
+
+        <lib-file src="src/android/libs/plug-n-play-cordova-release.aar"/>
+        <lib-file src="src/android/libs/payumoney-sdk-cordova-release.aar"/>
+    </platform>
+</plugin>

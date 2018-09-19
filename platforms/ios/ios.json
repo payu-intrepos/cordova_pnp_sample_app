@@ -1,0 +1,43 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"PayUmoneyPnP\"><param name=\"ios-package\" value=\"PayUMoneyPNPPlugin\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.payu.cordova.sample"
+    },
+    "com.payumoney.sdkui.cordova": {
+      "PACKAGE_NAME": "com.payu.cordova.sample"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "com.payumoney.sdkui.cordova.PayUmoneyPnP",
+      "file": "plugins/com.payumoney.sdkui.cordova/www/PayUMoneyPNPPlugin.js",
+      "pluginId": "com.payumoney.sdkui.cordova",
+      "clobbers": [
+        "cordova.plugins.PayUmoneyPnP"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-whitelist": "1.3.3",
+    "com.payumoney.sdkui.cordova": "1.1.1"
+  }
+}
