@@ -17,6 +17,8 @@
 #import "PUMHelperClass.h"
 #import "PUMTextField.h"
 #import "PUMLogEvents.h"
+#import "UIImageView+CitrusGraphics.h"
+
 
 #define SDK_Default_COLOR UIColorFromRGB([PUMUIConfig intFromHexString:defaultLinkTextColor])
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
@@ -95,6 +97,14 @@ typedef NSString* (^PUMRightActionCompletionBlock)(BOOL actionOccurred);
 
 /// This method is used for getting updated emi tenures on the basis of amount provided. Amount should contain convenience fee as well
 - (void)getEMIOptionsForAmount:(NSString *)amount completion:(PUMRawJSONCompletionBlock)completionBlock;
+
+/// Checks if UPI option is available or not.
+- (BOOL)isUPIOptionAvailable;
+
+/** Checks if VPA is valid or not. VPA should be in a format example@@example
+ @param vpa The VPA whose validation needs to be performed
+ */
+- (void)validateVPA:(NSString *)vpa completion:(void(^)(BOOL isValidVPA, NSError *error))completionBlock;
 
 - (void)fetchPaymentUserDataAPIWithCompletionBlock:(PUMRawJSONCompletionBlock)completionBlock;
 

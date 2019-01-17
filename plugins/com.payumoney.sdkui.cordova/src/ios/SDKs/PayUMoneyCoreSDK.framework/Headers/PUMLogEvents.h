@@ -15,6 +15,7 @@ static NSString *const KPUMAWalletCardValue = @"PUMWallet|Cards";
 static NSString *const KPUMAWalletNetBankValue = @"PUMWallet|Bank";
 static NSString *const KPUMA3PWallet = @"3PWallet";
 static NSString *const KPUMAEMI = @"EMI";
+static NSString *const kPUMAUPI = @"UPI";
 
 static NSString *const kPUMAScreenTypeCheckout = @"Checkout";
 static NSString *const kPUMAScreenTypeAddCard = @"AddCard";
@@ -96,7 +97,10 @@ static NSString *const kPUMAInvalidCVV = @"Invalid CVV";
 +(void)more3PWalletsClicked;
 
 +(void)moreEMIBanksClicked:(NSString *)amount;
-//+(void)twoFALoaded;
+
++(void)invalidVPAEntered:(NSString *)vpa;
+
++(void)failedToValidateVPA:(NSString *)vpa errorMessage:(NSString *)errorMessage;
 
 +(void)paymentAbandonedWithReason:(NSString *)reason;
 

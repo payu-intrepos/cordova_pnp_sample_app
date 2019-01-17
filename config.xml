@@ -25,5 +25,5 @@
     </platform>
     <engine name="ios" spec="^4.5.4" />
     <engine name="android" spec="^7.0.0" />
-    <plugin name="com.payumoney.sdkui.cordova" spec="^1.1.1" />
+    <plugin name="com.payumoney.sdkui.cordova" spec="../Plugins/PayUMoneyPNPPlugin" />
 </widget>
