@@ -172,8 +172,8 @@
 
             var environment_value = getEnv();
 
-            var key = "0P61t4V0";
-            var merchantID = "5805351";
+            var key = environment_value == PUMEnvironment.PUMEnvironmentProduction ?  "0P61t4V0" : "tPJM2e" ;
+            var merchantID = environment_value == PUMEnvironment.PUMEnvironmentProduction ? "5805351" : "4824899" ;
 
             console.log('payButtonClicked(): key = '.concat(key) );
             console.log('payButtonClicked(): merchantID = '.concat(merchantID) );
@@ -267,7 +267,8 @@
         }
 
         var getHash = function (txnParam) {
-            var salt = "9mF4voMh97";
+            var salt = getEnv() == PUMEnvironment.PUMEnvironmentProduction ? "9mF4voMh97" : "x4rmTrFm";
+
             console.log('getHash(): salt = '.concat(salt) );
 
             var hashSequence = txnParam.key + '|' + txnParam.txnID + '|' + txnParam.amount + '|' + txnParam.productInfo + '|' + txnParam.firstname + '|' + txnParam.email + '|' + txnParam.udf1 + '|' + txnParam.udf2 + '|' + txnParam.udf3 + '|' + txnParam.udf4 + '|' + txnParam.udf5 + '|' + txnParam.udf6 + '|' + txnParam.udf7 + '|' + txnParam.udf8 + '|' + txnParam.udf9 + '|' + txnParam.udf10 + '|' + salt;
