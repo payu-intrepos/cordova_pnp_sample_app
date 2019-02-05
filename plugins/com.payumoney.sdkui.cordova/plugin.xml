@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"
-    id="com.payumoney.sdkui.cordova" version="1.1.1">
+    id="com.payumoney.sdkui.cordova" version="1.2.0">
 
     <name>PayUmoneyPnP</name>
     <js-module name="PayUmoneyPnP" src="www/PayUMoneyPNPPlugin.js">
@@ -30,16 +30,10 @@
         <edit-config file="AndroidManifest.xml" target="/manifest/uses-permission" mode="merge">
             <!-- Taken from payumoney core sdk -->
             <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-            <uses-permission android:name="android.permission.RECEIVE_SMS" android:protectionLevel="normal" />
             <uses-permission android:name="android.permission.INTERNET" />
-            <!-- Require below permissions for reading sms and otp assist feature -->
-            <uses-permission android:name="android.permission.READ_SMS" />
-            <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-
 
             <!-- Taken from PNP sdk -->
             <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
 
             <!-- Taken from sample app -->
             <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />

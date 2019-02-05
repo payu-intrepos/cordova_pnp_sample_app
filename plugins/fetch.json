@@ -9,8 +9,8 @@
   },
   "com.payumoney.sdkui.cordova": {
     "source": {
-      "type": "local",
-      "path": "/Users/rajvinder.singh/Documents/Cordova/PnPSample/node_modules/com.payumoney.sdkui.cordova"
+      "type": "registry",
+      "id": "com.payumoney.sdkui.cordova@1.2.0"
     },
     "is_top_level": true,
     "variables": {}

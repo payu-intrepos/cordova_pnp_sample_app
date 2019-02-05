@@ -13,7 +13,7 @@ Key features of the PayUmoney SDK are:
 **Get the plugin** 
 To add the plugin to your Cordova development project, execute the following command from the console: 
 ```
-$ cordova plugin add com.payumoney.sdkui.cordova@1.1.1
+$ cordova plugin add com.payumoney.sdkui.cordova@1.2.0
 ```
  
 **Integrating the SDK with your app**

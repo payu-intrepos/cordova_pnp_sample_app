@@ -24,7 +24,6 @@ var path = require('path');
 var shell = require('shelljs');
 var superspawn = require('cordova-common').superspawn;
 var CordovaError = require('cordova-common').CordovaError;
-var events = require('cordova-common').events;
 var check_reqs = require('../check_reqs');
 
 var GenericBuilder = require('./GenericBuilder');
@@ -179,7 +178,7 @@ GradleBuilder.prototype.prepBuildFiles = function () {
     };
 
     subProjects.forEach(function (p) {
-        events.emit('log', 'Subproject Path: ' + p);
+        console.log('Subproject Path: ' + p);
         var libName = p.replace(/[/\\]/g, ':').replace(name + '-', '');
         depsList += '    implementation(project(path: "' + libName + '"))';
         insertExclude(p);

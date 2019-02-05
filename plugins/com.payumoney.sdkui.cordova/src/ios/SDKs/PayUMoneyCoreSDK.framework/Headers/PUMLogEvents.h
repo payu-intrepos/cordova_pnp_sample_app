@@ -40,9 +40,11 @@ static NSString *const kPUMAInvalidCVV = @"Invalid CVV";
 
 +(void)paymentAdded;
 
-+(void)paymentSucceededForAmount:(NSString *) amount;
++(void)paymentSucceededForAmount:(NSString *) amount pgType:(NSString *)pgType;
 
-+(void)paymentFailedWithReason:(NSString *) reason andAmount:(NSString *) amount;
++(void)paymentFailedWithReason:(NSString *) reason andAmount:(NSString *) amount pgType:(NSString *)pgType;
+
++(void)verifyAPIFailedWithReason:(NSString *)reason andAmount:(NSString *)amount;
 
 +(void)loginAttempted;
 

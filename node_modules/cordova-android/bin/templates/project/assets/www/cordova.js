@@ -1,5 +1,5 @@
 // Platform: android
-// 9e8e1b716252c4a08abcd31a13013b868d6f4141
+// 4450a4cea50616e080a82e8ede9e3d6a1fe3c3ec
 /*
  Licensed to the Apache Software Foundation (ASF) under one
  or more contributor license agreements.  See the NOTICE file
@@ -19,7 +19,7 @@
  under the License.
 */
 ;(function() {
-var PLATFORM_VERSION_BUILD_LABEL = '7.1.4';
+var PLATFORM_VERSION_BUILD_LABEL = '7.0.0';
 // file: src/scripts/require.js
 
 /* jshint -W079 */
@@ -307,7 +307,6 @@ var cordova = {
         } catch (err) {
             var msg = 'Error in ' + (isSuccess ? 'Success' : 'Error') + ' callbackId: ' + callbackId + ' : ' + err;
             console && console.log && console.log(msg);
-            console && console.log && err.stack && console.log(err.stack);
             cordova.fireWindowEvent('cordovacallbackerror', { 'message': msg });
             throw err;
         }
@@ -327,7 +326,7 @@ module.exports = cordova;
 
 });
 
-// file: /Users/brodybits/Documents/cordova/cordova-android/cordova-js-src/android/nativeapiprovider.js
+// file: /Users/jbowser/cordova/cordova-android/cordova-js-src/android/nativeapiprovider.js
 define("cordova/android/nativeapiprovider", function(require, exports, module) {
 
 /**
@@ -350,7 +349,7 @@ module.exports = {
 
 });
 
-// file: /Users/brodybits/Documents/cordova/cordova-android/cordova-js-src/android/promptbasednativeapi.js
+// file: /Users/jbowser/cordova/cordova-android/cordova-js-src/android/promptbasednativeapi.js
 define("cordova/android/promptbasednativeapi", function(require, exports, module) {
 
 /**
@@ -882,7 +881,7 @@ module.exports = channel;
 
 });
 
-// file: /Users/brodybits/Documents/cordova/cordova-android/cordova-js-src/exec.js
+// file: /Users/jbowser/cordova/cordova-android/cordova-js-src/exec.js
 define("cordova/exec", function(require, exports, module) {
 
 /**
@@ -1640,7 +1639,7 @@ exports.reset();
 
 });
 
-// file: /Users/brodybits/Documents/cordova/cordova-android/cordova-js-src/platform.js
+// file: /Users/jbowser/cordova/cordova-android/cordova-js-src/platform.js
 define("cordova/platform", function(require, exports, module) {
 
 // The last resume event that was received that had the result of a plugin call.
@@ -1750,7 +1749,7 @@ function onMessageFromNative(msg) {
 
 });
 
-// file: /Users/brodybits/Documents/cordova/cordova-android/cordova-js-src/plugin/android/app.js
+// file: /Users/jbowser/cordova/cordova-android/cordova-js-src/plugin/android/app.js
 define("cordova/plugin/android/app", function(require, exports, module) {
 
 var exec = require('cordova/exec');

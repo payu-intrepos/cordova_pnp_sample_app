@@ -187,9 +187,7 @@ module.exports.list_images = function () {
                 var api_level = avd.target.match(/\d+/);
                 if (api_level) {
                     var level = android_versions.get(api_level);
-                    if (level) {
-                        avd.target = 'Android ' + level.semver + ' (API level ' + api_level + ')';
-                    }
+                    avd.target = 'Android ' + level.semver + ' (API level ' + api_level + ')';
                 }
             }
             return avd;
@@ -344,8 +342,7 @@ module.exports.wait_for_emulator = function (port) {
         }, function (error) {
             if ((error && error.message &&
             (error.message.indexOf('not found') > -1)) ||
-            (error.message.indexOf('device offline') > -1) ||
-            (error.message.indexOf('device still connecting') > -1)) {
+            (error.message.indexOf('device offline') > -1)) {
                 // emulator not yet started, continue waiting
                 return self.wait_for_emulator(port);
             } else {
