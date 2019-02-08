@@ -185,12 +185,16 @@
             txnParam.hashValue = getHash(txnParam);
             cordova.plugins.PayUmoneyPnP.showPaymentView( function (response) {
                                                                     console.log('payButtonClicked(): showPaymentView received Success ');
-                                                                    alert(JSON.stringify(response));
+                                                                    console.log( JSON.stringify(response) );
+                                                                    var msg = 'Transaction successful\n'.concat( JSON.stringify(response) ) ;
+                                                                    alert( msg );
                                                                  },
 
                                                                  function (response){
                                                                     console.log('payButtonClicked(): showPaymentView received Failure ');
-                                                                    alert(JSON.stringify(response));
+                                                                    console.log( JSON.stringify(response) );
+                                                                    var msg = 'Transaction Failed\n'.concat( JSON.stringify(response) ) ;
+                                                                    alert( msg );
                                                                  },
 
                                                                  txnParam );
