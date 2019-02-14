@@ -172,8 +172,11 @@
 
             var environment_value = getEnv();
 
-            var key = environment_value == PUMEnvironment.PUMEnvironmentProduction ?  "0P61t4V0" : "tPJM2e" ;
-            var merchantID = environment_value == PUMEnvironment.PUMEnvironmentProduction ? "5805351" : "4824899" ;
+            var key = "0P61t4V0" ;  <!-- same key for Sandbox & Prod -->
+            <!--var key = environment_value == PUMEnvironment.PUMEnvironmentProduction ?  "0P61t4V0" : "tPJM2e" ;--> <!-- Different keys for pp44 -->
+
+            var merchantID = "5805351" ; <!-- same MerchantId for Sandbox & Prod -->
+            <!--var merchantID = environment_value == PUMEnvironment.PUMEnvironmentProduction ? "5805351" : "4824899" ;--> <!-- Different MerchantIds for pp44 -->
 
 
             console.log('payButtonClicked(): key = '.concat(key) );
@@ -272,7 +275,8 @@
         }
 
         var getHash = function (txnParam) {
-            var salt = getEnv() == PUMEnvironment.PUMEnvironmentProduction ? "9mF4voMh97" : "x4rmTrFm";
+            var salt =  "9mF4voMh97" ;  <!-- same Salt for Sandbox & Prod -->
+            <!--var salt = getEnv() == PUMEnvironment.PUMEnvironmentProduction ? "9mF4voMh97" : "x4rmTrFm";--> <!-- Different Salts for pp44 -->
 
             console.log('getHash(): salt = '.concat(salt) );
 
