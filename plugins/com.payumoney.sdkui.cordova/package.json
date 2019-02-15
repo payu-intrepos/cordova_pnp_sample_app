@@ -1,32 +1,7 @@
 {
-  "_from": "com.payumoney.sdkui.cordova@1.2.0",
-  "_id": "com.payumoney.sdkui.cordova@1.2.0",
-  "_inBundle": false,
-  "_integrity": "sha512-X6kgnypr7T8nFKIdZswAEx/Wze72RBFOirbF/X3sYoz/grXvFgvT82oNUJ56pFKJZmWBhuRz9ajYG9Hsyshwaw==",
-  "_location": "/com.payumoney.sdkui.cordova",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "com.payumoney.sdkui.cordova@1.2.0",
-    "name": "com.payumoney.sdkui.cordova",
-    "escapedName": "com.payumoney.sdkui.cordova",
-    "rawSpec": "1.2.0",
-    "saveSpec": null,
-    "fetchSpec": "1.2.0"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/com.payumoney.sdkui.cordova/-/com.payumoney.sdkui.cordova-1.2.0.tgz",
-  "_shasum": "f9348b1026dd9675ef91ec2214581df0a1ddc0e3",
-  "_spec": "com.payumoney.sdkui.cordova@1.2.0",
-  "_where": "/Users/vinay.setia/StudioProjects/cordova/cordovasampleapp",
-  "author": {
-    "name": "PayU Payments Private Limited"
-  },
-  "bundleDependencies": false,
+  "name": "com.payumoney.sdkui.cordova",
+  "version": "1.2.1",
+  "description": "PayUmoney PNP Plugin",
   "cordova": {
     "id": "com.payumoney.sdkui.cordova",
     "platforms": [
@@ -34,14 +9,11 @@
       "android"
     ]
   },
-  "deprecated": false,
-  "description": "PayUmoney PNP Plugin",
   "keywords": [
     "ecosystem:cordova",
     "cordova-ios",
     "cordova-android"
   ],
-  "license": "Apache 2.0",
-  "name": "com.payumoney.sdkui.cordova",
-  "version": "1.2.0"
+  "author": "PayU Payments Private Limited",
+  "license": "Apache 2.0"
 }

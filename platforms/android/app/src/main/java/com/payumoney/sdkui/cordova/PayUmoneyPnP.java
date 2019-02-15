@@ -26,6 +26,7 @@ import java.util.HashMap;
 import static android.app.Activity.RESULT_OK;
 import static android.app.Activity.RESULT_CANCELED;
 
+import java.util.Iterator;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import com.payu.custombrowser.bean.ReviewOrderBundle;
@@ -399,9 +400,12 @@ public class PayUmoneyPnP extends CordovaPlugin {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        Log.d(TAG, "onActivityResult(): request code " + requestCode + " resultcode " + resultCode);
+        Log.d(TAG, "onActivityResult(): request code = " + requestCode + " resultcode = " + resultCode + ", data = " + data );
         if( requestCode == 1 ) {
             final CallbackContext callbackContext = contextHashMap.get( ""+PayUmoneyFlowManager.REQUEST_CODE_PAYMENT );
+
+            // HashMap<String, String> resultMap = null;
+            JSONObject resultJsonObject = null;
 
             if (  resultCode == RESULT_OK ) {
                 if( data != null ) {
@@ -409,51 +413,182 @@ public class PayUmoneyPnP extends CordovaPlugin {
                             .INTENT_EXTRA_TRANSACTION_RESPONSE);
 
                     ResultModel resultModel = data.getParcelableExtra(PayUmoneyFlowManager.ARG_RESULT);
+
+                    Log.d(TAG, "onActivityResult(): transactionResponse = " + transactionResponse + ", resultModel = " + resultModel );
+
                     // Check which object is non-null
-                    if (transactionResponse != null && transactionResponse.getPayuResponse() != null) {
+                    if (transactionResponse != null ) {
 
                         final TransactionResponse.TransactionStatus transactionStatus = transactionResponse.getTransactionStatus();
+                        Log.d(TAG, "onActivityResult(): transactionStatus = " + transactionStatus );
 
-                        switch (transactionStatus) {
-                            case FAILED:
-                                callbackContext.error("Transaction failed");
-                                break;
+                        if( transactionStatus != null ) {
+                            // Response from Payumoney
+                            String payuResponse = transactionResponse.getPayuResponse();
+                            // Response from SURl and FURL
+                            String merchantResponse = transactionResponse.getTransactionDetails();
 
-                            case SUCCESSFUL:
-                                callbackContext.success("Transaction Successful");
-                                break;
+                            Log.d(TAG, "onActivityResult(): payuResponse = " + payuResponse + ", merchantResponse = " + merchantResponse);
+                            if ( TextUtils.isEmpty(payuResponse) ) {
 
-                            case CANCELLED:
-                                callbackContext.error("Transaction Cancelled");
-                                break;
+                                switch (transactionStatus) {
+                                    case FAILED:
+                                        resultJsonObject = createFailErrorJson( merchantResponse );
+                                        callbackContext.error( resultJsonObject );
+                                        break;
 
-                            default:
-                                callbackContext.error(transactionStatus.name());
-                                break;
+                                    case CANCELLED:
+                                        resultJsonObject = createCancelledErrorJson( merchantResponse );
+                                        callbackContext.error( resultJsonObject );
+                                        break;
+
+                                        // Should not come here if payuResponse is empty
+                                    case SUCCESSFUL:
+                                        resultJsonObject = createSuccessJson( transactionStatus.name(), merchantResponse );
+                                        callbackContext.success( resultJsonObject );
+                                        break;
+
+                                    default:
+                                        resultJsonObject = createErrorJson( transactionStatus.name(), merchantResponse );
+                                        callbackContext.error( resultJsonObject );
+                                        break;
+                                }
+                            }else {
+                                try {
+                                    JSONObject payuResponseJsonObject   = new JSONObject(payuResponse);
+                                    resultJsonObject                    = payuResponseJsonObject.getJSONObject( "result" );
+                                    Log.d(TAG, "onActivityResult(): resultJsonObject = " + resultJsonObject );
+
+                                    switch (transactionStatus) {
+                                        default:
+                                        case FAILED:
+                                        case CANCELLED:
+                                            callbackContext.error( resultJsonObject );
+                                            break;
+
+                                        case SUCCESSFUL:
+                                            callbackContext.success( resultJsonObject );
+                                            break;
+                                    }
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+
+                                    resultJsonObject = createFailErrorJson( null );
+                                    callbackContext.error( resultJsonObject );
+                                }
+                            }
+
+                        }else {
+                            resultJsonObject = createFailErrorJson( "Transaction Failed. Status not received" );
+                            callbackContext.error( resultJsonObject );
                         }
 
-                        // Response from Payumoney
-                        String payuResponse = transactionResponse.getPayuResponse();
+                    } else if (resultModel != null && resultModel.getError() != null ) {
+                        final com.payumoney.core.response.TransactionResponse errTransactionResponse = resultModel.getError().getTransactionResponse();
+                        Log.d(TAG, "Error response object = " + errTransactionResponse );
 
-                        // Response from SURl and FURL
-                        String merchantResponse = transactionResponse.getTransactionDetails();
+                        resultJsonObject = createFailErrorJson( null );
 
-                    } else if (resultModel != null && resultModel.getError() != null) {
-                        Log.d(TAG, "Error response : " + resultModel.getError().getTransactionResponse());
-                        callbackContext.error("Transaction failed");
+                        if( errTransactionResponse != null ){
+                            String errMsgPayU = errTransactionResponse.getJsonResponse();
+                            Log.d(TAG, "Error response payu = " + errMsgPayU );
+
+                            if(  TextUtils.isEmpty( errMsgPayU )){
+                                errMsgPayU = errTransactionResponse.getMessage();
+                                Log.d(TAG, "Error response payu 2 = " + errMsgPayU );
+                                if(  ! TextUtils.isEmpty( errMsgPayU )){
+                                    resultJsonObject = createFailErrorJson( errMsgPayU );
+                                }
+                            }else {
+                                try {
+                                    JSONObject payuResponseJsonObject = new JSONObject( errMsgPayU );
+                                    resultJsonObject = payuResponseJsonObject.getJSONObject( "result" );
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                        }
+
+                        callbackContext.error( resultJsonObject );
+
                     } else {
-                        Log.d(TAG, "Both objects are null!");
-                        callbackContext.success("Transaction Successful");
+                        Log.d(TAG, "Both objects - transactionResponse & resultModel are null!");
+
+                        resultJsonObject = createFailErrorJson(null );
+                        callbackContext.error( resultJsonObject );
                     }
                 }else {
-                    callbackContext.error( "Transaction Failed" );
+                    Log.d(TAG, "No result data available in callback" );
+
+                    resultJsonObject = createFailErrorJson( null );
+                    callbackContext.error( resultJsonObject );
                 }
             }else if (  resultCode == RESULT_CANCELED ) {
-                callbackContext.error("Transaction Cancelled");
+
+                resultJsonObject = createCancelledErrorJson( null );
+                callbackContext.error( resultJsonObject );
             }else {
-                callbackContext.error( "Transaction Failed" );
+
+                resultJsonObject = createFailErrorJson( "Unexpected error" );
+                callbackContext.error( resultJsonObject );
             }
         }
+    }
+
+    private JSONObject createSuccessJson( final String status, String message ){
+        final JSONObject jsonObject = new JSONObject( );
+
+        try {
+            jsonObject.put( "status", status );
+            if( TextUtils.isEmpty( message ) ){
+                message = "No response data"  ;
+            }
+            jsonObject.put( "message", message );
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        return jsonObject;
+    }
+
+    private JSONObject createErrorJson( final String status, final String errorMessage ){
+        final JSONObject jsonObject = new JSONObject( );
+
+        try {
+            jsonObject.put( "status", status );
+            jsonObject.put( "error_Message", errorMessage );
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        return jsonObject;
+    }
+
+    private JSONObject createFailErrorJson( String errorMessage ){
+        if( TextUtils.isEmpty( errorMessage ) ){
+            errorMessage = "Transaction Failed. No response data"  ;
+        }
+        return createErrorJson( "failure", errorMessage );
+    }
+
+    private JSONObject createCancelledErrorJson( String errorMessage ){
+        if( TextUtils.isEmpty( errorMessage ) ){
+            errorMessage = "Transaction Cancelled" ;
+        }
+        return createErrorJson( "failure", errorMessage );
+
+    }
+
+    private JSONObject createStatusJson( final String status ){
+        final JSONObject jsonObject = new JSONObject();
+
+        try {
+            jsonObject.put( "status", status );
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        return jsonObject;
     }
 }
 
