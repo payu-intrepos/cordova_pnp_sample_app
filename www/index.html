@@ -172,8 +172,12 @@
 
             var environment_value = getEnv();
 
-            var key = "0P61t4V0";
-            var merchantID = "5805351";
+            var key = "0P61t4V0" ;  <!-- same key for Sandbox & Prod -->
+            <!--var key = environment_value == PUMEnvironment.PUMEnvironmentProduction ?  "0P61t4V0" : "tPJM2e" ;--> <!-- Different keys for pp44 -->
+
+            var merchantID = "5805351" ; <!-- same MerchantId for Sandbox & Prod -->
+            <!--var merchantID = environment_value == PUMEnvironment.PUMEnvironmentProduction ? "5805351" : "4824899" ;--> <!-- Different MerchantIds for pp44 -->
+
 
             console.log('payButtonClicked(): key = '.concat(key) );
             console.log('payButtonClicked(): merchantID = '.concat(merchantID) );
@@ -185,12 +189,16 @@
             txnParam.hashValue = getHash(txnParam);
             cordova.plugins.PayUmoneyPnP.showPaymentView( function (response) {
                                                                     console.log('payButtonClicked(): showPaymentView received Success ');
-                                                                    alert(JSON.stringify(response));
+                                                                    console.log( JSON.stringify(response) );
+                                                                    var msg = 'Transaction successful\n'.concat( JSON.stringify(response) ) ;
+                                                                    alert( msg );
                                                                  },
 
                                                                  function (response){
                                                                     console.log('payButtonClicked(): showPaymentView received Failure ');
-                                                                    alert(JSON.stringify(response));
+                                                                    console.log( JSON.stringify(response) );
+                                                                    var msg = 'Transaction Failed\n'.concat( JSON.stringify(response) ) ;
+                                                                    alert( msg );
                                                                  },
 
                                                                  txnParam );
@@ -267,7 +275,9 @@
         }
 
         var getHash = function (txnParam) {
-            var salt = "9mF4voMh97";
+            var salt =  "9mF4voMh97" ;  <!-- same Salt for Sandbox & Prod -->
+            <!--var salt = getEnv() == PUMEnvironment.PUMEnvironmentProduction ? "9mF4voMh97" : "x4rmTrFm";--> <!-- Different Salts for pp44 -->
+
             console.log('getHash(): salt = '.concat(salt) );
 
             var hashSequence = txnParam.key + '|' + txnParam.txnID + '|' + txnParam.amount + '|' + txnParam.productInfo + '|' + txnParam.firstname + '|' + txnParam.email + '|' + txnParam.udf1 + '|' + txnParam.udf2 + '|' + txnParam.udf3 + '|' + txnParam.udf4 + '|' + txnParam.udf5 + '|' + txnParam.udf6 + '|' + txnParam.udf7 + '|' + txnParam.udf8 + '|' + txnParam.udf9 + '|' + txnParam.udf10 + '|' + salt;

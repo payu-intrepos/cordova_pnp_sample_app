@@ -33,7 +33,7 @@
               }
             },
             {
-              "xml": "<uses-permission android:name=\"android.permission.RECEIVE_SMS\" android:protectionLevel=\"normal\" />",
+              "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
               "count": 1,
               "mode": "merge",
               "plugin": "com.payumoney.sdkui.cordova",
@@ -43,42 +43,12 @@
               }
             },
             {
-              "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
-              "count": 1,
-              "mode": "merge",
-              "plugin": "com.payumoney.sdkui.cordova",
-              "oldAttrib": {
-                "android:name": "android.permission.RECEIVE_SMS",
-                "android:protectionLevel": "normal"
-              }
-            },
-            {
-              "xml": "<uses-permission android:name=\"android.permission.READ_SMS\" />",
-              "count": 1,
-              "mode": "merge",
-              "plugin": "com.payumoney.sdkui.cordova",
-              "oldAttrib": {
-                "android:name": "android.permission.INTERNET",
-                "android:protectionLevel": "normal"
-              }
-            },
-            {
-              "xml": "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />",
-              "count": 1,
-              "mode": "merge",
-              "plugin": "com.payumoney.sdkui.cordova",
-              "oldAttrib": {
-                "android:name": "android.permission.READ_SMS",
-                "android:protectionLevel": "normal"
-              }
-            },
-            {
               "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
               "count": 1,
               "mode": "merge",
               "plugin": "com.payumoney.sdkui.cordova",
               "oldAttrib": {
-                "android:name": "android.permission.READ_PHONE_STATE",
+                "android:name": "android.permission.INTERNET",
                 "android:protectionLevel": "normal"
               }
             },
@@ -128,6 +98,6 @@
   ],
   "plugin_metadata": {
     "cordova-plugin-whitelist": "1.3.3",
-    "com.payumoney.sdkui.cordova": "1.1.1"
+    "com.payumoney.sdkui.cordova": "1.2.1"
   }
 }
